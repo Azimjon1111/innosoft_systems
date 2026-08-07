@@ -80,7 +80,11 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${sourceSans.variable} ${geistMono.variable}`}>
+    <html
+      lang={locale}
+      className={`${sourceSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
+    >
       <body className="min-h-svh antialiased">
         {/* No-flash: tema localStorage'dan birinchi paint'dan OLDIN o'rnatiladi */}
         <script
