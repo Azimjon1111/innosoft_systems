@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "title": "Innosoft Systems — Software That Drives Business Growth",
+    "description": "Enterprise websites, AI solutions, CRM and ERP systems, mobile apps and digital transformation — from Uzbekistan's trusted software development company."
+  },
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "caseStudies": "Case Studies",
+    "company": "Company",
+    "contact": "Contact",
+    "cta": "Book Free Consultation",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "mainNav": "Main navigation",
+    "groupWeb": "Web & Digital",
+    "groupBusiness": "Business Systems",
+    "groupEmerging": "AI & Mobile",
+    "groupGrowth": "Marketing & Growth",
+    "allServices": "All services",
+    "featuredTitle": "Have a project?",
+    "featuredDesc": "Get a free consultation with exact pricing and timeline.",
+    "featuredCta": "Order a Website",
+    "companyAbout": "About Us",
+    "companyTeam": "Team",
+    "companyCareers": "Careers",
+    "companyBlog": "Blog",
+    "svc": {
+      "korporativ-saytlar": {
+        "title": "Corporate Websites",
+        "desc": "Platforms that strengthen company reputation"
+      },
+      "internet-dukonlar": {
+        "title": "E-commerce Stores",
+        "desc": "Online stores that grow your sales"
+      },
+      "lending-saytlar": {
+        "title": "Landing Pages",
+        "desc": "Conversion-focused pages"
+      },
+      "vizitka-saytlar": {
+        "title": "Business Card Sites",
+        "desc": "A fast start for small business"
+      },
+      "startap-saytlar": {
+        "title": "Startup Websites",
+        "desc": "MVPs and investor-ready products"
+      },
+      "crm-tizimlar": {
+        "title": "CRM Systems",
+        "desc": "Manage clients and sales pipeline"
+      },
+      "erp-tizimlar": {
+        "title": "ERP Systems",
+        "desc": "Production and resource management"
+      },
+      "biznes-avtomatlashtirish": {
+        "title": "Business Automation",
+        "desc": "Digitize manual processes"
+      },
+      "dasturiy-taminot": {
+        "title": "Custom Software",
+        "desc": "Systems built for your exact needs"
+      },
+      "veb-ilovalar": {
+        "title": "Web Applications",
+        "desc": "SaaS and internal corporate apps"
+      },
+      "ai-chatbotlar": {
+        "title": "AI Chatbots",
+        "desc": "Smart 24/7 customer service"
+      },
+      "telegram-botlar": {
+        "title": "Telegram Bots",
+        "desc": "Order and communication automation"
+      },
+      "mobile-ilovlar": {
+        "title": "Mobile Apps",
+        "desc": "Native quality for iOS and Android"
+      },
+      "seo-xizmatlar": {
+        "title": "SEO Services",
+        "desc": "Top positions on Google and Yandex"
+      },
+      "kontekst-reklama": {
+        "title": "Google Ads",
+        "desc": "Fast leads with paid search"
+      },
+      "smm-marketing": {
+        "title": "SMM Marketing",
+        "desc": "Brand growth on social media"
+      },
+      "ux-ui-dizayn": {
+        "title": "UX/UI Design",
+        "desc": "User experience and interfaces"
+      },
+      "sayt-redizayn": {
+        "title": "Website Redesign",
+        "desc": "Bring an old site up to modern standards"
+      },
+      "sayt-texnik-xizmat": {
+        "title": "Website Maintenance",
+        "desc": "Keep your site running smoothly"
+      },
+      "it-konsalting": {
+        "title": "IT Consulting",
+        "desc": "Digital strategy and architecture"
+      },
+      "it-autsorsing": {
+        "title": "IT Outsourcing",
+        "desc": "Dedicated teams and specialists"
+      },
+      "sayt-buyurtma": {
+        "title": "Order a Website",
+        "desc": "Start your project today"
+      }
+    }
+  },
+  "hero": {
+    "badge": "Trusted Software Development Company",
+    "title": "Build <accent>Software</accent> That Drives Business Growth.",
+    "subhead": "Enterprise websites, AI solutions, CRM systems, ERP software, mobile apps and digital transformation for growing businesses.",
+    "ctaPrimary": "Start Your Project",
+    "ctaSecondary": "View Case Studies",
+    "trustedBy": "Trusted by",
+    "slides": {
+      "ai": {
+        "eyebrow": "Artificial Intelligence",
+        "title": "Automate your processes with <accent>AI solutions</accent>.",
+        "desc": "AI chatbots, business process automation and data analytics — cutting costs and speeding up your operations.",
+        "cta": "Learn More"
+      },
+      "cases": {
+        "eyebrow": "Case Studies",
+        "title": "200+ successful projects — the <accent>results</accent> speak for themselves.",
+        "desc": "We have built websites, CRM/ERP systems and mobile apps for companies across industries.",
+        "cta": "View Case Studies"
+      }
+    }
+  },
+  "trust": {
+    "label": "Trusted by companies across Uzbekistan and international markets"
+  },
+  "stats": {
+    "ariaLabel": "Company statistics",
+    "projects": "Completed Projects",
+    "years": "Years Experience",
+    "users": "Users Served",
+    "support": "Support"
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Enterprise-grade software services",
+    "subhead": "From idea to launch — a full cycle of services that put your business on a digital growth path.",
+    "learnMore": "Learn more",
+    "items": {
+      "web": {
+        "title": "Enterprise Website Development",
+        "desc": "Fast, SEO-ready corporate platforms that strengthen your company's reputation."
+      },
+      "software": {
+        "title": "Custom Software",
+        "desc": "Scalable, tailor-made systems that fit your business processes exactly."
+      },
+      "crm": {
+        "title": "CRM Systems",
+        "desc": "Sales pipeline, client base and team performance — managed in one panel."
+      },
+      "erp": {
+        "title": "ERP Solutions",
+        "desc": "Warehouse, finance, production and HR — your whole enterprise in one system."
+      },
+      "ai": {
+        "title": "AI Automation",
+        "desc": "Automate customer service and internal workflows with AI chatbots and smart agents."
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "desc": "Fast, user-friendly iOS and Android apps that deliver real business results."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "desc": "Modern online stores integrated with payments, delivery and CRM."
+      },
+      "seo": {
+        "title": "SEO Services",
+        "desc": "Consistently high rankings on Google and Yandex — a steady flow of organic leads."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Why Innosoft",
+    "title": "Innosoft vs traditional agencies",
+    "subhead": "We don't sell templates — we build engineering solutions that serve your business for years.",
+    "colFeature": "Criteria",
+    "colUs": "Innosoft Systems",
+    "colThem": "Traditional Agencies",
+    "rows": {
+      "team": {
+        "label": "Dedicated engineering team",
+        "us": "Always",
+        "them": "Project-dependent"
+      },
+      "architecture": {
+        "label": "Clean, documented architecture",
+        "us": "Standard practice",
+        "them": "Rarely"
+      },
+      "scalable": {
+        "label": "Scalable system design",
+        "us": "Included",
+        "them": "Extra cost"
+      },
+      "seo": {
+        "label": "SEO-ready from day one",
+        "us": "Included",
+        "them": "Separate service"
+      },
+      "delivery": {
+        "label": "Delivery timeline",
+        "us": "2–8 weeks",
+        "them": "3–6 months"
+      },
+      "support": {
+        "label": "Post-launch support",
+        "us": "12 months",
+        "them": "30 days"
+      },
+      "stack": {
+        "label": "Modern tech stack",
+        "us": "Next.js, AI, Cloud",
+        "them": "Legacy CMS"
+      }
+    }
+  },
+  "cases": {
+    "eyebrow": "Featured Projects",
+    "title": "Work that delivers results",
+    "subhead": "Behind every project is a clear business goal and a measurable outcome.",
+    "view": "View Project",
+    "duration": "Timeline",
+    "empty": "Projects coming soon."
+  },
+  "industries": {
+    "eyebrow": "Industries",
+    "title": "Industries we serve",
+    "subhead": "We understand the business processes of different industries and offer digital solutions that fit.",
+    "items": {
+      "healthcare": {
+        "title": "Healthcare",
+        "desc": "Clinics and booking systems"
+      },
+      "construction": {
+        "title": "Construction",
+        "desc": "Catalogs and CRM solutions"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "desc": "ERP and warehouse management"
+      },
+      "education": {
+        "title": "Education",
+        "desc": "LMS and learning platforms"
+      },
+      "finance": {
+        "title": "Finance",
+        "desc": "Secure fintech solutions"
+      },
+      "retail": {
+        "title": "Retail",
+        "desc": "E-commerce and POS integration"
+      },
+      "logistics": {
+        "title": "Logistics",
+        "desc": "Tracking and routing systems"
+      },
+      "realestate": {
+        "title": "Real Estate",
+        "desc": "Catalogs and lead-gen websites"
+      },
+      "government": {
+        "title": "Government",
+        "desc": "Portals and e-services"
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Our Process",
+    "title": "7 steps from idea to launch",
+    "subhead": "A transparent process — you know exactly what is happening at every stage.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "We define business goals and requirements"
+      },
+      "research": {
+        "title": "UX Research",
+        "desc": "User and competitor analysis"
+      },
+      "design": {
+        "title": "UI Design",
+        "desc": "Interface design that fits your brand"
+      },
+      "development": {
+        "title": "Development",
+        "desc": "Clean architecture, weekly demos"
+      },
+      "qa": {
+        "title": "QA",
+        "desc": "Testing and security review"
+      },
+      "launch": {
+        "title": "Launch",
+        "desc": "Deployment, SEO and analytics setup"
+      },
+      "support": {
+        "title": "Support",
+        "desc": "12 months of free maintenance"
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Technology",
+    "title": "A modern, battle-tested technology stack",
+    "subhead": "For every project we choose market-proven technologies built to last for years.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Data",
+      "cloud": "Cloud & DevOps",
+      "ai": "Artificial Intelligence",
+      "payments": "Payments"
+    }
+  },
+  "certificates": {
+    "eyebrow": "Official Status",
+    "title": "Licenses & Certificates",
+    "subhead": "Innosoft Systems is an officially registered company and an IT Park resident.",
+    "items": {
+      "itpark": {
+        "title": "IT Park Resident",
+        "desc": "Certificate of registration as a resident of the Technological Park of Software Products and Information Technologies (No. 3670, 2025)."
+      },
+      "state": {
+        "title": "State Registration Certificate",
+        "desc": "\"INNOSOFT SYSTEMS\" LLC is registered as a legal entity (TIN 309 771 284, 2022)."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "subhead": "Everything you need to know before starting a project.",
+    "groups": {
+      "work": {
+        "title": "Working with us",
+        "items": {
+          "q1": {
+            "q": "How does a project start?",
+            "a": "We begin with a free consultation to understand your business goal, then deliver a technical proposal with pricing and timeline within 2–3 days. Once the contract is signed, the team starts work and shows weekly demos."
+          },
+          "q2": {
+            "q": "How do I track project progress?",
+            "a": "Every client gets a dedicated project manager. Through weekly demo calls, a Telegram group and a task board, you see every stage of the project in real time."
+          },
+          "q3": {
+            "q": "I'm not technical — is that a problem?",
+            "a": "Not at all. We explain technical details in plain language and take full ownership of engineering decisions. All we need from you is a clearly stated business goal."
+          },
+          "q4": {
+            "q": "Do you work with small businesses?",
+            "a": "Absolutely. Our portfolio includes small businesses and startups alongside large enterprises. We build a phased plan that fits your budget — core features first, expansion later."
+          },
+          "q5": {
+            "q": "How do contracts and warranty work?",
+            "a": "All projects run under an official contract that clearly defines scope, timeline, price and confidentiality terms. Delivered work is covered by a 12-month technical warranty."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Pricing & timeline",
+        "items": {
+          "q1": {
+            "q": "How much does a project cost?",
+            "a": "Pricing depends on complexity: landing and business card sites are the most affordable, corporate websites are mid-range, and CRM/ERP or mobile apps are quoted individually. We provide an exact quote within 2–3 days of a free consultation."
+          },
+          "q2": {
+            "q": "How does payment work?",
+            "a": "Usually in stages: an advance at the start, the rest as milestones are delivered. For large projects a monthly payment schedule is possible. All payments are fixed in the contract."
+          },
+          "q3": {
+            "q": "How long will development take?",
+            "a": "A landing page takes 1–2 weeks, a corporate website 3–5 weeks, an online store 4–8 weeks, and CRM/ERP systems 2–4 months. The exact timeline is set after the specification is agreed and fixed in the contract."
+          },
+          "q4": {
+            "q": "Will there be extra costs?",
+            "a": "No — the price agreed in the contract is final. Only the domain, hosting and third-party services (such as an SMS provider) are billed separately, and we state these upfront."
+          },
+          "q5": {
+            "q": "Why are you more expensive than some agencies?",
+            "a": "We build an engineered product, not a template: clean code, documented architecture, SEO and scalability are included in the price. This saves significant rebuild costs down the road."
+          }
+        }
+      },
+      "tech": {
+        "title": "Technology & support",
+        "items": {
+          "q1": {
+            "q": "Which technologies do you use?",
+            "a": "Our core stack is Next.js, React, TypeScript, NestJS, PostgreSQL and MongoDB. We use AWS and other platforms for cloud infrastructure, and OpenAI technologies for AI solutions."
+          },
+          "q2": {
+            "q": "Do you guarantee site speed and SEO?",
+            "a": "Yes. Every project is built to Core Web Vitals standards: fast loading, semantic HTML, schema.org markup and a sitemap are configured from day one. That's the technical foundation for strong Google rankings."
+          },
+          "q3": {
+            "q": "What happens after launch?",
+            "a": "Technical support is free for 12 months: bug fixes, security updates and monitoring. After that, you can optionally continue with a monthly maintenance contract."
+          },
+          "q4": {
+            "q": "Who owns the code and the system?",
+            "a": "You do, fully. After project delivery, all source code, design files and accounts are transferred to your name. No hidden dependencies remain."
+          },
+          "q5": {
+            "q": "Can you integrate with our existing systems?",
+            "a": "Yes. We have extensive experience integrating with 1C, AmoCRM, Bitrix24, payment systems (Payme, Click, Stripe), SMS gateways and other APIs. We also help migrate data from legacy systems."
+          }
+        }
+      }
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Latest articles",
+    "subhead": "Useful reads on IT, SEO and business automation.",
+    "viewAll": "View all articles",
+    "readTime": "min read"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "subhead": "Book a free 30-minute strategy call to discuss your project — we'll give you an exact price and timeline.",
+    "primary": "Book a Free Strategy Call"
+  },
+  "footer": {
+    "tagline": "A trusted software development company in Uzbekistan. Corporate websites, CRM/ERP systems, AI solutions and mobile apps.",
+    "colServices": "Services",
+    "colSolutions": "Solutions",
+    "colCompany": "Company",
+    "colResources": "Resources",
+    "colContact": "Contact",
+    "about": "About Us",
+    "team": "Team",
+    "careers": "Careers",
+    "contact": "Contact Us",
+    "blog": "Blog",
+    "projects": "Projects",
+    "faq": "FAQ",
+    "allServices": "All services",
+    "workHours": "Mon–Sat: 09:00–18:00",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "footerNav": "Footer navigation"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "homeLink": "Innosoft Systems — home page",
+    "switchLanguage": "Switch language",
+    "toggleTheme": "Toggle theme"
+  }
+}

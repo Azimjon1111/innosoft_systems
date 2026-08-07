@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "title": "Innosoft Systems — Biznes o'sishi uchun dasturiy ta'minot",
+    "description": "Korporativ veb-saytlar, AI yechimlar, CRM va ERP tizimlar, mobil ilovalar hamda raqamli transformatsiya — O'zbekistondagi yetakchi dasturiy ta'minot kompaniyasidan."
+  },
+  "nav": {
+    "services": "Xizmatlar",
+    "industries": "Sohalar",
+    "caseStudies": "Loyihalar",
+    "company": "Kompaniya",
+    "contact": "Aloqa",
+    "cta": "Bepul konsultatsiya",
+    "menuOpen": "Menyuni ochish",
+    "menuClose": "Menyuni yopish",
+    "mainNav": "Asosiy navigatsiya",
+    "groupWeb": "Veb va raqamli",
+    "groupBusiness": "Biznes tizimlar",
+    "groupEmerging": "AI va mobil",
+    "groupGrowth": "Marketing va o'sish",
+    "allServices": "Barcha xizmatlar",
+    "featuredTitle": "Loyihangiz bormi?",
+    "featuredDesc": "Bepul konsultatsiyada narx va muddatni hisoblab beramiz.",
+    "featuredCta": "Sayt buyurtma berish",
+    "companyAbout": "Biz haqimizda",
+    "companyTeam": "Jamoa",
+    "companyCareers": "Vakansiyalar",
+    "companyBlog": "Blog",
+    "svc": {
+      "korporativ-saytlar": {
+        "title": "Korporativ saytlar",
+        "desc": "Kompaniya obro'sini ko'rsatuvchi platformalar"
+      },
+      "internet-dukonlar": {
+        "title": "Internet-do'konlar",
+        "desc": "Savdoni onlaynga olib chiquvchi e-commerce"
+      },
+      "lending-saytlar": {
+        "title": "Landing sahifalar",
+        "desc": "Konversiyaga yo'naltirilgan sahifalar"
+      },
+      "vizitka-saytlar": {
+        "title": "Vizitka saytlar",
+        "desc": "Kichik biznes uchun tezkor start"
+      },
+      "startap-saytlar": {
+        "title": "Startap saytlar",
+        "desc": "MVP va investor-ready mahsulotlar"
+      },
+      "crm-tizimlar": {
+        "title": "CRM tizimlar",
+        "desc": "Mijozlar bazasi va savdoni boshqarish"
+      },
+      "erp-tizimlar": {
+        "title": "ERP tizimlar",
+        "desc": "Ishlab chiqarish va resurs boshqaruvi"
+      },
+      "biznes-avtomatlashtirish": {
+        "title": "Biznes avtomatlashtirish",
+        "desc": "Qo'l jarayonlarini raqamlashtirish"
+      },
+      "dasturiy-taminot": {
+        "title": "Maxsus dasturiy ta'minot",
+        "desc": "Talabga mos individual tizimlar"
+      },
+      "veb-ilovalar": {
+        "title": "Veb-ilovalar",
+        "desc": "SaaS va ichki korporativ ilovalar"
+      },
+      "ai-chatbotlar": {
+        "title": "AI chatbotlar",
+        "desc": "Mijozlarga 24/7 aqlli xizmat"
+      },
+      "telegram-botlar": {
+        "title": "Telegram botlar",
+        "desc": "Buyurtma va muloqot avtomatikasi"
+      },
+      "mobile-ilovlar": {
+        "title": "Mobil ilovalar",
+        "desc": "iOS va Android uchun native sifat"
+      },
+      "seo-xizmatlar": {
+        "title": "SEO xizmatlar",
+        "desc": "Google va Yandex'da yuqori o'rinlar"
+      },
+      "kontekst-reklama": {
+        "title": "Kontekst reklama",
+        "desc": "Google Ads bilan tezkor lidlar"
+      },
+      "smm-marketing": {
+        "title": "SMM marketing",
+        "desc": "Ijtimoiy tarmoqlarda brend o'sishi"
+      },
+      "ux-ui-dizayn": {
+        "title": "UX/UI dizayn",
+        "desc": "Foydalanuvchi tajribasi va interfeys"
+      },
+      "sayt-redizayn": {
+        "title": "Sayt redizayni",
+        "desc": "Eski saytni zamonaviy darajaga olib chiqish"
+      },
+      "sayt-texnik-xizmat": {
+        "title": "Texnik qo'llab-quvvatlash",
+        "desc": "Saytingiz uzluksiz ishlashi"
+      },
+      "it-konsalting": {
+        "title": "IT konsalting",
+        "desc": "Raqamli strategiya va arxitektura"
+      },
+      "it-autsorsing": {
+        "title": "IT autsorsing",
+        "desc": "Ajratilgan jamoa va mutaxassislar"
+      },
+      "sayt-buyurtma": {
+        "title": "Sayt buyurtma",
+        "desc": "Loyihani bugun boshlang"
+      }
+    }
+  },
+  "hero": {
+    "badge": "Ishonchli dasturiy ta'minot kompaniyasi",
+    "title": "Biznes o'sishini ta'minlaydigan <accent>dasturiy ta'minot</accent> yaratamiz.",
+    "subhead": "Korporativ veb-saytlar, AI yechimlar, CRM va ERP tizimlar, mobil ilovalar hamda o'sayotgan bizneslar uchun raqamli transformatsiya.",
+    "ctaPrimary": "Loyihani boshlash",
+    "ctaSecondary": "Loyihalarni ko'rish",
+    "trustedBy": "Bizga ishonishadi",
+    "slides": {
+      "ai": {
+        "eyebrow": "Sun'iy intellekt",
+        "title": "Jarayonlaringizni <accent>AI yechimlar</accent> bilan avtomatlashtiring.",
+        "desc": "AI chatbotlar, biznes-jarayonlarni avtomatlashtirish va ma'lumotlar tahlili — xarajatlarni kamaytirib, tezlikni oshiramiz.",
+        "cta": "Batafsil"
+      },
+      "cases": {
+        "eyebrow": "Loyihalar",
+        "title": "200+ muvaffaqiyatli loyiha — <accent>natijalar</accent> o'zi gapiradi.",
+        "desc": "Turli sohalardagi kompaniyalar uchun veb-saytlar, CRM/ERP tizimlar va mobil ilovalar yaratdik.",
+        "cta": "Loyihalarni ko'rish"
+      }
+    }
+  },
+  "trust": {
+    "label": "O'zbekiston va xalqaro bozorlardagi kompaniyalar bizga ishonadi"
+  },
+  "stats": {
+    "ariaLabel": "Kompaniya ko'rsatkichlari",
+    "projects": "Bajarilgan loyihalar",
+    "years": "Yillik tajriba",
+    "users": "Foydalanuvchilar",
+    "support": "Qo'llab-quvvatlash"
+  },
+  "services": {
+    "eyebrow": "Xizmatlarimiz",
+    "title": "Enterprise darajadagi dasturiy xizmatlar",
+    "subhead": "G'oyadan ishga tushirishgacha — biznesingizni raqamli o'sishga olib chiqadigan to'liq sikl xizmatlar.",
+    "learnMore": "Batafsil",
+    "items": {
+      "web": {
+        "title": "Korporativ veb-saytlar",
+        "desc": "Kompaniyangiz obro'sini mustahkamlaydigan, tez va SEO-tayyor korporativ platformalar."
+      },
+      "software": {
+        "title": "Maxsus dasturiy ta'minot",
+        "desc": "Biznes jarayonlaringizga aynan mos keladigan, kengayadigan individual tizimlar."
+      },
+      "crm": {
+        "title": "CRM tizimlar",
+        "desc": "Savdo voronkasi, mijozlar bazasi va jamoa samaradorligini bitta panelda boshqaring."
+      },
+      "erp": {
+        "title": "ERP yechimlar",
+        "desc": "Ombor, moliya, ishlab chiqarish va HR — butun korxonani yagona tizimda birlashtiring."
+      },
+      "ai": {
+        "title": "AI avtomatlashtirish",
+        "desc": "AI chatbotlar va aqlli agentlar bilan xizmat ko'rsatish va ichki jarayonlarni avtomatlashtiring."
+      },
+      "mobile": {
+        "title": "Mobil ilovalar",
+        "desc": "iOS va Android uchun tezkor, foydalanuvchiga qulay va biznesga natija beradigan ilovalar."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "desc": "To'lov, yetkazib berish va CRM bilan integratsiyalashgan zamonaviy internet-do'konlar."
+      },
+      "seo": {
+        "title": "SEO xizmatlar",
+        "desc": "Google va Yandex'da barqaror yuqori o'rinlar — organik trafik va lidlar oqimi."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Nega Innosoft",
+    "title": "Innosoft va odatiy agentliklar farqi",
+    "subhead": "Biz shablon sotmaymiz — biznesingiz uchun uzoq yillar xizmat qiladigan muhandislik yechimlarini quramiz.",
+    "colFeature": "Mezon",
+    "colUs": "Innosoft Systems",
+    "colThem": "Odatiy agentliklar",
+    "rows": {
+      "team": {
+        "label": "Ajratilgan muhandislik jamoasi",
+        "us": "Har doim",
+        "them": "Loyihaga qarab"
+      },
+      "architecture": {
+        "label": "Toza, hujjatlashtirilgan arxitektura",
+        "us": "Standart amaliyot",
+        "them": "Kamdan-kam"
+      },
+      "scalable": {
+        "label": "Kengayadigan tizim dizayni",
+        "us": "Narxga kiritilgan",
+        "them": "Qo'shimcha to'lov"
+      },
+      "seo": {
+        "label": "Birinchi kundan SEO-tayyor",
+        "us": "Narxga kiritilgan",
+        "them": "Alohida xizmat"
+      },
+      "delivery": {
+        "label": "Yetkazib berish muddati",
+        "us": "2–8 hafta",
+        "them": "3–6 oy"
+      },
+      "support": {
+        "label": "Ishga tushirilgandan keyingi qo'llab-quvvatlash",
+        "us": "12 oy",
+        "them": "30 kun"
+      },
+      "stack": {
+        "label": "Zamonaviy texnologiyalar",
+        "us": "Next.js, AI, Cloud",
+        "them": "Eskirgan CMS"
+      }
+    }
+  },
+  "cases": {
+    "eyebrow": "Tanlangan loyihalar",
+    "title": "Natija beradigan ishlarimiz",
+    "subhead": "Har bir loyiha ortida aniq biznes-maqsad va o'lchanadigan natija turadi.",
+    "view": "Loyihani ko'rish",
+    "duration": "Muddat",
+    "empty": "Loyihalar tez orada qo'shiladi."
+  },
+  "industries": {
+    "eyebrow": "Sohalar",
+    "title": "Qaysi sohalarda ishlaymiz",
+    "subhead": "Turli sohalardagi biznes-jarayonlarni tushunamiz va ularga mos raqamli yechimlar taklif qilamiz.",
+    "items": {
+      "healthcare": {
+        "title": "Sog'liqni saqlash",
+        "desc": "Klinika va booking tizimlari"
+      },
+      "construction": {
+        "title": "Qurilish",
+        "desc": "Katalog va CRM yechimlari"
+      },
+      "manufacturing": {
+        "title": "Ishlab chiqarish",
+        "desc": "ERP va ombor boshqaruvi"
+      },
+      "education": {
+        "title": "Ta'lim",
+        "desc": "LMS va o'quv platformalari"
+      },
+      "finance": {
+        "title": "Moliya",
+        "desc": "Xavfsiz fintech yechimlar"
+      },
+      "retail": {
+        "title": "Savdo",
+        "desc": "E-commerce va POS integratsiya"
+      },
+      "logistics": {
+        "title": "Logistika",
+        "desc": "Kuzatuv va marshrut tizimlari"
+      },
+      "realestate": {
+        "title": "Ko'chmas mulk",
+        "desc": "Katalog va lead-gen saytlar"
+      },
+      "government": {
+        "title": "Davlat sektori",
+        "desc": "Portal va elektron xizmatlar"
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Ish jarayoni",
+    "title": "G'oyadan ishga tushirishgacha 7 bosqich",
+    "subhead": "Shaffof jarayon — har bosqichda nima bo'layotganini aniq bilasiz.",
+    "steps": {
+      "discovery": {
+        "title": "Tahlil",
+        "desc": "Biznes-maqsad va talablarni aniqlaymiz"
+      },
+      "research": {
+        "title": "UX tadqiqot",
+        "desc": "Foydalanuvchi va raqobat tahlili"
+      },
+      "design": {
+        "title": "UI dizayn",
+        "desc": "Brendga mos interfeys dizayni"
+      },
+      "development": {
+        "title": "Dasturlash",
+        "desc": "Toza arxitektura, haftalik demo"
+      },
+      "qa": {
+        "title": "Sifat nazorati",
+        "desc": "Testlash va xavfsizlik tekshiruvi"
+      },
+      "launch": {
+        "title": "Ishga tushirish",
+        "desc": "Deploy, SEO va analitika sozlash"
+      },
+      "support": {
+        "title": "Qo'llab-quvvatlash",
+        "desc": "12 oy bepul texnik xizmat"
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Texnologiyalar",
+    "title": "Zamonaviy va sinalgan texnologiya steki",
+    "subhead": "Har bir loyiha uchun uzoq muddat xizmat qiladigan, bozorda o'zini isbotlagan texnologiyalarni tanlaymiz.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Ma'lumotlar",
+      "cloud": "Cloud va DevOps",
+      "ai": "Sun'iy intellekt",
+      "payments": "To'lov tizimlari"
+    }
+  },
+  "certificates": {
+    "eyebrow": "Rasmiy maqom",
+    "title": "Litsenziya va guvohnomalar",
+    "subhead": "Innosoft Systems — rasmiy ro'yxatdan o'tgan kompaniya va IT Park rezidenti.",
+    "items": {
+      "itpark": {
+        "title": "IT Park rezidenti",
+        "desc": "Dasturiy mahsulotlar va axborot texnologiyalari texnologik parki rezidenti sifatida ro'yxatga olinganlik guvohnomasi (№3670, 2025)."
+      },
+      "state": {
+        "title": "Davlat ro'yxatidan o'tganlik guvohnomasi",
+        "desc": "\"INNOSOFT SYSTEMS\" MChJ yuridik shaxs sifatida davlat ro'yxatidan o'tgan (STIR 309 771 284, 2022)."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Savol-javob",
+    "title": "Ko'p beriladigan savollar",
+    "subhead": "Loyiha boshlashdan oldin bilishingiz kerak bo'lgan barcha narsalar.",
+    "groups": {
+      "work": {
+        "title": "Biz bilan ishlash",
+        "items": {
+          "q1": {
+            "q": "Loyiha qanday boshlanadi?",
+            "a": "Avval bepul konsultatsiyada biznes-maqsadingizni tinglaymiz, so'ng 2–3 kun ichida texnik taklif, narx va muddatni taqdim etamiz. Shartnoma imzolangach, jamoa ishni boshlaydi va har hafta demo ko'rsatib boradi."
+          },
+          "q2": {
+            "q": "Loyiha jarayonini qanday kuzataman?",
+            "a": "Har bir mijozga shaxsiy menejer biriktiriladi. Haftalik demo-qo'ng'iroqlar, Telegram guruh va vazifalar taxtasi orqali loyihaning har bir bosqichini real vaqtda ko'rib borasiz."
+          },
+          "q3": {
+            "q": "Texnik bilimim yo'q — muammo bo'ladimi?",
+            "a": "Yo'q. Biz texnik tafsilotlarni oddiy tilda tushuntiramiz va barcha muhandislik qarorlarini o'z zimmamizga olamiz. Sizdan faqat biznes-maqsadni aniq aytish talab qilinadi."
+          },
+          "q4": {
+            "q": "Kichik biznes bilan ham ishlaysizlarmi?",
+            "a": "Albatta. Portfelimizda yirik korxonalar bilan bir qatorda kichik biznes va startaplar ham bor. Byudjetingizga mos bosqichli reja tuzamiz — avval eng muhim funksiyalar, keyin kengaytirish."
+          },
+          "q5": {
+            "q": "Shartnoma va kafolat qanday?",
+            "a": "Barcha loyihalar rasmiy shartnoma asosida bajariladi. Unda ish hajmi, muddat, narx va maxfiylik shartlari aniq belgilanadi. Topshirilgan ishga 12 oylik texnik kafolat beramiz."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Narx va muddat",
+        "items": {
+          "q1": {
+            "q": "Loyiha qancha turadi?",
+            "a": "Narx loyiha murakkabligiga bog'liq: landing sahifa va vizitka saytlar eng hamyonbop, korporativ saytlar o'rta segment, CRM/ERP va mobil ilovalar individual hisoblanadi. Bepul konsultatsiyada aniq narxni 2–3 kunda taqdim etamiz."
+          },
+          "q2": {
+            "q": "To'lov qanday amalga oshiriladi?",
+            "a": "Odatda bosqichli to'lov: boshlanishda avans, qolgan qismi bosqichlar topshirilgani sayin. Yirik loyihalarda oylik to'lov jadvali ham mumkin. Barcha to'lovlar shartnomada qayd etiladi."
+          },
+          "q3": {
+            "q": "Sayt qancha vaqtda tayyor bo'ladi?",
+            "a": "Landing sahifa 1–2 hafta, korporativ sayt 3–5 hafta, internet-do'kon 4–8 hafta, CRM/ERP tizimlar 2–4 oy. Aniq muddat texnik topshiriq kelishilgach belgilanadi va shartnomada qayd etiladi."
+          },
+          "q4": {
+            "q": "Qo'shimcha xarajatlar bo'ladimi?",
+            "a": "Yo'q — shartnomada kelishilgan narx yakuniy. Faqat domen, hosting va uchinchi tomon servislari (masalan, SMS-provayder) alohida to'lanadi, ularni ham oldindan aniq aytamiz."
+          },
+          "q5": {
+            "q": "Nega ba'zi agentliklardan qimmatroqsiz?",
+            "a": "Biz shablon emas, muhandislik mahsuloti yaratamiz: toza kod, hujjatlashtirilgan arxitektura, SEO va kengayish imkoniyati narxga kiritilgan. Bu keyinchalik qayta yasash xarajatlaridan ancha tejaydi."
+          }
+        }
+      },
+      "tech": {
+        "title": "Texnologiya va qo'llab-quvvatlash",
+        "items": {
+          "q1": {
+            "q": "Qaysi texnologiyalardan foydalanasizlar?",
+            "a": "Asosiy stekimiz: Next.js, React, TypeScript, NestJS, PostgreSQL va MongoDB. Cloud infratuzilma uchun AWS va boshqa platformalar, AI yechimlar uchun OpenAI texnologiyalaridan foydalanamiz."
+          },
+          "q2": {
+            "q": "Sayt tez ishlashi va SEO kafolatlanadimi?",
+            "a": "Ha. Har bir loyiha Core Web Vitals talablariga mos quriladi: tez yuklanish, semantik HTML, schema.org markup va sitemap birinchi kundan sozlanadi. Bu Google'da yaxshi o'rin uchun texnik poydevor."
+          },
+          "q3": {
+            "q": "Ishga tushirilgandan keyin nima bo'ladi?",
+            "a": "12 oy davomida texnik qo'llab-quvvatlash bepul: xatolarni tuzatish, xavfsizlik yangilanishlari va monitoring. Keyin xohishga ko'ra oylik texnik xizmat shartnomasini davom ettirish mumkin."
+          },
+          "q4": {
+            "q": "Kod va tizim kimga tegishli bo'ladi?",
+            "a": "To'liq sizga. Loyiha topshirilgach, barcha manba kod, dizayn fayllari va akkauntlar sizning nomingizga o'tkaziladi. Hech qanday yashirin bog'liqlik qolmaydi."
+          },
+          "q5": {
+            "q": "Mavjud tizimlarimiz bilan integratsiya qila olasizlarmi?",
+            "a": "Ha. 1C, AmoCRM, Bitrix24, to'lov tizimlari (Payme, Click, Stripe), SMS-shlyuzlar va boshqa API'lar bilan integratsiya tajribamiz katta. Eski tizimdan ma'lumot ko'chirishda ham yordam beramiz."
+          }
+        }
+      }
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "So'nggi maqolalar",
+    "subhead": "IT, SEO va biznes avtomatlashtirish bo'yicha foydali materiallar.",
+    "viewAll": "Barcha maqolalar",
+    "readTime": "daqiqa o'qish"
+  },
+  "cta": {
+    "title": "Biznesingizni yangi bosqichga olib chiqishga tayyormisiz?",
+    "subhead": "Bepul 30 daqiqalik strategiya suhbatida loyihangizni muhokama qilamiz — narx va muddatni aniq hisoblab beramiz.",
+    "primary": "Bepul strategiya suhbati"
+  },
+  "footer": {
+    "tagline": "O'zbekistondagi ishonchli dasturiy ta'minot kompaniyasi. Korporativ saytlar, CRM/ERP tizimlar, AI yechimlar va mobil ilovalar.",
+    "colServices": "Xizmatlar",
+    "colSolutions": "Yechimlar",
+    "colCompany": "Kompaniya",
+    "colResources": "Resurslar",
+    "colContact": "Aloqa",
+    "about": "Biz haqimizda",
+    "team": "Jamoa",
+    "careers": "Vakansiyalar",
+    "contact": "Bog'lanish",
+    "blog": "Blog",
+    "projects": "Loyihalar",
+    "faq": "Savol-javob",
+    "allServices": "Barcha xizmatlar",
+    "workHours": "Du–Sha: 09:00–18:00",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "cookies": "Cookie siyosati",
+    "footerNav": "Footer navigatsiyasi"
+  },
+  "a11y": {
+    "skipToContent": "Asosiy kontentga o'tish",
+    "homeLink": "Innosoft Systems — bosh sahifa",
+    "switchLanguage": "Tilni almashtirish",
+    "toggleTheme": "Rejimni almashtirish"
+  }
+}

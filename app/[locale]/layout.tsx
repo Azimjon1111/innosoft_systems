@@ -1,0 +1,101 @@
+import type { Metadata } from "next";
+import { Source_Sans_3, Geist_Mono } from "next/font/google";
+import { notFound } from "next/navigation";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { routing, type Locale } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/constants";
+import { JsonLd } from "@/components/seo/json-ld";
+import { organizationSchema, webSiteSchema } from "@/components/seo/schemas";
+import "../globals.css";
+
+// EPAM shrift stacki: museo-sans (litsenziyali, mavjud bo'lsa) → Source Sans.
+// Source Sans 3 — "Source Sans Pro"ning davomchisi, next/font orqali self-hosted.
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: t("title"),
+      template: "%s — Innosoft Systems",
+    },
+    description: t("description"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        uz: "/uz",
+        ru: "/ru",
+        en: "/en",
+        "x-default": "/uz",
+      },
+    },
+    openGraph: {
+      type: "website",
+      siteName: "Innosoft Systems",
+      title: t("title"),
+      description: t("description"),
+      url: `/${locale}`,
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    robots: { index: true, follow: true },
+  };
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
+
+  return (
+    <html lang={locale} className={`${sourceSans.variable} ${geistMono.variable}`}>
+      <body className="min-h-svh antialiased">
+        {/* No-flash: tema localStorage'dan birinchi paint'dan OLDIN o'rnatiladi */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}",
+          }}
+        />
+        <NextIntlClientProvider>
+          {children}
+        </NextIntlClientProvider>
+        <JsonLd
+          data={[organizationSchema(locale as Locale), webSiteSchema(locale as Locale)]}
+        />
+      </body>
+    </html>
+  );
+}
