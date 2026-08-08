@@ -20,6 +20,7 @@ export async function TechStack() {
     <Section id="tech" labelledBy="tech-title" density="mid" surface="elevated">
       <Container>
         <SectionHeader
+          num="06"
           id="tech-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

@@ -3,6 +3,7 @@ import { Reveal } from "./reveal";
 
 export function SectionHeader({
   id,
+  num,
   eyebrow,
   title,
   subhead,
@@ -10,6 +11,8 @@ export function SectionHeader({
   className,
 }: {
   id: string;
+  /** EPAM uslubidagi seksiya raqami, masalan "01" */
+  num?: string;
   eyebrow: string;
   title: string;
   subhead?: string;
@@ -25,6 +28,11 @@ export function SectionHeader({
       )}
     >
       <p className="text-[13px] font-medium uppercase tracking-[0.14em] text-accent">
+        {num && (
+          <span className="mr-3 font-mono text-tertiary" aria-hidden>
+            {num} —
+          </span>
+        )}
         {eyebrow}
       </p>
       <h2

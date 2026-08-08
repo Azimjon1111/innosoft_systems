@@ -45,6 +45,7 @@ export async function Services({ locale }: { locale: Locale }) {
     <Section id="services" labelledBy="services-title" density="full">
       <Container>
         <SectionHeader
+          num="01"
           id="services-title"
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -54,15 +55,19 @@ export async function Services({ locale }: { locale: Locale }) {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((service, i) => (
             <Reveal key={service.key} as="article" index={i % 4}>
-              <Link
-                href={servicePath(locale, service.route)}
-                className="group flex h-full flex-col rounded-lg border border-line bg-surface p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors duration-200 hover:border-line-brand hover:bg-surface-hover"
-              >
+              {/* Stretched-link: butun karta xizmatga olib boradi,
+                  pastdagi alohida havola esa portfolioga */}
+              <div className="group relative flex h-full flex-col rounded-lg border border-line bg-surface p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors duration-200 hover:border-line-brand hover:bg-surface-hover">
                 <IconTile className="group-hover:bg-primary/20">
                   <service.icon className="size-6" />
                 </IconTile>
                 <h3 className="mt-6 text-xl font-semibold tracking-[-0.02em]">
-                  {t(`items.${service.key}.title`)}
+                  <Link
+                    href={servicePath(locale, service.route)}
+                    className="after:absolute after:inset-0"
+                  >
+                    {t(`items.${service.key}.title`)}
+                  </Link>
                 </h3>
                 <p className="mt-3 flex-1 text-base leading-relaxed text-secondary">
                   {t(`items.${service.key}.desc`)}
@@ -74,7 +79,14 @@ export async function Services({ locale }: { locale: Locale }) {
                     aria-hidden
                   />
                 </span>
-              </Link>
+                {/* Hover'da ochiladigan portfolio havolasi (xizmat → loyihalar) */}
+                <a
+                  href="#cases"
+                  className="relative z-10 mt-3 hidden w-fit items-center gap-1.5 text-[13px] font-medium text-tertiary opacity-0 transition-all duration-200 [transform:translateY(4px)] hover:text-foreground group-hover:translate-y-0 group-hover:opacity-100 lg:inline-flex"
+                >
+                  {t("related")} →
+                </a>
+              </div>
             </Reveal>
           ))}
         </div>

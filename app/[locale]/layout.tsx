@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
-import { SITE_URL } from "@/lib/constants";
+import { Send } from "lucide-react";
+import { SITE_URL, CONTACT } from "@/lib/constants";
 import { JsonLd } from "@/components/seo/json-ld";
 import { organizationSchema, webSiteSchema } from "@/components/seo/schemas";
 import "../globals.css";
@@ -96,6 +97,17 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
+        {/* Suzuvchi Telegram CTA — O'zbekiston bozorida eng tez konversiya kanali */}
+        <a
+          href={CONTACT.telegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Telegram"
+          className="fixed bottom-5 right-5 z-40 inline-flex size-[52px] items-center justify-center rounded-full text-white shadow-[0_8px_24px_rgba(9,131,198,0.4)] transition-transform duration-200 hover:scale-105 print:hidden"
+          style={{ background: "linear-gradient(135deg, #0983c6, #065d8f)" }}
+        >
+          <Send className="size-5" aria-hidden />
+        </a>
         <JsonLd
           data={[organizationSchema(locale as Locale), webSiteSchema(locale as Locale)]}
         />

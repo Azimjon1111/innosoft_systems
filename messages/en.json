@@ -136,7 +136,8 @@
         "desc": "We have built websites, CRM/ERP systems and mobile apps for companies across industries.",
         "cta": "View Case Studies"
       }
-    }
+    },
+    "proof": "200+ projects · IT Park resident · 5+ years of experience"
   },
   "trust": {
     "label": "Trusted by companies across Uzbekistan and international markets"
@@ -186,7 +187,8 @@
         "title": "SEO Services",
         "desc": "Consistently high rankings on Google and Yandex — a steady flow of organic leads."
       }
-    }
+    },
+    "related": "Related projects"
   },
   "why": {
     "eyebrow": "Why Innosoft",
@@ -427,7 +429,9 @@
           }
         }
       }
-    }
+    },
+    "moreTitle": "Didn't find your answer?",
+    "moreCta": "Ask us on Telegram"
   },
   "blog": {
     "eyebrow": "Blog",

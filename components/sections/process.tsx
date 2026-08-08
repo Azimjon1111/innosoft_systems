@@ -21,6 +21,7 @@ export async function Process() {
     <Section id="process" labelledBy="process-title" density="full">
       <Container>
         <SectionHeader
+          num="05"
           id="process-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

@@ -130,6 +130,28 @@
   background: rgba(5, 8, 22, 0.15) !important;
 }
 
+/* ── Hamkor logolari — rangli, shaffof fonda, to'liq tiniq ── */
+.partner-logo {
+  opacity: 1;
+}
+
+/* ── Footer watermark parallax (scroll-driven, fallback: statik) ── */
+@supports (animation-timeline: view()) {
+  .wm-parallax {
+    animation: wm-shift linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+  }
+}
+@keyframes wm-shift {
+  from {
+    transform: translateY(52px);
+  }
+  to {
+    transform: translateY(-6px);
+  }
+}
+
 @keyframes hero-progress {
   from {
     width: 0%;
@@ -206,8 +228,15 @@
     );
   }
 
+  /* Ikkinchi qator — teskari yo'nalishda */
+  .marquee-track-reverse {
+    animation: marquee 46s linear infinite reverse;
+  }
+
   .group\/marquee:hover .marquee-track,
-  .group\/marquee:focus-within .marquee-track {
+  .group\/marquee:focus-within .marquee-track,
+  .group\/marquee:hover .marquee-track-reverse,
+  .group\/marquee:focus-within .marquee-track-reverse {
     animation-play-state: paused;
   }
 
@@ -294,7 +323,12 @@
     transition: none;
   }
 
-  .marquee-track {
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
+  }
+
+  .wm-parallax {
     animation: none;
   }
 

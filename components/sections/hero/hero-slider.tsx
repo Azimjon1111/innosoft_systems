@@ -21,7 +21,7 @@ export interface HeroSlide {
  * (muted, loop, cover), pastki-chapda yirik light sarlavha, pastda
  * progress-indikatorlar. Reduced-motion'da avto-aylanish va video o'chadi.
  */
-export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
+export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: string }) {
   const [active, setActive] = useState(0);
   const [reduced, setReduced] = useState(false);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
@@ -110,6 +110,8 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         )}
         {/* Matn o'qilishi uchun overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/55 to-[#050816]/30" />
+        {/* Tema foniga yumshoq o'tish (light rejimda oq seksiyaga uzviy ulanadi) */}
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-bg to-transparent" />
       </div>
 
       {/* Slayd matnlari — vertikal markazda (EPAM kabi) */}
@@ -159,6 +161,16 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
                   aria-hidden
                 />
               </a>
+
+              {/* Ijtimoiy isbot qatori — birinchi 3 soniyada ishonch */}
+              {proof && (
+                <p
+                  className="mt-9 text-[13px] font-medium tracking-[0.04em]"
+                  style={{ color: "rgba(255,255,255,0.55)" }}
+                >
+                  {proof}
+                </p>
+              )}
             </div>
           );
         })}

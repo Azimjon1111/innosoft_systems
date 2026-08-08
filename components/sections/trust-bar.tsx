@@ -2,12 +2,52 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Section } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
-import { Reveal } from "@/components/ui/reveal";
-import { PARTNERS } from "@/content/partners";
+import { PARTNERS, type PartnerLogo } from "@/content/partners";
 
-/** Hamkorlar devori — barcha logolar statik, hammasi ko'rinadi */
+/** Bitta marquee qatori — ro'yxat 2x render bo'ladi (uzluksiz aylanish) */
+function MarqueeRow({
+  items,
+  reverse = false,
+}: {
+  items: PartnerLogo[];
+  reverse?: boolean;
+}) {
+  const track = reverse ? "marquee-track-reverse" : "marquee-track";
+
+  return (
+    <div className="group/marquee marquee-mask overflow-hidden">
+      <ul className={`${track} flex w-max items-center gap-4 pr-4 md:gap-5 md:pr-5`}>
+        {[false, true].map((clone) =>
+          items.map((partner) => (
+            <li
+              key={partner.logo + (clone ? "-c" : "")}
+              aria-hidden={clone || undefined}
+              className="w-[160px] shrink-0 overflow-hidden rounded-lg bg-white md:w-[190px]"
+            >
+              {/* unoptimized: 504px shaffof-fonli manba qayta siqilmasin */}
+              <Image
+                src={partner.logo}
+                alt={clone ? "" : partner.name}
+                width={504}
+                height={304}
+                unoptimized
+                className="partner-logo aspect-[8/5] w-full object-cover"
+              />
+            </li>
+          ))
+        )}
+      </ul>
+    </div>
+  );
+}
+
+/** Hamkorlar — oq kartochkali, ikki qatorli qarama-qarshi marquee */
 export async function TrustBar() {
   const t = await getTranslations("trust");
+
+  const half = Math.ceil(PARTNERS.length / 2);
+  const rowA = PARTNERS.slice(0, half);
+  const rowB = PARTNERS.slice(half);
 
   return (
     <Section density="band" surface="elevated" ariaLabel={t("label")}>
@@ -15,26 +55,11 @@ export async function TrustBar() {
         <p className="mb-10 text-center text-[13px] font-medium uppercase tracking-[0.14em] text-tertiary">
           {t("label")}
         </p>
-        <Reveal>
-          <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 md:gap-4 lg:grid-cols-6">
-            {PARTNERS.map((partner) => (
-              <li
-                key={partner.logo}
-                className="group overflow-hidden  border rounded-4xl border-line bg-white/[0.02]"
-              >
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={252}
-                  height={152}
-                  sizes="(min-width: 1024px) 190px, (min-width: 640px) 25vw, 33vw"
-                  className="aspect-[8/5] w-full object-cover opacity-85 rounded-4xl transition-opacity duration-200 group-hover:opacity-100"
-                />
-              </li>
-            ))}
-          </ul>
-        </Reveal>
       </Container>
+      <div className="space-y-4 md:space-y-5">
+        <MarqueeRow items={rowA} />
+        <MarqueeRow items={rowB} reverse />
+      </div>
     </Section>
   );
 }

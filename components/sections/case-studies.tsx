@@ -22,6 +22,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
     <Section id="cases" labelledBy="cases-title" density="full">
       <Container>
         <SectionHeader
+          num="03"
           id="cases-title"
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -49,7 +50,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
                         reversed && "lg:order-2"
                       )}
                     >
-                      <div className="overflow-hidden rounded-t-lg border border-b-0 border-line bg-bg-elevated">
+                      <div className="group/frame overflow-hidden rounded-t-lg border border-b-0 border-line bg-bg-elevated">
                         <div className="flex items-center gap-1.5 border-b border-line px-4 py-2.5">
                           <span className="frame-dot size-2 rounded-full bg-white/15" />
                           <span className="frame-dot size-2 rounded-full bg-white/15" />
@@ -68,7 +69,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
                             height={450}
                             sizes="(min-width: 1024px) 640px, 100vw"
                             quality={85}
-                            className="aspect-[16/10] w-full object-cover object-top"
+                            className="aspect-[16/10] w-full object-cover object-top transition-[object-position] duration-[5000ms] ease-linear group-hover/frame:object-bottom"
                           />
                         )}
                       </div>

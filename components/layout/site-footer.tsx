@@ -203,6 +203,7 @@ export async function SiteFooter({ locale }: { locale: Locale }) {
         style={{ pointerEvents: "none", userSelect: "none", overflow: "hidden" }}
       >
         <p
+          className="wm-parallax"
           style={{
             fontSize: "13.5vw",
             fontWeight: 700,

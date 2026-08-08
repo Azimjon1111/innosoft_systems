@@ -34,6 +34,7 @@ export async function Industries() {
     <Section id="industries" labelledBy="industries-title" density="mid" surface="elevated">
       <Container>
         <SectionHeader
+          num="04"
           id="industries-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

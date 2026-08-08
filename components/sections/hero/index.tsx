@@ -44,5 +44,5 @@ export async function Hero({ locale }: { locale: Locale }) {
     },
   ];
 
-  return <HeroSlider slides={slides} />;
+  return <HeroSlider slides={slides} proof={t("proof")} />;
 }

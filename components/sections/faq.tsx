@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { Plus } from "lucide-react";
+import { Plus, Send } from "lucide-react";
+import { CONTACT } from "@/lib/constants";
 import { Section } from "@/components/ui/section";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
@@ -24,6 +25,7 @@ export async function Faq() {
     <Section id="faq" labelledBy="faq-title" density="full" surface="elevated">
       <Container>
         <SectionHeader
+          num="08"
           id="faq-title"
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -60,6 +62,26 @@ export async function Faq() {
             </div>
           ))}
         </div>
+
+        {/* FAQ o'qigan odam — eng "issiq" lead */}
+        <Reveal className="mt-16 flex flex-col items-center justify-center gap-4 border-t border-line pt-10 text-center sm:flex-row sm:gap-6">
+          <p className="text-lg font-medium">{t("moreTitle")}</p>
+          <a
+            href={CONTACT.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 text-[15px] font-semibold text-accent transition-colors hover:text-foreground"
+          >
+            <Send className="size-4" aria-hidden />
+            {t("moreCta")}
+            <span
+              className="transition-transform duration-200 group-hover:translate-x-1"
+              aria-hidden
+            >
+              →
+            </span>
+          </a>
+        </Reveal>
       </Container>
       <JsonLd data={faqSchema(allItems)} />
     </Section>

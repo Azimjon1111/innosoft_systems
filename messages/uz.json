@@ -136,7 +136,8 @@
         "desc": "Turli sohalardagi kompaniyalar uchun veb-saytlar, CRM/ERP tizimlar va mobil ilovalar yaratdik.",
         "cta": "Loyihalarni ko'rish"
       }
-    }
+    },
+    "proof": "200+ loyiha · IT Park rezidenti · 5+ yillik tajriba"
   },
   "trust": {
     "label": "O'zbekiston va xalqaro bozorlardagi kompaniyalar bizga ishonadi"
@@ -186,7 +187,8 @@
         "title": "SEO xizmatlar",
         "desc": "Google va Yandex'da barqaror yuqori o'rinlar — organik trafik va lidlar oqimi."
       }
-    }
+    },
+    "related": "Tegishli loyihalar"
   },
   "why": {
     "eyebrow": "Nega Innosoft",
@@ -427,7 +429,9 @@
           }
         }
       }
-    }
+    },
+    "moreTitle": "Javobingizni topolmadingizmi?",
+    "moreCta": "Telegram'da so'rang"
   },
   "blog": {
     "eyebrow": "Blog",

@@ -31,6 +31,7 @@ export async function BlogPreview({ locale }: { locale: Locale }) {
     <Section id="blog" labelledBy="blog-title" density="mid">
       <Container>
         <SectionHeader
+          num="09"
           id="blog-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

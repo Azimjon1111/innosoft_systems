@@ -14,6 +14,7 @@ export async function WhyUs() {
     <Section id="why-us" labelledBy="why-title" density="mid" surface="elevated">
       <Container>
         <SectionHeader
+          num="02"
           id="why-title"
           eyebrow={t("eyebrow")}
           title={t("title")}
