@@ -25,7 +25,6 @@ export async function Faq() {
     <Section id="faq" labelledBy="faq-title" density="full" surface="elevated">
       <Container>
         <SectionHeader
-          num="08"
           id="faq-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

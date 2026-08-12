@@ -11,7 +11,7 @@ export async function Hero({ locale }: { locale: Locale }) {
   const t = await getTranslations("hero");
 
   const accent = (chunks: React.ReactNode) => (
-    <span className="font-normal text-accent">{chunks}</span>
+    <span className="grad-text font-normal">{chunks}</span>
   );
 
   const slides: HeroSlide[] = [

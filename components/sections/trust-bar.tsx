@@ -22,7 +22,7 @@ function MarqueeRow({
             <li
               key={partner.logo + (clone ? "-c" : "")}
               aria-hidden={clone || undefined}
-              className="w-[160px] shrink-0 overflow-hidden rounded-lg bg-white md:w-[190px]"
+              className="partner-item flex w-[160px] shrink-0 items-center justify-center px-3 py-2 md:w-[190px]"
             >
               {/* unoptimized: 504px shaffof-fonli manba qayta siqilmasin */}
               <Image
@@ -31,8 +31,20 @@ function MarqueeRow({
                 width={504}
                 height={304}
                 unoptimized
-                className="partner-logo aspect-[8/5] w-full object-cover"
+                className={`partner-logo aspect-[8/5] w-full object-contain${
+                  partner.mono ? " partner-logo--mono" : ""
+                }${partner.logoDark ? " logo-for-light" : ""}`}
               />
+              {partner.logoDark && (
+                <Image
+                  src={partner.logoDark}
+                  alt=""
+                  width={504}
+                  height={304}
+                  unoptimized
+                  className="partner-logo logo-for-dark aspect-[8/5] w-full object-contain"
+                />
+              )}
             </li>
           ))
         )}
@@ -41,7 +53,7 @@ function MarqueeRow({
   );
 }
 
-/** Hamkorlar — oq kartochkali, ikki qatorli qarama-qarshi marquee */
+/** Hamkorlar — fonsiz oq monoxrom logolar, ikki qatorli qarama-qarshi marquee */
 export async function TrustBar() {
   const t = await getTranslations("trust");
 

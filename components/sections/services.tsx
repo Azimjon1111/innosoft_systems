@@ -16,6 +16,7 @@ import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
 import { IconTile } from "@/components/ui/icon-tile";
 import { Reveal } from "@/components/ui/reveal";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { JsonLd } from "@/components/seo/json-ld";
 import { servicesSchema } from "@/components/seo/schemas";
 import { servicePath } from "@/lib/routes";
@@ -45,7 +46,6 @@ export async function Services({ locale }: { locale: Locale }) {
     <Section id="services" labelledBy="services-title" density="full">
       <Container>
         <SectionHeader
-          num="01"
           id="services-title"
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -57,9 +57,13 @@ export async function Services({ locale }: { locale: Locale }) {
             <Reveal key={service.key} as="article" index={i % 4}>
               {/* Stretched-link: butun karta xizmatga olib boradi,
                   pastdagi alohida havola esa portfolioga */}
-              <div className="group relative flex h-full flex-col rounded-lg border border-line bg-surface p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors duration-200 hover:border-line-brand hover:bg-surface-hover">
-                <IconTile className="group-hover:bg-primary/20">
-                  <service.icon className="size-6" />
+              <SpotlightCard className="group relative flex h-full flex-col rounded-lg border border-line bg-surface p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors duration-200 hover:bg-surface-hover">
+                <span className="spot-sheen" aria-hidden />
+                <span className="spot-num" aria-hidden>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <IconTile className="transition-all duration-300 ease-out group-hover:-rotate-6 group-hover:scale-110 group-hover:rounded-full group-hover:bg-primary/20">
+                  <service.icon className="size-6 transition-transform duration-300 group-hover:rotate-6" />
                 </IconTile>
                 <h3 className="mt-6 text-xl font-semibold tracking-[-0.02em]">
                   <Link
@@ -72,10 +76,17 @@ export async function Services({ locale }: { locale: Locale }) {
                 <p className="mt-3 flex-1 text-base leading-relaxed text-secondary">
                   {t(`items.${service.key}.desc`)}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent">
-                  {t("learnMore")}
-                  <ArrowRight
-                    className="size-4 transition-transform duration-200 group-hover:translate-x-1"
+                <span className="mt-6 inline-flex w-fit flex-col text-sm font-medium text-accent">
+                  <span className="inline-flex items-center gap-2">
+                    {t("learnMore")}
+                    <ArrowRight
+                      className="size-4 transition-transform duration-300 group-hover:translate-x-1.5"
+                      aria-hidden
+                    />
+                  </span>
+                  {/* Ostki chiziq — hover'da chapdan o'sib chiqadi */}
+                  <span
+                    className="grad-line mt-1 block h-px w-full origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                     aria-hidden
                   />
                 </span>
@@ -86,7 +97,7 @@ export async function Services({ locale }: { locale: Locale }) {
                 >
                   {t("related")} →
                 </a>
-              </div>
+              </SpotlightCard>
             </Reveal>
           ))}
         </div>

@@ -65,7 +65,7 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
     <section
       aria-labelledby="hero-title"
       aria-roledescription="carousel"
-      className="relative isolate flex min-h-[640px] flex-col overflow-hidden pt-[76px] h-svh"
+      className="relative isolate flex min-h-svh flex-col overflow-hidden pt-[76px]"
     >
       {/* Orqa fon: fallback gradient + videolar + qoraytiruvchi qatlam */}
       <div className="absolute inset-0 -z-10" aria-hidden>
@@ -110,8 +110,8 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
         )}
         {/* Matn o'qilishi uchun overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/55 to-[#050816]/30" />
-        {/* Tema foniga yumshoq o'tish (light rejimda oq seksiyaga uzviy ulanadi) */}
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-bg to-transparent" />
+        {/* Tema foniga yumshoq o'tish — faqat dark'da; light'da oq parda xunuk chiqadi */}
+        <div className="hero-fade absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-bg to-transparent" />
       </div>
 
       {/* Slayd matnlari — vertikal markazda (EPAM kabi) */}
@@ -139,7 +139,7 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
               </p>
               <TitleTag
                 id={i === 0 ? "hero-title" : undefined}
-                className="mt-4 max-w-[16ch] text-[40px] font-light leading-[1.05] tracking-[-0.02em] sm:text-6xl lg:text-7xl xl:text-[76px]"
+                className="hero-title mt-4 max-w-[16ch] text-[40px] font-light leading-[1.05] tracking-[-0.02em] sm:text-6xl lg:text-7xl xl:text-[76px]"
                 style={{ color: "#ffffff" }}
               >
                 {slide.title}
@@ -165,7 +165,7 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
               {/* Ijtimoiy isbot qatori — birinchi 3 soniyada ishonch */}
               {proof && (
                 <p
-                  className="mt-9 text-[13px] font-medium tracking-[0.04em]"
+                  className="hero-proof mt-9 text-[13px] font-medium tracking-[0.04em]"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
                   {proof}
@@ -192,12 +192,12 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
                 {i === active && !reduced && (
                   <span
                     key={active}
-                    className="absolute inset-y-0 left-0 block bg-white"
+                    className="grad-line absolute inset-y-0 left-0 block"
                     style={{ animation: `hero-progress ${SLIDE_MS}ms linear forwards` }}
                   />
                 )}
                 {i === active && reduced && (
-                  <span className="absolute inset-0 block bg-white" />
+                  <span className="grad-line absolute inset-0 block" />
                 )}
               </span>
               <span

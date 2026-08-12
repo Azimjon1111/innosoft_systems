@@ -96,14 +96,14 @@
 
 /* Secondary tugma — logodagi ko'k (#0983c6) + qora gradient */
 .btn-secondary {
-  background: linear-gradient(135deg, #0983c6 0%, #06507a 45%, #050816 100%);
-  border: 1px solid rgba(9, 131, 198, 0.45);
+  background: linear-gradient(135deg, var(--grad-a) 0%, var(--grad-b) 75%);
+  border: 1px solid color-mix(in oklab, var(--grad-a) 50%, transparent);
   color: #ffffff;
   transition: filter 200ms ease, border-color 200ms ease;
 }
 .btn-secondary:hover {
-  filter: brightness(1.2);
-  border-color: rgba(9, 131, 198, 0.7);
+  filter: brightness(1.12);
+  border-color: color-mix(in oklab, var(--grad-a) 80%, transparent);
 }
 :root[data-theme="light"] .btn-secondary {
   color: #ffffff;
@@ -130,8 +130,32 @@
   background: rgba(5, 8, 22, 0.15) !important;
 }
 
-/* ── Hamkor logolari — rangli, shaffof fonda, to'liq tiniq ── */
+/* ── Hamkor logolari — fonsiz, to'liq oq monoxrom, tiniq ── */
 .partner-logo {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+  transition: filter 300ms ease, transform 300ms ease;
+}
+.partner-item:hover .partner-logo {
+  filter: brightness(0) invert(1) drop-shadow(0 0 14px rgba(255, 255, 255, 0.3));
+  transform: scale(1.05);
+}
+/* Light temada logolar asl rangida ko'rinadi */
+:root[data-theme="light"] .partner-logo {
+  filter: none;
+  opacity: 1;
+}
+:root[data-theme="light"] .partner-item:hover .partner-logo {
+  filter: drop-shadow(0 4px 12px rgba(5, 8, 22, 0.18));
+  transform: scale(1.05);
+}
+/* Faqat oq rangli fayllar light fonda ko'rinmaydi — qora siluet qilamiz */
+:root[data-theme="light"] .partner-logo.partner-logo--mono {
+  filter: brightness(0);
+  opacity: 0.78;
+}
+:root[data-theme="light"] .partner-item:hover .partner-logo.partner-logo--mono {
+  filter: brightness(0) drop-shadow(0 4px 12px rgba(5, 8, 22, 0.18));
   opacity: 1;
 }
 
@@ -158,6 +182,356 @@
   }
   to {
     width: 100%;
+  }
+}
+
+/* ── Spotlight-kartalar (xizmatlar) — kursorni kuzatuvchi nur ── */
+.spot-card {
+  --mx: 50%;
+  --my: 50%;
+  --spot-line: rgba(255, 255, 255, 0.55);
+  --spot-fill: rgba(255, 255, 255, 0.06);
+  position: relative;
+  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Chegara bo'ylab yuruvchi nur (mask orqali faqat 1px halqa bo'yaladi) */
+.spot-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    240px circle at var(--mx) var(--my),
+    var(--spot-line),
+    transparent 70%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  z-index: 1;
+}
+/* Ichki yumshoq yorug'lik */
+.spot-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    340px circle at var(--mx) var(--my),
+    var(--spot-fill),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+}
+.spot-card:hover {
+  transform: translateY(-6px);
+}
+.spot-card:hover::before,
+.spot-card:hover::after {
+  opacity: 1;
+}
+:root[data-theme="light"] .spot-card {
+  --spot-line: rgba(5, 8, 22, 0.45);
+  --spot-fill: rgba(5, 8, 22, 0.045);
+}
+
+/* Sharpa tartib-raqami — kontur ko'rinishda, hover'da to'lib siljiydi */
+.spot-num {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-family: var(--font-mono);
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-line-strong);
+  transition:
+    color 350ms ease,
+    -webkit-text-stroke-color 350ms ease,
+    transform 350ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 350ms ease;
+  opacity: 0.9;
+  pointer-events: none;
+  user-select: none;
+}
+.group:hover .spot-num {
+  background: linear-gradient(120deg, var(--grad-a), var(--grad-b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke-color: transparent;
+  transform: translateY(-4px) scale(1.06);
+  opacity: 1;
+}
+
+/* Diagonal yaltirash — hover'da karta bo'ylab bir marta o'tadi */
+.spot-sheen {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+.spot-sheen::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  bottom: -60%;
+  left: -30%;
+  width: 34%;
+  transform: rotate(18deg) translateX(-260%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+}
+.group:hover .spot-sheen::before {
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform: rotate(18deg) translateX(680%);
+}
+:root[data-theme="light"] .spot-sheen::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(5, 8, 22, 0.04),
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spot-card,
+  .spot-card::before,
+  .spot-card::after,
+  .spot-num,
+  .spot-sheen::before {
+    transition: none !important;
+  }
+  .spot-card:hover {
+    transform: none;
+  }
+  .group:hover .spot-sheen::before {
+    transform: rotate(18deg) translateX(-260%);
+  }
+}
+
+/* ── Jarayon seksiyasi gradient aksentlari (ko'k -> binafsha, vazmin) ── */
+:root {
+  --grad-a: #4fc3ff;
+  --grad-b: #0983c6;
+}
+:root[data-theme="light"] {
+  --grad-a: #0983c6;
+  --grad-b: #1e5fd6;
+}
+/* Gradient matn — sayt bo'ylab umumiy aksent ip */
+.grad-text,
+.proc-grad-text {
+  background: linear-gradient(120deg, var(--grad-a), var(--grad-b));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+/* Gradient chiziq/yuza */
+.grad-line {
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
+}
+/* Yumshoq gradient dog' (fon bezagi) */
+.grad-blob {
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in oklab, var(--grad-a) 55%, transparent),
+    color-mix(in oklab, var(--grad-b) 35%, transparent) 55%,
+    transparent 75%
+  );
+}
+/* Aktiv ustun: yumshoq gradient yuvilish + gradient chegara halqasi */
+.proc-active {
+  position: relative;
+  background-image: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--grad-a) 13%, transparent),
+    transparent 45%,
+    color-mix(in oklab, var(--grad-b) 11%, transparent)
+  );
+}
+.proc-active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--grad-a) 55%, transparent),
+    color-mix(in oklab, var(--grad-b) 55%, transparent)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+/* Progress chiziq gradienti */
+.proc-progress {
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
+}
+
+/* ── Texnologiya steki: orbital sistema ── */
+@keyframes orbit-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes orbit-counter {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+@keyframes orbit-halo {
+  0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.9; transform: translate(-50%, -50%) scale(1.22); }
+}
+/* Markaziy yadro ortidagi ko'k quyosh-korona */
+.orbit-sun {
+  background: radial-gradient(
+    circle,
+    #4fc3ff 0%,
+    rgba(9, 131, 198, 0.55) 38%,
+    transparent 70%
+  );
+}
+/* Statik orbita yo'li */
+.orbit-path {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-line);
+  border-radius: 9999px;
+  pointer-events: none;
+}
+/* Aylanuvchi qatlam */
+.orbit-ring {
+  position: absolute;
+  inset: 0;
+  animation: orbit-spin var(--dur, 80s) linear infinite;
+}
+/* Element o'rni (halqa bilan birga aylanadi) */
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(var(--a)) translateX(var(--r)) rotate(calc(-1 * var(--a)));
+}
+/* Chip — global holatda tik turishi uchun qarshi aylanadi */
+.orbit-chip {
+  animation: orbit-counter var(--dur, 80s) linear infinite;
+}
+/* Hover'da butun sistema to'xtaydi */
+.orbit-scene:hover .orbit-ring,
+.orbit-scene:hover .orbit-chip {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit-ring,
+  .orbit-chip {
+    animation: none;
+  }
+  .orbit-chip {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ── Loyihalar bento-mozaikasi ── */
+.bento-tile {
+  position: relative;
+}
+/* Hover'da gradient halqa */
+.bento-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--grad-a) 65%, transparent),
+    color-mix(in oklab, var(--grad-b) 65%, transparent)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  z-index: 3;
+}
+.bento-tile:hover::after {
+  opacity: 1;
+}
+
+/* ── Nega biz: 3D flip-kartalar ── */
+.flip-scene {
+  perspective: 1400px;
+}
+.flip-inner {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.flip-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+/* Sichqonchali qurilmalarda hover ham ag'daradi */
+@media (hover: hover) {
+  .flip-scene:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transition: none;
+  }
+}
+
+/* Hero pastki o'tish gradienti light'da oq parda bo'lib qoladi — o'chiramiz */
+:root[data-theme="light"] .hero-fade {
+  display: none;
+}
+
+/* Noutbuk ekranlari (balandligi past) — hero bir ekranga sig'sin:
+   sarlavha kichrayadi, vertikal bo'shliqlar tejaladi */
+@media (min-width: 1024px) and (max-height: 940px) {
+  .hero-title {
+    font-size: 54px;
+    line-height: 1.08;
+  }
+  .hero-proof {
+    margin-top: 20px;
   }
 }
 

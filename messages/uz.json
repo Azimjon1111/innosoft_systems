@@ -147,7 +147,12 @@
     "projects": "Bajarilgan loyihalar",
     "years": "Yillik tajriba",
     "users": "Foydalanuvchilar",
-    "support": "Qo'llab-quvvatlash"
+    "support": "Qo'llab-quvvatlash",
+    "eyebrow": "Natijalar",
+    "title": "Natijalar raqamlarda",
+    "subhead": "Turli sohalardagi kompaniyalar uchun veb-saytlar, CRM/ERP tizimlar va mobil ilovalar yaratdik — raqamlar o'zi gapiradi.",
+    "clients": "Doimiy mijoz-brendlar",
+    "industries": "Soha bo'yicha yechimlar"
   },
   "services": {
     "eyebrow": "Xizmatlarimiz",
@@ -191,8 +196,8 @@
     "related": "Tegishli loyihalar"
   },
   "why": {
-    "eyebrow": "Nega Innosoft",
-    "title": "Innosoft va odatiy agentliklar farqi",
+    "eyebrow": "Nega Innosoft Systems",
+    "title": "Innosoft Systems va odatiy agentliklar farqi",
     "subhead": "Biz shablon sotmaymiz — biznesingiz uchun uzoq yillar xizmat qiladigan muhandislik yechimlarini quramiz.",
     "colFeature": "Mezon",
     "colUs": "Innosoft Systems",
@@ -233,7 +238,11 @@
         "us": "Next.js, AI, Cloud",
         "them": "Eskirgan CMS"
       }
-    }
+    },
+    "ctaTitle": "Farqni amalda ko'ring",
+    "ctaDesc": "Bepul strategiya suhbatida loyihangizni baholab beramiz",
+    "ctaAction": "Bog'lanish",
+    "flipHint": "Kartani ag'daring"
   },
   "cases": {
     "eyebrow": "Tanlangan loyihalar",
@@ -241,7 +250,8 @@
     "subhead": "Har bir loyiha ortida aniq biznes-maqsad va o'lchanadigan natija turadi.",
     "view": "Loyihani ko'rish",
     "duration": "Muddat",
-    "empty": "Loyihalar tez orada qo'shiladi."
+    "empty": "Loyihalar tez orada qo'shiladi.",
+    "viewAll": "Barcha loyihalar"
   },
   "industries": {
     "eyebrow": "Sohalar",

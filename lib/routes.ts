@@ -41,6 +41,17 @@ export function servicePath(locale: Locale, key: keyof typeof serviceRoutes): st
   return `/${locale}/${category}/${slug}`;
 }
 
+/** Barcha loyihalar sahifasi (sahifaning o'zi keyinroq quriladi) */
+export const projectsRoutes: Record<Locale, string> = {
+  uz: "loyihalar",
+  ru: "proekty",
+  en: "projects",
+};
+
+export function projectsPath(locale: Locale): string {
+  return `/${locale}/${projectsRoutes[locale]}`;
+}
+
 export function servicesHubPath(locale: Locale): string {
   return `/${locale}/${categoryRoutes.xizmatlar[locale]}`;
 }

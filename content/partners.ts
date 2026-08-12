@@ -5,6 +5,10 @@
 export interface PartnerLogo {
   name: string;
   logo: string;
+  /** Fayl faqat oq rangda — light temada qora siluet qilinadi */
+  mono?: boolean;
+  /** Dark tema uchun alohida variant (alpha-detallar bilan) */
+  logoDark?: string;
 }
 
 export const PARTNERS: PartnerLogo[] = [
@@ -25,7 +29,7 @@ export const PARTNERS: PartnerLogo[] = [
   { name: "Tamerlan Marketing", logo: "/assets/img/partners/15-tamerlan-marketing.webp" },
   { name: "Meritz", logo: "/assets/img/partners/17-meritz.webp" },
   { name: "Block 21 Group", logo: "/assets/img/partners/22-block-21-group.webp" },
-  { name: "New Anibla", logo: "/assets/img/partners/25-new-anibla.webp" },
+  { name: "New Anibla", logo: "/assets/img/partners/25-new-anibla.webp", logoDark: "/assets/img/partners/25-new-anibla-dark.webp" },
   { name: "FireWise Enterprises", logo: "/assets/img/partners/26-firewise-enterprises.webp" },
   { name: "Yurak Markazi", logo: "/assets/img/partners/28-yurak-markazi.webp" },
   { name: "Imir-Trade Group", logo: "/assets/img/partners/30-imir-trade-group.webp" },
@@ -38,7 +42,6 @@ export const PARTNERS: PartnerLogo[] = [
   { name: "Smart Technology Systems", logo: "/assets/img/partners/45-smart-technology-systems.webp" },
   { name: "O'ZSMP", logo: "/assets/img/partners/49-ozsmp.webp" },
   { name: "UNG Overseas", logo: "/assets/img/partners/50-ung-overseas.webp" },
-  { name: "RememberMe", logo: "/assets/img/partners/53-rememberme.webp" },
   { name: "Cleanza", logo: "/assets/img/partners/55-cleanza.webp" },
   { name: "Scriber Engineering Arts", logo: "/assets/img/partners/57-scriber-engineering-arts.webp" },
   { name: "Tax Advisors Academy", logo: "/assets/img/partners/58-tax-advisors-academy.webp" },

@@ -14,6 +14,11 @@ export async function FinalCta() {
       <Container>
         <Reveal className="relative overflow-hidden rounded-xl border border-line bg-bg-elevated px-6 py-20 text-center md:px-16 md:py-28">
           <div className="grid-pattern absolute inset-0" aria-hidden />
+          {/* Nozik gradient dog' — sarlavha orqasida */}
+          <div
+            className="grad-blob pointer-events-none absolute -top-24 left-1/2 h-72 w-[46rem] -translate-x-1/2 opacity-[0.16] blur-3xl"
+            aria-hidden
+          />
           {/* Interaktiv IT tarmoq foni — sichqonchaga reaksiya qiladi */}
           <div className="absolute inset-0" aria-hidden>
             <ParticleNetwork />

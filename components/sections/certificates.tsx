@@ -28,7 +28,6 @@ export async function Certificates() {
     <Section id="certificates" labelledBy="certificates-title" density="mid">
       <Container>
         <SectionHeader
-          num="07"
           id="certificates-title"
           eyebrow={t("eyebrow")}
           title={t("title")}

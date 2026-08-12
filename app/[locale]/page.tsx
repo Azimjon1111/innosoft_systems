@@ -5,7 +5,6 @@ import { routing, type Locale } from "@/i18n/routing";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Hero } from "@/components/sections/hero";
-import { TechMarquee } from "@/components/sections/tech-marquee";
 import { TrustBar } from "@/components/sections/trust-bar";
 import { Stats } from "@/components/sections/stats";
 import { Services } from "@/components/sections/services";
@@ -35,7 +34,6 @@ export default async function HomePage({
       <SiteHeader locale={l} />
       <main id="main">
         <Hero locale={l} />
-        <TechMarquee />
         <TrustBar />
         <Stats />
         <Services locale={l} />

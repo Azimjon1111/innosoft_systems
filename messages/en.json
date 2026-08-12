@@ -147,7 +147,12 @@
     "projects": "Completed Projects",
     "years": "Years Experience",
     "users": "Users Served",
-    "support": "Support"
+    "support": "Support",
+    "eyebrow": "Results",
+    "title": "Results in Numbers",
+    "subhead": "Websites, CRM/ERP systems and mobile apps delivered for companies across industries — the numbers speak for themselves.",
+    "clients": "Long-term Client Brands",
+    "industries": "Industry Verticals"
   },
   "services": {
     "eyebrow": "What We Do",
@@ -191,8 +196,8 @@
     "related": "Related projects"
   },
   "why": {
-    "eyebrow": "Why Innosoft",
-    "title": "Innosoft vs traditional agencies",
+    "eyebrow": "Why Innosoft Systems",
+    "title": "Innosoft Systems vs traditional agencies",
     "subhead": "We don't sell templates — we build engineering solutions that serve your business for years.",
     "colFeature": "Criteria",
     "colUs": "Innosoft Systems",
@@ -233,7 +238,11 @@
         "us": "Next.js, AI, Cloud",
         "them": "Legacy CMS"
       }
-    }
+    },
+    "ctaTitle": "See the difference in action",
+    "ctaDesc": "We'll assess your project in a free consultation",
+    "ctaAction": "Get in touch",
+    "flipHint": "Flip the card"
   },
   "cases": {
     "eyebrow": "Featured Projects",
@@ -241,7 +250,8 @@
     "subhead": "Behind every project is a clear business goal and a measurable outcome.",
     "view": "View Project",
     "duration": "Timeline",
-    "empty": "Projects coming soon."
+    "empty": "Projects coming soon.",
+    "viewAll": "All projects"
   },
   "industries": {
     "eyebrow": "Industries",
