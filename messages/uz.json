@@ -196,53 +196,27 @@
     "related": "Tegishli loyihalar"
   },
   "why": {
-    "eyebrow": "Nega Innosoft Systems",
-    "title": "Innosoft Systems va odatiy agentliklar farqi",
-    "subhead": "Biz shablon sotmaymiz — biznesingiz uchun uzoq yillar xizmat qiladigan muhandislik yechimlarini quramiz.",
-    "colFeature": "Mezon",
-    "colUs": "Innosoft Systems",
-    "colThem": "Odatiy agentliklar",
-    "rows": {
+    "eyebrow": "Afzalliklarimiz",
+    "title": "Nima uchun Innosoft Systems?",
+    "subhead": "Biz mijozlarimizga quyidagi afzalliklarni taqdim etamiz.",
+    "items": {
+      "quality": {
+        "title": "Yuqori sifat",
+        "desc": "Har bir loyihaga alohida e'tibor beramiz. Sifatli kod, zamonaviy dizayn va yuqori darajadagi xavfsizlik bilan xizmat ko'rsatamiz."
+      },
       "team": {
-        "label": "Ajratilgan muhandislik jamoasi",
-        "us": "Har doim",
-        "them": "Loyihaga qarab"
+        "title": "Professional jamoa",
+        "desc": "10+ professional dasturchilar, dizaynerlar va loyiha menejerlari jamoasi. Har bir mutaxassis o'z sohasida tajribaga ega."
       },
-      "architecture": {
-        "label": "Toza, hujjatlashtirilgan arxitektura",
-        "us": "Standart amaliyot",
-        "them": "Kamdan-kam"
-      },
-      "scalable": {
-        "label": "Kengayadigan tizim dizayni",
-        "us": "Narxga kiritilgan",
-        "them": "Qo'shimcha to'lov"
-      },
-      "seo": {
-        "label": "Birinchi kundan SEO-tayyor",
-        "us": "Narxga kiritilgan",
-        "them": "Alohida xizmat"
-      },
-      "delivery": {
-        "label": "Yetkazib berish muddati",
-        "us": "2–8 hafta",
-        "them": "3–6 oy"
+      "result": {
+        "title": "Natijaga yo'naltirilgan",
+        "desc": "Bizning asosiy maqsadimiz — mijozlarimiz biznesini rivojlantirish. Har bir loyiha aniq biznes maqsadlarga yo'naltirilgan."
       },
       "support": {
-        "label": "Ishga tushirilgandan keyingi qo'llab-quvvatlash",
-        "us": "12 oy",
-        "them": "30 kun"
-      },
-      "stack": {
-        "label": "Zamonaviy texnologiyalar",
-        "us": "Next.js, AI, Cloud",
-        "them": "Eskirgan CMS"
+        "title": "24/7 qo'llab-quvvatlash",
+        "desc": "Loyihangiz ishga tushgandan so'ng ham, biz doimo yoningizda. Texnik qo'llab-quvvatlash xizmatimiz 24/7 rejimida ishlaydi."
       }
-    },
-    "ctaTitle": "Farqni amalda ko'ring",
-    "ctaDesc": "Bepul strategiya suhbatida loyihangizni baholab beramiz",
-    "ctaAction": "Bog'lanish",
-    "flipHint": "Kartani ag'daring"
+    }
   },
   "cases": {
     "eyebrow": "Tanlangan loyihalar",
@@ -327,7 +301,7 @@
       },
       "support": {
         "title": "Qo'llab-quvvatlash",
-        "desc": "12 oy bepul texnik xizmat"
+        "desc": "6 oy bepul texnik xizmat"
       }
     }
   },
@@ -385,7 +359,7 @@
           },
           "q5": {
             "q": "Shartnoma va kafolat qanday?",
-            "a": "Barcha loyihalar rasmiy shartnoma asosida bajariladi. Unda ish hajmi, muddat, narx va maxfiylik shartlari aniq belgilanadi. Topshirilgan ishga 12 oylik texnik kafolat beramiz."
+            "a": "Barcha loyihalar rasmiy shartnoma asosida bajariladi. Unda ish hajmi, muddat, narx va maxfiylik shartlari aniq belgilanadi. Topshirilgan ishga 6 oylik texnik kafolat beramiz."
           }
         }
       },
@@ -407,10 +381,6 @@
           "q4": {
             "q": "Qo'shimcha xarajatlar bo'ladimi?",
             "a": "Yo'q — shartnomada kelishilgan narx yakuniy. Faqat domen, hosting va uchinchi tomon servislari (masalan, SMS-provayder) alohida to'lanadi, ularni ham oldindan aniq aytamiz."
-          },
-          "q5": {
-            "q": "Nega ba'zi agentliklardan qimmatroqsiz?",
-            "a": "Biz shablon emas, muhandislik mahsuloti yaratamiz: toza kod, hujjatlashtirilgan arxitektura, SEO va kengayish imkoniyati narxga kiritilgan. Bu keyinchalik qayta yasash xarajatlaridan ancha tejaydi."
           }
         }
       },
@@ -427,7 +397,7 @@
           },
           "q3": {
             "q": "Ishga tushirilgandan keyin nima bo'ladi?",
-            "a": "12 oy davomida texnik qo'llab-quvvatlash bepul: xatolarni tuzatish, xavfsizlik yangilanishlari va monitoring. Keyin xohishga ko'ra oylik texnik xizmat shartnomasini davom ettirish mumkin."
+            "a": "6 oy davomida texnik qo'llab-quvvatlash bepul: xatolarni tuzatish, xavfsizlik yangilanishlari va monitoring. Keyin xohishga ko'ra oylik texnik xizmat shartnomasini davom ettirish mumkin."
           },
           "q4": {
             "q": "Kod va tizim kimga tegishli bo'ladi?",

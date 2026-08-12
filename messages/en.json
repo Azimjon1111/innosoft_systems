@@ -196,53 +196,27 @@
     "related": "Related projects"
   },
   "why": {
-    "eyebrow": "Why Innosoft Systems",
-    "title": "Innosoft Systems vs traditional agencies",
-    "subhead": "We don't sell templates — we build engineering solutions that serve your business for years.",
-    "colFeature": "Criteria",
-    "colUs": "Innosoft Systems",
-    "colThem": "Traditional Agencies",
-    "rows": {
+    "eyebrow": "Our Advantages",
+    "title": "Why Innosoft Systems?",
+    "subhead": "Here's what we deliver to every client.",
+    "items": {
+      "quality": {
+        "title": "High Quality",
+        "desc": "Every project gets dedicated attention: clean code, modern design and a high level of security."
+      },
       "team": {
-        "label": "Dedicated engineering team",
-        "us": "Always",
-        "them": "Project-dependent"
+        "title": "Professional Team",
+        "desc": "A team of 10+ developers, designers and project managers — each experienced in their field."
       },
-      "architecture": {
-        "label": "Clean, documented architecture",
-        "us": "Standard practice",
-        "them": "Rarely"
-      },
-      "scalable": {
-        "label": "Scalable system design",
-        "us": "Included",
-        "them": "Extra cost"
-      },
-      "seo": {
-        "label": "SEO-ready from day one",
-        "us": "Included",
-        "them": "Separate service"
-      },
-      "delivery": {
-        "label": "Delivery timeline",
-        "us": "2–8 weeks",
-        "them": "3–6 months"
+      "result": {
+        "title": "Result-Oriented",
+        "desc": "Our main goal is growing our clients' business. Every project is aligned with clear business objectives."
       },
       "support": {
-        "label": "Post-launch support",
-        "us": "12 months",
-        "them": "30 days"
-      },
-      "stack": {
-        "label": "Modern tech stack",
-        "us": "Next.js, AI, Cloud",
-        "them": "Legacy CMS"
+        "title": "24/7 Support",
+        "desc": "We stay by your side after launch. Our technical support runs around the clock."
       }
-    },
-    "ctaTitle": "See the difference in action",
-    "ctaDesc": "We'll assess your project in a free consultation",
-    "ctaAction": "Get in touch",
-    "flipHint": "Flip the card"
+    }
   },
   "cases": {
     "eyebrow": "Featured Projects",
@@ -327,7 +301,7 @@
       },
       "support": {
         "title": "Support",
-        "desc": "12 months of free maintenance"
+        "desc": "6 months of free maintenance"
       }
     }
   },
@@ -385,7 +359,7 @@
           },
           "q5": {
             "q": "How do contracts and warranty work?",
-            "a": "All projects run under an official contract that clearly defines scope, timeline, price and confidentiality terms. Delivered work is covered by a 12-month technical warranty."
+            "a": "All projects run under an official contract that clearly defines scope, timeline, price and confidentiality terms. Delivered work is covered by a 6-month technical warranty."
           }
         }
       },
@@ -407,10 +381,6 @@
           "q4": {
             "q": "Will there be extra costs?",
             "a": "No — the price agreed in the contract is final. Only the domain, hosting and third-party services (such as an SMS provider) are billed separately, and we state these upfront."
-          },
-          "q5": {
-            "q": "Why are you more expensive than some agencies?",
-            "a": "We build an engineered product, not a template: clean code, documented architecture, SEO and scalability are included in the price. This saves significant rebuild costs down the road."
           }
         }
       },
@@ -427,7 +397,7 @@
           },
           "q3": {
             "q": "What happens after launch?",
-            "a": "Technical support is free for 12 months: bug fixes, security updates and monitoring. After that, you can optionally continue with a monthly maintenance contract."
+            "a": "Technical support is free for 6 months: bug fixes, security updates and monitoring. After that, you can optionally continue with a monthly maintenance contract."
           },
           "q4": {
             "q": "Who owns the code and the system?",

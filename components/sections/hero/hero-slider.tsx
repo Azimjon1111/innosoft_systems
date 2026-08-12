@@ -139,13 +139,13 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
               </p>
               <TitleTag
                 id={i === 0 ? "hero-title" : undefined}
-                className="hero-title mt-4 max-w-[16ch] text-[40px] font-light leading-[1.05] tracking-[-0.02em] sm:text-6xl lg:text-7xl xl:text-[76px]"
+                className="hero-title mt-4 max-w-[19ch] text-[40px] font-light leading-[1.05] tracking-[-0.02em] sm:text-6xl lg:text-7xl xl:text-[76px]"
                 style={{ color: "#ffffff" }}
               >
                 {slide.title}
               </TitleTag>
               <p
-                className="mt-5 max-w-[54ch] text-base leading-relaxed md:text-lg"
+                className="hero-desc mt-5 max-w-[54ch] text-base leading-relaxed md:text-lg"
                 style={{ color: "rgba(255,255,255,0.72)" }}
               >
                 {slide.desc}
@@ -153,7 +153,7 @@ export function HeroSlider({ slides, proof }: { slides: HeroSlide[]; proof?: str
               <a
                 href={slide.ctaHref}
                 tabIndex={i === active ? 0 : -1}
-                className="group mt-8 inline-flex h-12 w-fit items-center gap-3 border border-white/40 px-7 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-200 hover:border-white hover:bg-white hover:text-[#050816]"
+                className="hero-cta group mt-8 inline-flex h-12 w-fit items-center gap-3 border border-white/40 px-7 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-200 hover:border-white hover:bg-white hover:text-[#050816]"
               >
                 {slide.ctaLabel}
                 <ArrowRight
