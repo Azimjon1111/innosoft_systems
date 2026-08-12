@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal } from "@/components/ui/reveal";
 import Link from "next/link";
-import { getProjects, mediaUrl } from "@/lib/api";
+import { PROJECTS } from "@/content/projects";
 import { projectsPath } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
@@ -21,9 +21,9 @@ const SPANS = [
 ] as const;
 
 export async function CaseStudies({ locale }: { locale: Locale }) {
-  const [t, projects] = await Promise.all([getTranslations("cases"), getProjects()]);
+  const t = await getTranslations("cases");
 
-  const featured = projects.slice(0, 5);
+  const featured = PROJECTS.slice(0, 5);
 
   return (
     <Section id="cases" labelledBy="cases-title" density="full">
@@ -40,7 +40,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
         ) : (
           <div className="grid grid-cols-1 gap-5 lg:auto-rows-[225px] lg:grid-cols-3">
             {featured.map((project, i) => {
-              const img = mediaUrl(project.image);
+              const img = project.image;
               const title = project.title[locale] ?? project.title.uz;
               const isBig = i === 0;
               const Tag = project.url ? "a" : "div";
@@ -66,13 +66,20 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
                         alt={title}
                         fill
                         sizes={isBig ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, 100vw"}
-                        quality={85}
+                        unoptimized
+                        priority={i === 0}
                         className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                       />
                     )}
-                    {/* O'qilish uchun doimiy qoraytiruvchi qatlam */}
+                    {/* O'qilish uchun doimiy qoraytiruvchi qatlam — och rangli
+                        skrinshotlarda ham sarlavha aniq o'qilsin */}
                     <span
-                      className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/5 transition-opacity duration-300"
+                      className="absolute inset-0 bg-black/5 transition-colors duration-300 group-hover:bg-black/0"
+                      aria-hidden
+                    />
+                    {/* Qoraytirish faqat matn turadigan pastki qismda jamlangan */}
+                    <span
+                      className="absolute inset-x-0 bottom-0 h-[62%] bg-gradient-to-t from-black via-black/70 to-transparent"
                       aria-hidden
                     />
 
