@@ -389,6 +389,80 @@
   background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
 }
 
+/* ── Ish jarayoni: zigzag yo'l xaritasi ── */
+@keyframes road-dot {
+  from { opacity: 0; transform: scale(0.2); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes road-card-left {
+  from { opacity: 0; transform: translateX(-26px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes road-card-right {
+  from { opacity: 0; transform: translateX(26px); }
+  to { opacity: 1; transform: none; }
+}
+/* Bekat atrofidagi doimiy puls halqasi — "jonli" his */
+@keyframes road-pulse {
+  0% { transform: scale(0.85); opacity: 0.5; }
+  70%, 100% { transform: scale(1.95); opacity: 0; }
+}
+/* Ikonka yengil "nafas oladi" */
+@keyframes road-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.14); }
+}
+
+/* Yo'l scroll progressiga qarab chiziladi (--p: 0 → 1, JS beradi) */
+.road-scene {
+  --p: 0;
+}
+.road-path {
+  /* dasharray/dashoffset JS'da aniq uzunlik bo'yicha beriladi */
+  transition: stroke-dashoffset 140ms linear;
+}
+
+.road-node {
+  opacity: 0;
+  transform: scale(0.2);
+}
+.road-scene[data-drawn="true"] .road-node {
+  animation: road-dot 520ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+.road-pulse {
+  animation: road-pulse 2.8s ease-out infinite;
+  animation-delay: var(--d, 0ms);
+}
+.road-icon {
+  animation: road-breathe 3.4s ease-in-out infinite;
+  animation-delay: var(--d, 0ms);
+}
+.road-card {
+  opacity: 0;
+}
+.road-scene[data-drawn="true"] .road-card-l {
+  animation: road-card-left 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+.road-scene[data-drawn="true"] .road-card-r {
+  animation: road-card-right 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+/* Mobil: chapdagi vertikal gradient chiziq */
+.road-line-v {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--grad-a) 75%, transparent),
+    color-mix(in oklab, var(--grad-b) 75%, transparent)
+  );
+}
+@media (prefers-reduced-motion: reduce) {
+  .road-path { stroke-dashoffset: 0 !important; transition: none; }
+  .road-node, .road-card { opacity: 1; transform: none; animation: none !important; }
+  .road-pulse, .road-icon { animation: none !important; }
+}
+
 /* ── Texnologiya steki: orbital sistema ── */
 @keyframes orbit-spin {
   to { transform: rotate(360deg); }

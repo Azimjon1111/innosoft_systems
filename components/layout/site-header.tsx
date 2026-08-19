@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X, ArrowRight, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { servicePath, servicesHubPath } from "@/lib/routes";
+import { servicePath, servicesHubPath, projectsPath } from "@/lib/routes";
 import { serviceGroups } from "@/lib/nav";
 import type { Locale } from "@/i18n/routing";
 
@@ -46,13 +46,13 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState<MenuId>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [theme, setTheme] = useState<"dark" | "light">("light");
 
   // Boshlang'ich tema — no-flash script o'rnatgan atributdan
   useEffect(() => {
-    if (document.documentElement.getAttribute("data-theme") === "light") {
-      setTheme("light");
-    }
+    setTheme(
+      document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark"
+    );
   }, []);
 
   const toggleTheme = useCallback(() => {
@@ -213,9 +213,14 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             />
           </button>
 
-          <a href="#cases" onMouseEnter={closeAll} className={topLink} onClick={closeAll}>
+          <Link
+            href={projectsPath(locale)}
+            onMouseEnter={closeAll}
+            className={topLink}
+            onClick={closeAll}
+          >
             {t("caseStudies")}
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -462,14 +467,14 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                   </ul>
                 </details>
 
-                <a
-                  href="#cases"
+                <Link
+                  href={projectsPath(locale)}
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center justify-between border-b border-line py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
                 >
                   {t("caseStudies")}
                   <ArrowRight className="size-5 text-tertiary lg:size-6" aria-hidden />
-                </a>
+                </Link>
 
                 <details className="group border-b border-line">
                   <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl [&::-webkit-details-marker]:hidden">

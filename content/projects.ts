@@ -1,9 +1,9 @@
 import type { Project } from "@/lib/api";
 
 /**
- * Statik portfolio — API'siz (admin.innosoft-systems.uz'dan 2026-08-12'da
- * ko'chirilgan snapshot). Rasmlar: brend uslubida generatsiya qilingan
- * fonlar (public/assets/img/projects/), kartada overlay matni bilan ishlaydi.
+ * Statik portfolio — API'siz (admin.innosoft-systems.uz snapshot,
+ * 2026-08-12, 6 sahifa / 52 loyiha). Muqovalar: saytlarning haqiqiy
+ * skrinshotlari, manzili yo'qlariga brend-fon (public/assets/img/projects/).
  */
 export const PROJECTS: Project[] = [
   {
@@ -350,6 +350,1232 @@ export const PROJECTS: Project[] = [
         "en": "Building"
       },
       "slug": "construction"
+    }
+  },
+  {
+    "id": "biolife",
+    "slug": "biolife",
+    "title": {
+      "uz": "Biolife",
+      "ru": "Biolife",
+      "en": "Biolife"
+    },
+    "description": {
+      "uz": "Imir-Trade Group kompaniyasi uchun ishlab chiqilgan va ularning \"Biolife\" qadoqlangan suv va ichimliklar brendini namoyish etuvchi zamonaviy platforma. Sayt foydalanuvchilar uchun qulay bo'lgan katalog orqali turli xil mahsulotlar liniyalarini, jumladan, gazlanmagan suv va turli hajmdagi mevali (qulupnay, limon miks) ichimliklarni taqdim etadi.",
+      "ru": "Современная платформа-витрина, разработанная для компании Imir-Trade Group, представляющая бренд бутилированной воды и напитков «Biolife». Сайт предлагает удобный каталог с различными линейками продукции, включая негазированную воду и ароматизированные напитки (клубника, лимонный микс) разных объемов.",
+      "en": "A modern product showcase platform developed for Imir-Trade Group, featuring their \"Biolife\" brand of bottled water and beverages. The website provides a clean, user-friendly catalog displaying various product lines, including non-carbonated water and flavored drinks (strawberry, lemon mix) in different sizes."
+    },
+    "duration": {
+      "uz": "20 kun",
+      "ru": "20 дней",
+      "en": "20 days"
+    },
+    "image": "/assets/img/projects/biolife.webp",
+    "technologies": [
+      "Next.js",
+      "Tailwind",
+      "Typescript"
+    ],
+    "url": "https://biolife.innobek.uz",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "gci",
+    "slug": "gci",
+    "title": {
+      "uz": "GCI",
+      "ru": "GCI",
+      "en": "GCI"
+    },
+    "description": {
+      "uz": "GCI Labs — zargarlik buyumlari va qimmatbaho toshlarni professional sertifikatlash va ekspertizadan o'tkazishga ixtisoslashgan O'zbekistondagi birinchi xalqaro gemologiya laboratoriyasidir. 20 yildan ortiq tajribaga ega bo'lgan laboratoriya qat'iy xalqaro standartlarga (ISO sertifikatlari) javob beradigan zamonaviy tahlil usullaridan foydalanadi. Platforma foydalanuvchilarga 4 bosqichli sertifikatlash jarayoni bilan tanishish, maxsus gemologiya kurslarini o'rganish va o'zlariga berilgan sertifikatlarning haqiqiyligini onlayn tarzda xavfsiz tekshirish imkonini beruvchi qulay raqamli tizimni taklif etadi.",
+      "ru": "GCI Labs — это первая международная геммологическая лаборатория в Узбекистане, специализирующаяся на профессиональной сертификации и экспертной оценке ювелирных изделий и драгоценных камней. Опираясь на более чем 20-летний опыт, лаборатория использует современные методы анализа, соответствующие строгим международным стандартам (сертификация ISO). Платформа предлагает удобный интерфейс, где пользователи могут ознакомиться с 4-этапным процессом сертификации, записаться на специализированные курсы по геммологии и безопасно проверить подлинность выданных сертификатов онлайн.",
+      "en": "GCI Labs is Uzbekistan's premier international gemological laboratory, specializing in the professional certification and expert appraisal of jewelry and precious stones. With over 20 years of industry expertise, the laboratory utilizes modern analytical methods that comply with rigorous international standards (ISO certified). The platform offers a seamless digital experience where users can learn about the 4-step certification process, explore specialized gemology courses, and securely verify the authenticity of their issued certificates online."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "10 месяца",
+      "en": "10 months"
+    },
+    "image": "/assets/img/projects/gci.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Tailwind",
+      "Nest.js"
+    ],
+    "url": "https://gci-labs.uz",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "dentium",
+    "slug": "dentium",
+    "title": {
+      "uz": "Dentium",
+      "ru": "Dentium",
+      "en": "Dentium"
+    },
+    "description": {
+      "uz": "«dentium.uz» sayti — bu Dentium Uzbekistan brendi ostida ishlovchi, stomatologik implantlar va boshqa  dental mahsulotlar bilan shug‘ullanuvchi kompaniya. Bugungi kunida o‘zining korporativ sayti orqali   o‘z xizmatlari va mahsulotlarini mijozlariga  taqdim etmoqda",
+      "ru": "Сайт «dentium.uz» — это корпоративный ресурс компании, работающей под брендом Dentium Uzbekistan и занимающейся стоматологическими имплантами и другими дентальными продуктами. Сегодня компания предоставляет свои услуги и продукцию клиентам через данный сайт.",
+      "en": "«dentium.uz» sayti — bu Dentium Uzbekistan brendi ostida ishlovchi, stomatologik implantlar va boshqa  dental mahsulotlar bilan shug‘ullanuvchi kompaniya. Bugungi kunida o‘zining korporativ sayti orqali   o‘z xizmatlari va mahsulotlarini mijozlariga  taqdim etmoqda"
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 kun",
+      "en": "10 kun"
+    },
+    "image": "/assets/img/projects/dentium.webp",
+    "technologies": [
+      "React js",
+      "JQuery",
+      "Tailwind Css"
+    ],
+    "url": "https://www.dentium.uz/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "drkim",
+    "slug": "drkim",
+    "title": {
+      "uz": "DrKim",
+      "ru": "DrKim",
+      "en": "DrKim"
+    },
+    "description": {
+      "uz": "«drkim.uz»- bu Tibbiyot sohasida foydalaniladigan zamonaviy asbob-uskunalar : yoritgichlar, optika, 4K-kameralar va boshqa operatsion jihozlarni 3D formatda interaktiv ko‘rish, ularning funksiyalari, afzalliklari va texnik tavsiflari bilan batafsil tanishish imkoniyatini beruvchi bir sahifali sayt",
+      "ru": "«drkim.uz» — это одностраничный сайт, предоставляющий возможность в интерактивном 3D-формате подробно ознакомиться с современным медицинским оборудованием: осветителями, оптикой, 4K-камерами и другими операционными устройствами, а также их функциями, преимуществами и техническими характеристиками.",
+      "en": "“drkim.uz” is a modern one-page website in the medical field that allows interactive 3D viewing of equipment such as lighting systems, optics, 4K cameras, and other surgical devices. Users can explore their functions, advantages, and technical specifications in detail."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяца",
+      "en": "1 months"
+    },
+    "image": "/assets/img/projects/drkim.webp",
+    "technologies": [
+      "React js",
+      "JQuery",
+      "Css"
+    ],
+    "url": "https://www.drkim.uz/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "oikos",
+    "slug": "oikos",
+    "title": {
+      "uz": "Oikos",
+      "ru": "Oikos",
+      "en": "Oikos"
+    },
+    "description": {
+      "uz": "Oikos brendining O‘zbekistondagi rasmiy vakili uchun yaratilgan korporativ veb-sayt bo‘lib, u Italiyaning premium ekologik toza bo‘yoqlari va dekorativ qoplamalarini taqdim etadi. Platforma brend nufuzini mustahkamlaydi va barqaror yechimlarga qiziquvchi mijozlar bilan samarali aloqa o‘rnatishga yordam beradi.",
+      "ru": "Корпоративный сайт для официального представителя Oikos в Узбекистане, представляющий премиальные экологичные краски и декоративные покрытия из Италии. Платформа укрепляет доверие к бренду и служит эффективным инструментом для коммуникации с клиентами, ценящими качество и устойчивое развитие.",
+      "en": "A professional corporate platform for Oikos Uzbekistan that showcases premium Italian eco-friendly paints and decorative solutions. The website strengthens brand authority and facilitates communication between the brand and clients seeking sustainable, high-quality materials for interior and exterior design."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/oikos.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://oikos-paint.uz",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "ipsum-conference",
+    "slug": "ipsum-conference",
+    "title": {
+      "uz": "Ipsum Conference",
+      "ru": "Ipsum Conference",
+      "en": "Ipsum Conference"
+    },
+    "description": {
+      "uz": "Toshkent shahrida bo'lib o'tadigan \"Diagnostik va bashoratli patologiyada zamonaviy yondashuvlar\" mavzusidagi xalqaro ilmiy-amaliy konferensiya uchun maxsus ishlab chiqilgan raqamli platforma. Sog'liqni saqlash vazirligi va Ipsum Pathology hamkorligida tashkil etilgan ushbu sayt tibbiyot mutaxassislari uchun qulay axborot markazi bo'lib xizmat qiladi. U ishtirokchilarga tadbirga oson ro'yxatdan o'tish, batafsil dastur bilan tanishish hamda AQSh, Yevropa va MDH davlatlaridan tashrif buyurgan yetakchi patolog-ekspertlar profillarini o'rganish imkonini beradi. Shuningdek, platforma maxsus master-klasslar, mehmonxonalarga joylashish va madaniy turlar haqida qulay va birlashtirilgan ma'lumotlarni taqdim etib, barcha ishtirokchilar uchun yuqori darajadagi qulaylikni ta'minlaydi.",
+      "ru": "Специализированная цифровая платформа, разработанная для Международной научно-практической конференции «Современные подходы в диагностической и предиктивной патологии», проходящей в Ташкенте. Сайт, организованный совместно с Министерством здравоохранения РУз и Ipsum Pathology, служит удобным центром для медицинских специалистов. Он позволяет участникам легко зарегистрироваться на мероприятие, изучить подробную программу и ознакомиться с профилями ведущих экспертов-патологов из США, Европы и стран СНГ. Платформа также предоставляет интегрированную информацию о профильных мастер-классах, вариантах проживания и культурных турах, обеспечивая комфортное участие для всех делегатов.",
+      "en": "A dedicated digital platform developed for the International Scientific and Practical Conference \"Modern Approaches in Diagnostic and Predictive Pathology,\" held in Tashkent, Uzbekistan. Organized in collaboration with the Ministry of Health and Ipsum Pathology, the website serves as a comprehensive hub for medical professionals. It allows attendees to seamlessly register for the event, explore the detailed schedule, and review profiles of leading pathology experts from the USA, Europe, and CIS countries. The platform also provides integrated information on specialized masterclasses, accommodation options, and cultural tours, ensuring a smooth experience for all participants."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/ipsum-conference.webp",
+    "technologies": [
+      "Next.js",
+      "Tailwind",
+      "Typescript",
+      "Nestjs"
+    ],
+    "url": "https://ipsumconference.uz",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "sbm-food",
+    "slug": "sbm-food",
+    "title": {
+      "uz": "SBM Food",
+      "ru": "SBM Food",
+      "en": "SBM Food"
+    },
+    "description": {
+      "uz": "O‘zbekistondagi yetakchi oziq-ovqat distribyutori uchun brend nufuzini oshirish va mijozlar ishonchini mustahkamlashga qaratilgan zamonaviy e-commerce platformasi. Loyiha iste'molchilar bilan samarali aloqa o‘rnatishga xizmat qiluvchi professional raqamli vitrina va axborot markazini taqdim etadi.",
+      "ru": "Современная e-commerce платформа для ведущего дистрибьютора продуктов питания в Узбекистане, созданная для укрепления имиджа бренда и повышения доверия потребителей. Проект обеспечивает эффективную цифровую витрину и удобные каналы связи для прямого взаимодействия с аудиторией.",
+      "en": "A modern e-commerce platform for a leading food distributor in Uzbekistan, designed to enhance brand presence and build consumer trust. The project provides a professional digital storefront that facilitates seamless communication and strengthens the brand's position in the local market."
+    },
+    "duration": {
+      "uz": "2 oy",
+      "ru": "2 месяца",
+      "en": "2 months"
+    },
+    "image": "/assets/img/projects/sbm-food.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://sbmfood.uz",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет-магазин",
+        "en": "E-commerce"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "neurotagline",
+    "slug": "neurotagline",
+    "title": {
+      "uz": "Neurotagline",
+      "ru": "Neurotagline",
+      "en": "Neurotagline"
+    },
+    "description": {
+      "uz": "NEUROTAGLINE brendi uchun yaratilgan ushbu professional platforma sun'iy intellektga asoslangan aqlli salomatlik qurilmalarini taqdim etadi. Sayt brend nufuzini oshirish va foydalanuvchilar bilan ishonchli aloqa kanalini yo'lga qo'yish maqsadida ishlab chiqilgan.",
+      "ru": "Профессиональный лендинг для бренда NEUROTAGLINE, представляющий инновационные смарт-устройства для мониторинга здоровья на базе ИИ. Проект направлен на укрепление доверия к бренду и создание эффективного канала коммуникации с пользователями.",
+      "en": "A professional landing page for NEUROTAGLINE, showcasing a range of next-generation smart wellness devices powered by AI health insights. The site establishes a strong brand presence and provides a centralized hub for user engagement and technical support."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/neurotagline.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://neurotagline.com",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "myyurist",
+    "slug": "myyurist",
+    "title": {
+      "uz": "MyYurist",
+      "ru": "MyYurist",
+      "en": "MyYurist"
+    },
+    "description": {
+      "uz": "MyYurist — O‘zbekistondagi fuqarolar va professional yuristlar o‘rtasidagi muloqotni soddalashtirishga qaratilgan innovatsion huquqiy platforma. Loyiha huquqiy yordamdan foydalanish imkoniyatlarini kengaytirish va raqamli muhitda brend ishonchini mustahkamlashga xizmat qiladi.",
+      "ru": "MyYurist — это инновационная юридическая платформа, созданная для упрощения взаимодействия между гражданами и профессиональными юристами в Узбекистане. Проект направлен на повышение доступности правовой помощи и укрепление доверия к бренду через современный цифровой интерфейс.",
+      "en": "MyYurist is an innovative legal platform designed to bridge the gap between citizens and professional lawyers in Uzbekistan through a seamless digital interface. The project enhances legal accessibility and brand trust, providing a secure environment for professional consultations and document management."
+    },
+    "duration": {
+      "uz": "2 oy",
+      "ru": "2 месяца",
+      "en": "2 months"
+    },
+    "image": "/assets/img/projects/myyurist.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://myyurist.uz",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "ceragem-uzbekistan",
+    "slug": "ceragem-uzbekistan",
+    "title": {
+      "uz": "Ceragem Uzbekistan",
+      "ru": "Ceragem Uzbekistan",
+      "en": "Ceragem Uzbekistan"
+    },
+    "description": {
+      "uz": "«ceragemuzbekistann.uz»– bu Tashkentda joylashgan, Ceragem terapevtik massaj uskunalarining rasmiy vakolatxonasi. Ular massaj to‘shaklarini sotadi Agar siz osteoxondroz, mushak og‘riqlari yoki umurtqa muammolari uchun massaj echimi qidirsangiz kopmaniya veb-saytiga tashrif buyuring",
+      "ru": "«ceragemuzbekistann.uz» — официальное представительство терапевтического массажного оборудования Ceragem в Ташкенте. Они продают массажные кровати. Если вы ищете массажные процедуры при остеохондрозе, мышечных болях или проблемах с позвоночником, посетите сайт компании",
+      "en": "«ceragemuzbekistann.uz»– bu Tashkentda joylashgan, Ceragem terapevtik massaj uskunalarining rasmiy vakolatxonasi. Ular massaj to‘shaklarini sotadi Agar siz osteoxondroz, mushak og‘riqlari yoki umurtqa muammolari uchun massaj echimi qidirsangiz kopmaniya veb-saytiga tashrif buyuring"
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 kun",
+      "en": "10 kun"
+    },
+    "image": "/assets/img/projects/ceragem-uzbekistan.webp",
+    "technologies": [
+      "Next js",
+      "React js",
+      "Type Script",
+      "Tailwind Css",
+      "Framer Motion"
+    ],
+    "url": "https://www.ceragemuzbekistann.uz/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "firewise",
+    "slug": "firewise",
+    "title": {
+      "uz": "Firewise",
+      "ru": "Firewise",
+      "en": "Firewise"
+    },
+    "description": {
+      "uz": "Firewise.uz – bu O‘zbekistonda yong‘in signalizatsiya  va tutun detektorlari bo‘yicha birinchi importyorlardan  biri bo‘lib, kompaniya o‘z sayti orqali,  mahsulotlarini bozorga olib kirib,mijozlarga o‘z xizmatlarini ko‘rsatmoqda.",
+      "ru": "Firewise.uz – одна из первых компаний-импортёров систем пожарной сигнализации и дымовых детекторов в Узбекистане. Компания через свой сайт выводит продукцию на рынок и оказывает услуги своим клиентам.",
+      "en": "Firewise.uz – is one of the first importers of fire alarm systems and smoke detectors in Uzbekistan. Through its website, the company brings its products to the market and provides services to its customers."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяца",
+      "en": "1 months"
+    },
+    "image": "/assets/img/projects/firewise.webp",
+    "technologies": [
+      "NestJs",
+      "NextJs",
+      "MONGO",
+      "TailwindCSS",
+      "ShadcnUI"
+    ],
+    "url": "https://firewise.uz",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "minifull",
+    "slug": "minifull",
+    "title": {
+      "uz": "Minifull",
+      "ru": "Minifull",
+      "en": "Minifull"
+    },
+    "description": {
+      "uz": "MINIFULL loyihasi sifatli mahsulotlar savdosi uchun mo'ljallangan zamonaviy elektron tijorat platformasi bo'lib, mijozlarga qulay xarid jarayoni va ishonchli xizmat ko'rsatishni ta'minlaydi. Sayt brendning raqamli nufuzini oshirish va foydalanuvchilar bilan samarali aloqa o'rnatishga xizmat qiladi.",
+      "ru": "Проект MINIFULL — это современная платформа электронной коммерции, разработанная для обеспечения удобного процесса покупок и качественного обслуживания клиентов. Веб-сайт укрепляет доверие к бренду и служит эффективным инструментом для взаимодействия с аудиторией.",
+      "en": "The MINIFULL project is a modern e-commerce platform designed to provide a seamless shopping experience and reliable customer service. The website enhances brand presence and fosters trust through efficient user communication and professional digital representation."
+    },
+    "duration": {
+      "uz": "2 oy",
+      "ru": "2 месяца",
+      "en": "2 months"
+    },
+    "image": "/assets/img/projects/minifull.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://minifull.uz",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет-магазин",
+        "en": "E-commerce"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "imtihan",
+    "slug": "imtihan",
+    "title": {
+      "uz": "Imtihan",
+      "ru": "Imtihan",
+      "en": "Imtihan"
+    },
+    "description": {
+      "uz": "Imtihan — arab tili bo'yicha bilim darajasini tasdiqlash uchun yaratilgan ixtisoslashgan raqamli platforma bo'lib, nomzodlar uchun xavfsiz va professional imtihon muhitini taqdim etadi. Loyiha yuqori akademik standartlar asosida ishonchli brend imidjini yaratish va foydalanuvchilarga tezkor natijalar taqdim etishga yo'naltirilgan.",
+      "ru": "Imtihan — это специализированная цифровая платформа для сертификации знаний арабского языка, обеспечивающая безопасную и профессиональную среду для подтверждения академической квалификации. Проект направлен на создание надежной цифровой экосистемы с высокими стандартами безопасности и мгновенной отчетностью для пользователей.",
+      "en": "Imtihan is a specialized digital platform for Arabic language certification, providing a secure and professional environment for candidates to validate their academic proficiency. The project establishes a high-standard digital ecosystem that ensures trust, data privacy, and immediate performance feedback for users."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/imtihan.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://imtihan.net",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "myhealthy",
+    "slug": "myhealthy",
+    "title": {
+      "uz": "Myhealthy",
+      "ru": "Myhealthy",
+      "en": "Myhealthy"
+    },
+    "description": {
+      "uz": "Bolalar va o'smirlarda allergik kasalliklarni erta aniqlash hamda ularning oldini olishga qaratilgan ixtisoslashtirilgan raqamli tibbiyot platformasi. Saytda xalqaro standartlarga asoslangan interaktiv elektron savolnoma mavjud bo'lib, u foydalanuvchilarga o'z sog'lig'ini nazorat qilish va dastlabki tashxis natijalarini olish imkonini beradi. Diagnostika vositasidan tashqari, platforma allergiya alomatlari (bronxial astma, allergik rinit, atopik dermatit kabi) haqida keng qamrovli ma'lumotlar, professional davolash yo'riqnomalari va tibbiy qo'llab-quvvatlash xizmatlarini taklif etadi. Bunda barcha ma'lumotlarning to'liq maxfiyligi kafolatlanadi.",
+      "ru": "Специализированная цифровая медицинская платформа, разработанная для раннего выявления и профилактики аллергических заболеваний у детей и подростков. На сайте представлена интерактивная электронная анкета, основанная на международных стандартах, которая помогает пользователям контролировать свое здоровье и получать предварительные результаты диагностики. Помимо диагностического инструмента, платформа предлагает подробные информационные материалы о симптомах аллергии (таких как бронхиальная астма, аллергический ринит и атопический дерматит), профессиональные рекомендации по лечению и доступ к службам медицинской поддержки, гарантируя при этом строгую конфиденциальность личных данных.",
+      "en": "A specialized digital healthcare platform designed for the early detection and prevention of allergic diseases in children and adolescents. The website features an interactive, internationally standardized electronic questionnaire that allows users to monitor their health and receive preliminary diagnostic results. Alongside the assessment tool, the platform offers comprehensive educational resources on common allergy symptoms (such as bronchial asthma, allergic rhinitis, and atopic dermatitis), professional treatment guidelines, and access to medical support services, all while strictly ensuring user data privacy."
+    },
+    "duration": {
+      "uz": "10 days",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/myhealthy.webp",
+    "technologies": [
+      "Next.js",
+      "Tailwind"
+    ],
+    "url": "https://www.myhealthy.uz",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "freeman-lourenco",
+    "slug": "freeman-lourenco",
+    "title": {
+      "uz": "Freeman & Lourenco",
+      "ru": "Freeman & Lourenco",
+      "en": "Freeman & Lourenco"
+    },
+    "description": {
+      "uz": "Durham mintaqasi va Katta Toronto hududida faoliyat yurituvchi ishonchli Freeman & Lourenco LLP malakali buxgalterlar va auditorlar firmasi uchun ishlab chiqilgan professional korporativ veb-sayt. Firmaning 40 yildan ortiq tajribasini o'zida aks ettirgan ushbu platforma shaxsiy va korporativ soliqlarni tayyorlash, buxgalteriya hisobi va strategik maslahat kabi keng ko'lamli moliyaviy yechimlarni namoyish etadi. Sayt qat'iy va zamonaviy dizaynga ega bo'lib, o'zida xavfsiz mijozlar portali, moliya va soliqqa oid foydali bloglar hamda mutaxassislar bilan bog'lanish uchun qulay tizimni jamlagan. Bu esa jismoniy va yuridik shaxslar uchun ishonchli va uzluksiz raqamli xizmat ko'rsatishni ta'minlaydi.",
+      "ru": "Профессиональный корпоративный сайт, разработанный для Freeman & Lourenco LLP — надежной бухгалтерской и консалтинговой компании, обслуживающей регион Дарем и Большой Торонто. Опираясь на более чем 40-летний опыт работы фирмы, платформа подробно освещает широкий спектр финансовых решений, включая подготовку личных и корпоративных налоговых деклараций, бухгалтерский учет и стратегическое планирование. Проект отличается строгим и современным дизайном, интегрированным безопасным клиентским порталом, информативным блогом о финансах и удобной системой обратной связи, обеспечивая комфортное цифровое взаимодействие как для частных лиц, так и для корпоративных клиентов.",
+      "en": "A professional corporate website developed for Freeman & Lourenco LLP, a trusted firm of Chartered Professional Accountants serving the Durham Region and Greater Toronto Area. Highlighting over 40 years of industry experience, the platform details their comprehensive financial solutions, including personal and corporate tax preparation, accounting, and strategic advisory services. The site features a clean, accessible design integrating a secure client portal, informative financial blogs, and straightforward contact systems, ensuring a seamless and reliable digital experience for both individual taxpayers and businesses."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/freeman-lourenco.webp",
+    "technologies": [
+      "Nextjs",
+      "Tailwind",
+      "Typescript"
+    ],
+    "url": "https://site1760185143.mywhc.ca",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "decolor",
+    "slug": "decolor",
+    "title": {
+      "uz": "Decolor",
+      "ru": "Decolor",
+      "en": "Decolor"
+    },
+    "description": {
+      "uz": "O'zbekistonga yuqori sifatli Italiya qurilish hamda pardozlash materiallarini to'g'ridan-to'g'ri import qilish va yetkazib berishga ixtisoslashgan Decolor Group Ltd kompaniyasining premium qurilish va dizayn platformasi. Saytda OIKOS, Marmorino Tools va Giusto Manetti kabi butun dunyoga mashhur Italiya brendlarining dekorativ bo'yoqlari, Venetsiya suvoqlari, professional zarhallash (tilla suvi yugurtirish) materiallari hamda mebellari katalogi keng yoritilgan. Loyiha nafaqat mahsulotlar savdosi, balki elita villalarini qurish, xonalarni premium darajada ta'mirlash, eksklyuziv interyer dizaynini yaratish, shuningdek, noyob mebel va santexnikalarni tanlashda individual yordam ko'rsatish kabi yuqori darajadagi xizmatlarni ham taklif etadi.",
+      "ru": "Премиальная строительно-дизайнерская платформа компании Decolor Group Ltd, специализирующаяся на прямом импорте и поставках высококачественных итальянских строительных и отделочных материалов в Узбекистан. На сайте представлен обширный каталог декоративных красок, венецианской штукатурки, материалов для профессионального золочения, а также мебели от всемирно известных итальянских брендов, таких как OIKOS, Marmorino Tools и Giusto Manetti. Помимо реализации продукции, проект подробно описывает предоставляемые услуги, включая проектирование, строительство элитных вилл, премиальную отделку помещений и индивидуальную помощь в подборе эксклюзивных предметов интерьера и сантехники.",
+      "en": "A premium construction and design platform representing Decolor Group Ltd, specializing in the direct import and supply of high-end Italian building materials and interior products in Uzbekistan. The website showcases an extensive catalog of decorative paints, Venetian plaster, professional gilding materials, and furniture from world-renowned Italian brands such as OIKOS, Marmorino Tools, and Giusto Manetti. Beyond product sales, the platform details their comprehensive services, including architectural design, luxury villa construction, high-end interior finishing, and personalized assistance in sourcing exclusive home décor and sanitary ware."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/decolor.webp",
+    "technologies": [
+      "Next.js",
+      "Tailwind",
+      "Typescript"
+    ],
+    "url": "https://decolor.uz",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "bobo-market",
+    "slug": "bobo-market",
+    "title": {
+      "uz": "Bobo Market",
+      "ru": "Bobo Market",
+      "en": "Bobo Market"
+    },
+    "description": {
+      "uz": "Kundalik oziq-ovqat mahsulotlari, go'sht, ichimliklar, shirinliklar va kiyimlarni o'z ichiga olgan keng turdagi tovarlarni taklif etuvchi ko'p tarmoqli onlayn market va savdo maydonchasi. Platforma turli xil auditoriyaga xizmat ko'rsatish maqsadida ko'plab tillarni qo'llab-quvvatlaydi. Loyiha o'zida qulay katalog, maxsus mavsumiy tovarlar, ulgurji xaridlar va chet eldan keltirilgan mahsulotlar bo'limlarini jamlagan. Sayt xavfsiz avtorizatsiya, qulay savatcha tizimi hamda belgilangan miqdordan oshgan buyurtmalar uchun bepul yetkazib berish xizmati bilan foydalanuvchilarga mukammal onlayn xarid tajribasini taqdim etadi.",
+      "ru": "Многофункциональная онлайн-платформа и маркетплейс, предлагающий широкий ассортимент товаров, включая продукты питания, мясо, напитки, кондитерские изделия и одежду. Сайт поддерживает множество языков для удобства широкой аудитории. Проект имеет интуитивно понятный каталог со специальными разделами для сезонных товаров, оптовых покупок и импортной продукции. Платформа обеспечивает комфортный процесс онлайн-шопинга благодаря удобной системе корзины, безопасной авторизации и опции бесплатной доставки для определенных заказов.",
+      "en": "A comprehensive online grocery and retail marketplace offering a diverse selection of products, including daily groceries, meats, beverages, sweets, and clothing. The platform is designed with extensive multilingual support to serve a broad and diverse user base. It features a highly accessible catalog with special sections for seasonal items, wholesale purchases, and imported goods. The website ensures a seamless digital shopping experience with a convenient cart system, secure login, and free delivery options on qualifying orders."
+    },
+    "duration": {
+      "uz": "4 oy",
+      "ru": "4 месяца",
+      "en": "4 months"
+    },
+    "image": "/assets/img/projects/bobo-market.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Tailwind"
+    ],
+    "url": " https://bobo-market.uz",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет-магазин",
+        "en": "E-commerce"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "bernhardt",
+    "slug": "bernhardt",
+    "title": {
+      "uz": "Bernhardt",
+      "ru": "Bernhardt",
+      "en": "Bernhardt"
+    },
+    "description": {
+      "uz": "O'zbekistondagi premium Amerika mebel brendi bo'lmish Bernhardtning rasmiy dileri uchun ishlab chiqilgan zamonaviy elektron tijorat platformasi. Sayt xaridorlarga keng ko'lamli yuqori sifatli mebellar katalogini, batafsil mahsulot galereyalari va texnik xususiyatlarni taqdim etgan holda mukammal onlayn xarid tajribasini taklif etadi. Foydalanuvchilar kolleksiyalar bilan osongina tanishishlari, konsultatsiyalarga yozilishlari hamda yetkazib berish va professional yig'ish xizmatlarini rasmiylashtirishlari mumkin.",
+      "ru": "Элегантная e-commerce платформа, разработанная для официального дилера премиального американского мебельного бренда Bernhardt в Узбекистане. Сайт предлагает изысканный опыт онлайн-покупок, предоставляя обширный каталог высококачественной мебели с подробными галереями товаров и техническими характеристиками. Пользователи могут легко просматривать коллекции, записываться на консультации, а также оформлять доставку и профессиональную сборку.",
+      "en": "An elegant e-commerce platform developed for the official dealership of the premium American furniture brand, Bernhardt, in Uzbekistan. The site offers a sophisticated online shopping experience, featuring an extensive catalog of high-quality furniture with detailed product galleries and technical specifications. Users can seamlessly browse collections, schedule consultations, and easily arrange for delivery and professional assembly."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/bernhardt.webp",
+    "technologies": [
+      "Next.js",
+      "Tailwind",
+      "Lucide"
+    ],
+    "url": "bernhardt.uz",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет-магазин",
+        "en": "E-commerce"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "wogme",
+    "slug": "wogme",
+    "title": {
+      "uz": "Wogme",
+      "ru": "Wogme",
+      "en": "Wogme"
+    },
+    "description": {
+      "uz": "«wogme.com» — bu Dubay markazli, Yaqin Sharq va boshqa mintaqalarda faoliyat yurituvchi, arkada o‘yinlari va attraksion uskunalarining mukammal yetkazib beruvchisi. Korxona o‘zining katalog sayti orqali,o‘yin avtomatlarini sotish, o‘rnatish, texnik xizmat ko‘rsatish kabi xizmatlarini dunyoga tanishtiradi va o‘zining brend maqomini oshirish uchun saytdan foydalanadi.",
+      "ru": "«wogme.com» — это компания, базирующаяся в Дубае и работающая на Ближнем Востоке и в других регионах, являющаяся ведущим поставщиком аркадных игр и аттракционного оборудования. С помощью своего каталог-сайта компания представляет миру услуги по продаже, установке и техническому обслуживанию игровых автоматов, а также использует сайт для повышения узнаваемости своего бренда.",
+      "en": "«wogme.com» — bu Dubay markazli, Yaqin Sharq va boshqa mintaqalarda faoliyat yurituvchi, arkada o‘yinlari va attraksion uskunalarining mukammal yetkazib beruvchisi. Korxona o‘zining katalog sayti orqali,o‘yin avtomatlarini sotish, o‘rnatish, texnik xizmat ko‘rsatish kabi xizmatlarini dunyoga tanishtiradi va o‘zining brend maqomini oshirish uchun saytdan foydalanadi."
+    },
+    "duration": {
+      "uz": "2 oy",
+      "ru": "2 oy",
+      "en": "2 oy"
+    },
+    "image": "/assets/img/projects/wogme.webp",
+    "technologies": [
+      "React js",
+      "Next js",
+      "MUI",
+      "Tailwind Css"
+    ],
+    "url": "https://www.wogme.com/",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет-магазин",
+        "en": "E-commerce"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "ceragemuzbekistann",
+    "slug": "ceragemuzbekistann",
+    "title": {
+      "uz": "Ceragemuzbekistann",
+      "ru": "Ceragemuzbekistann",
+      "en": "Ceragemuzbekistann"
+    },
+    "description": {
+      "uz": "«ceragemuzbekistann.uz»– bu Tashkentda joylashgan, Ceragem terapevtik massaj uskunalarining rasmiy vakolatxonasi. Ular massaj to‘shaklarini sotadi Agar siz osteoxondroz, mushak og‘riqlari yoki umurtqa muammolari uchun massaj echimi qidirsangiz kopmaniya veb-saytiga tashrif buyuring",
+      "ru": "«ceragemuzbekistann.uz» — официальный представитель терапевтического массажного оборудования Ceragem, расположенный в Ташкенте. Они продают массажные кровати. Если вы ищете массажное решение при остеохондрозе, мышечных болях или проблемах с позвоночником, посетите сайт компании.",
+      "en": "«ceragemuzbekistann.uz» — is the official representative office of Ceragem therapeutic massage equipment located in Tashkent. They sell massage beds. If you are looking for a massage solution for osteochondrosis, muscle pain, or spinal problems, visit the company’s website."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяца",
+      "en": "1 months"
+    },
+    "image": "/assets/img/projects/ceragemuzbekistann.webp",
+    "technologies": [
+      "ReactJs",
+      "NextJs",
+      "Tailwind Css",
+      "Shadcn UI",
+      "NestJs",
+      "Mongo"
+    ],
+    "url": "https://www.ceragemuzbekistann.uz",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "universal-frp-systems-mchj",
+    "slug": "universal-frp-systems-mchj",
+    "title": {
+      "uz": "Universal FRP Systems MChJ",
+      "ru": "Universal FRP Systems MChJ",
+      "en": "Universal FRP Systems MChJ"
+    },
+    "description": {
+      "uz": "«ufrp.uz» — bu Universal FRP Systems MChJ  kompaniyasining rasmiy veb-sayti bo‘lib, shisha-kumpozit  (FRP) armaturalar va qurilish tarmoqlarini ishlab chiqarishga  ixtisoslashgan",
+      "ru": "«ufrp.uz» — официальный веб-сайт компании Universal FRP Systems ООО, специализирующейся на производстве стеклокомпозитной (FRP) арматуры и строительных материалов.",
+      "en": "«ufrp.uz» — is the official website of Universal FRP Systems LLC, a company specialized in the production of fiberglass composite (FRP) reinforcements and construction materials."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/universal-frp-systems-mchj.webp",
+    "technologies": [
+      "React Js",
+      "Next Js",
+      "TailwindCss",
+      "Shadcn UI",
+      "Nest Js",
+      "Mongo"
+    ],
+    "url": "https://www.ufrp.uz",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "starcatering",
+    "slug": "starcatering",
+    "title": {
+      "uz": "Starcatering",
+      "ru": "Starcatering",
+      "en": "Starcatering"
+    },
+    "description": {
+      "uz": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin.",
+      "ru": "\"starcatering.uz\" — это высококачественная кейтеринг-компания в Ташкенте, которая профессионально обслуживает мероприятия разных форматов и отличается прочными и надёжными отношениями с клиентами. Если вы планируете корпоративную встречу, свадьбу, праздник или другое мероприятие, эта компания может стать для вас подходящим выбором.",
+      "en": "\"starcatering.uz\" — is a high-quality catering company in Tashkent that provides professional services for various types of events, with strong and reliable customer relations. Whether you are planning a corporate meeting, wedding, celebration, or any other event, this company may be the right choice for you."
+    },
+    "duration": {
+      "uz": "15 kun",
+      "ru": "15 дней",
+      "en": "15 days"
+    },
+    "image": "/assets/img/projects/starcatering.webp",
+    "technologies": [
+      "React Js",
+      "NextJs",
+      "Tailwind Css",
+      "NestJs",
+      "Mongo"
+    ],
+    "url": "https://www.starcatering.uz",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "uv",
+    "slug": "uv",
+    "title": {
+      "uz": "UV",
+      "ru": "UV",
+      "en": "UV"
+    },
+    "description": {
+      "uz": "«uvix.uz» - UV printlash – plastik, metall,  yog‘och,shisha, akril va boshqalarga yuqori \naniqlikda rendlash funsiyalarini taklif qiladi  Kompaniya o‘z Saytida va ijtimoiy tarmoqlarda  vizual misollarni namoyish qilish orqali mijozlari sonini oshirmoqda",
+      "ru": "«uvix.uz» – UV-печать предлагает функции высокоточной печати на пластике, металле, дереве, стекле, акриле и других материалах. Компания увеличивает количество клиентов, демонстрируя визуальные примеры на своём сайте и в социальных сетях.",
+      "en": "«uvix.uz» – UV printing offers high-precision rendering functions on plastic, metal, wood, glass, acrylic, and more. The company increases its customer base by showcasing visual examples on its website and social media platforms."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяца",
+      "en": "1 months"
+    },
+    "image": "/assets/img/projects/uv.webp",
+    "technologies": [
+      "NextJs",
+      "TailwindCSS",
+      "NestJs",
+      "MONGO"
+    ],
+    "url": "https://www.uvix.uz/",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "tamamuzbot",
+    "slug": "tamamuzbot",
+    "title": {
+      "uz": "Tamamuzbot",
+      "ru": "Tamamuzbot",
+      "en": "Tamamuzbot"
+    },
+    "description": {
+      "uz": "@tamamuzbot — bu zamonaviy  Telegram bot bo‘lib, original,  nufuzli va sifatli atirlarni oson va  tez xarid qilish imkonini beradi.  U O‘zbekiston bozorida atir  ixlosmandlari uchun  maxsus ishlab chiqilgan  qulay platformadir",
+      "ru": "@tamamuzbot — это современный Telegram-бот, который позволяет легко и быстро приобрести оригинальные, престижные и качественные духи. Это удобная платформа, специально созданная для любителей парфюмерии в Узбекистане.",
+      "en": "@tamamuzbot — is a modern Telegram bot that allows you to easily and quickly purchase original, prestigious, and high-quality perfumes. It is a convenient platform specially designed for perfume enthusiasts in Uzbekistan."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/tamamuzbot.webp",
+    "technologies": [
+      "NextJs",
+      "GrammyJs",
+      "TailwindCSS",
+      "MONGO"
+    ],
+    "url": "@tamamuzbot",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "uzfiltr",
+    "slug": "uzfiltr",
+    "title": {
+      "uz": "UzFiltr",
+      "ru": "UzFiltr",
+      "en": "UzFiltr"
+    },
+    "description": {
+      "uz": "«uzfiltr.uz» — sanoat filtrlari va tozalash elementlarida yetakchi kompaniya bo‘lib, mahalliy ishlab chiqarish, keng assortiment va sifat nazorati bilan ajralib turadi. Agar siz sanoat, energetika yoki ekologiya tarmoqlarida samaradorligini oshirmoqchi bo‘lsangiz, UzFiltr siz uchun ishonchli tanlov bo‘ladi.",
+      "ru": "«uzfiltr.uz» — ведущая компания в области промышленных фильтров и очистительных элементов, отличающаяся локальным производством, широким ассортиментом и строгим контролем качества. Если вы хотите повысить эффективность в промышленности, энергетике или экологии, UzFiltr станет для вас надежным выбором.",
+      "en": "“uzfiltr.uz” is a leading company in industrial filters and purification elements, distinguished by local production, a wide product range, and strict quality control. If you want to improve efficiency in industry, energy, or ecology, UzFiltr is the reliable choice for you."
+    },
+    "duration": {
+      "uz": "10 kun",
+      "ru": "10 дней",
+      "en": "10 days"
+    },
+    "image": "/assets/img/projects/uzfiltr.webp",
+    "technologies": [
+      "ReactJs",
+      "ExpressJs",
+      "NodeJs",
+      "Tailwind",
+      "Redux"
+    ],
+    "url": "https://www.uzfiltr.uz/",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "zap",
+    "slug": "zap",
+    "title": {
+      "uz": "Zap",
+      "ru": "Zap",
+      "en": "Zap"
+    },
+    "description": {
+      "uz": "ZAP.UZ — O‘zbekistondagi avtoehtiyot qismlari va servis xizmatlarini qidirishni osonlashtirish uchun yaratilgan keng ko‘lamli marketpleys. Platforma avtomobil egalari va ishonchli sotuvchilar o‘rtasida samarali aloqa o‘rnatib, bozorda ishonchli brend ishtirokini ta'minlaydi.",
+      "ru": "ZAP.UZ — это масштабный маркетплейс, созданный для упрощения поиска автозапчастей и сервисных услуг в Узбекистане. Платформа обеспечивает эффективное взаимодействие между автовладельцами и проверенными поставщиками, повышая доступность качественного обслуживания и доверие к бренду.",
+      "en": "ZAP.UZ is a comprehensive marketplace designed to streamline the search for auto parts and professional car services across Uzbekistan. The platform establishes a reliable bridge between car owners and verified sellers, enhancing market accessibility and user trust through a centralized digital presence."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/zap.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://zap.uz",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "scriber-arts",
+    "slug": "scriber-arts",
+    "title": {
+      "uz": "Scriber Arts",
+      "ru": "Scriber Arts",
+      "en": "Scriber Arts"
+    },
+    "description": {
+      "uz": "Innovatsion muhandislik va arxitektura yechimlariga ixtisoslashgan xalqaro kompaniya uchun ishlab chiqilgan professional korporativ platforma. Sayt brend ishonchini mustahkamlashga, texnik salohiyatni namoyish etishga va mijozlar bilan samarali aloqa o'rnatishga xizmat qiladi.",
+      "ru": "Профессиональная корпоративная платформа для международной инжиниринговой компании, предназначенная для демонстрации архитектурного опыта и технических решений в промышленном секторе. Сайт способствует росту доверия к бренду через прозрачный доступ к лицензиям и обеспечивает эффективное взаимодействие с партнерами.",
+      "en": "A professional corporate platform for an international engineering firm, designed to showcase architectural expertise and technical solutions across various industrial sectors. The website strengthens brand trust by providing transparent access to official certifications and facilitating seamless communication with global partners."
+    },
+    "duration": {
+      "uz": "2 oy",
+      "ru": "2 месяца",
+      "en": "2 months"
+    },
+    "image": "/assets/img/projects/scriber-arts.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://scriber-arts.uz",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "universal-frp-systems",
+    "slug": "universal-frp-systems",
+    "title": {
+      "uz": "Universal FRP Systems",
+      "ru": "Universal FRP Systems",
+      "en": "Universal FRP Systems"
+    },
+    "description": {
+      "uz": "«ufrp.uz» — bu Universal FRP Systems MChJ  kompaniyasining rasmiy veb-sayti bo‘lib, shisha-kumpozit  (FRP) armaturalar va qurilish tarmoqlarini ishlab chiqarishga  ixtisoslashgan",
+      "ru": "«ufrp.uz» — официальный сайт компании ООО «Universal FRP Systems», специализирующейся на производстве стеклопластиковой арматуры и строительных сетей.",
+      "en": "«ufrp.uz» — bu Universal FRP Systems MChJ  kompaniyasining rasmiy veb-sayti bo‘lib, shisha-kumpozit  (FRP) armaturalar va qurilish tarmoqlarini ishlab chiqarishga  ixtisoslashgan"
+    },
+    "duration": {
+      "uz": "14 kun",
+      "ru": "14 kun",
+      "en": "14 kun"
+    },
+    "image": "/assets/img/projects/universal-frp-systems.webp",
+    "technologies": [
+      "Next js",
+      "React js",
+      "Tailwind Css",
+      "Type Script",
+      "Framer Motion"
+    ],
+    "url": "https://www.ufrp.uz/uz",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Building"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "saturn-education",
+    "slug": "saturn-education",
+    "title": {
+      "uz": "Saturn Education",
+      "ru": "Saturn Education",
+      "en": "Saturn Education"
+    },
+    "description": {
+      "uz": "Saturn Education — butun dunyo bo'ylab talabalarga turli fanlar bo'yicha bepul va sifatli ta'lim berishga mo'ljallangan professional platforma. Loyiha brend nufuzini oshirish va ekspert bilimlariga oson kirish imkonini beruvchi qulay raqamli muhitni taqdim etadi.",
+      "ru": "Saturn Education — это профессиональная образовательная платформа, предоставляющая бесплатный доступ к качественным урокам по различным дисциплинам для студентов по всему миру. Проект направлен на укрепление доверия к бренду и создание доступной цифровой среды для эффективного обучения.",
+      "en": "Saturn Education is a professional educational platform providing free, high-quality lessons across diverse subjects to empower students globally. The project focuses on building brand trust and accessibility, offering a student-centered digital space for expert-led learning."
+    },
+    "duration": {
+      "uz": "1 oy",
+      "ru": "1 месяц",
+      "en": "1 month"
+    },
+    "image": "/assets/img/projects/saturn-education.webp",
+    "technologies": [
+      "Typescript",
+      "Next.js",
+      "Nest.js",
+      "Mongodb"
+    ],
+    "url": "https://www.saturnedu.org",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "start-catering",
+    "slug": "start-catering",
+    "title": {
+      "uz": "Start Catering",
+      "ru": "Start Catering",
+      "en": "Start Catering"
+    },
+    "description": {
+      "uz": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin.",
+      "ru": "\"starcatering.uz\" - это высококачественная кейтеринговая компания в Ташкенте, которая предоставляет профессиональные и разнообразные услуги по организации мероприятий, с прочными отношениями с клиентами. Если вы планируете организовать корпоративную встречу, свадьбу, праздник или другое мероприятие, эта компания может вам подойти.",
+      "en": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin."
+    },
+    "duration": {
+      "uz": "7 kun",
+      "ru": "7 kun",
+      "en": "7 kun"
+    },
+    "image": "/assets/img/projects/start-catering.webp",
+    "technologies": [
+      "React js",
+      "Next js",
+      "Tailwind Css",
+      "Framer motion",
+      "Type Script"
+    ],
+    "url": "https://www.starcatering.uz/",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "cleanza",
+    "slug": "cleanza",
+    "title": {
+      "uz": "Cleanza",
+      "ru": "Cleanza",
+      "en": "Cleanza"
+    },
+    "description": {
+      "uz": "Cleanza.uz — uy, kvartira va ofislarni, shuningdek  remontdan keyingi yoki general tozalash xizmatlarini  taqdim etuvchi professional tozalash xizmati.\nUlarning sayti mavjudligi xizmat shakli va jonli ish  faoliyatini tasdiqlaydi",
+      "ru": "Cleanza.uz — профессиональная клининговая компания, предоставляющая услуги по уборке домов, квартир и офисов, а также генеральной и послеремонтной уборке.\nНаличие сайта подтверждает формат предоставляемых услуг и активную деятельность компании.",
+      "en": "Cleanza.uz — uy, kvartira va ofislarni, shuningdek  remontdan keyingi yoki general tozalash xizmatlarini  taqdim etuvchi professional tozalash xizmati.\nUlarning sayti mavjudligi xizmat shakli va jonli ish  faoliyatini tasdiqlaydi"
+    },
+    "duration": {
+      "uz": "5 kun",
+      "ru": "5 kun",
+      "en": "5 kun"
+    },
+    "image": "/assets/img/projects/cleanza.webp",
+    "technologies": [
+      "React js",
+      "Next js",
+      "TypeScript",
+      "Css"
+    ],
+    "url": "https://www.cleanza.uz/",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "aslamboi-uc-bot",
+    "slug": "aslamboi-uc-bot",
+    "title": {
+      "uz": "Aslamboi UC bot",
+      "ru": "Aslamboi UC bot",
+      "en": "Aslamboi UC bot"
+    },
+    "description": {
+      "uz": "@Ucaslambot — bu PUBG  Mobile o‘yini uchun UC xarid  qilishni osonlashtiruvchi Telegram  botidir.O‘zbekistonlik geymerlar  uchun maxsus ishlab chiqilgan  bu bot orqali istalgan vaqtda  UC sotib olish mumkin. Bot tezkor, qulay va ishonchli.",
+      "ru": "@Ucaslambot — Telegram-бот, упрощающий покупку UC для игры PUBG Mobile. Этот бот специально разработан для геймеров из Узбекистана, позволяя приобрести UC в любое время. Бот работает быстро, удобно и надёжно.",
+      "en": "@Ucaslambot — bu PUBG  Mobile o‘yini uchun UC xarid  qilishni osonlashtiruvchi Telegram  botidir.O‘zbekistonlik geymerlar  uchun maxsus ishlab chiqilgan  bu bot orqali istalgan vaqtda  UC sotib olish mumkin. Bot tezkor, qulay va ishonchli."
+    },
+    "duration": {
+      "uz": "15 kun",
+      "ru": "15 kun",
+      "en": "15 kun"
+    },
+    "image": "/assets/img/projects/aslamboi-uc-bot.webp",
+    "technologies": [
+      "React js",
+      "Next js",
+      "Tailwind Css"
+    ],
+    "url": "https://t.me/Ucaslambot",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "bio-inside",
+    "slug": "bio-inside",
+    "title": {
+      "uz": "Bio Inside",
+      "ru": "Bio Inside",
+      "en": "Bio Inside"
+    },
+    "description": {
+      "uz": "bio-inside.net – biologik faol qo‘shimchalar sohasida yangi  va innovatsion loyiha bo‘lib, sifatli va salomatlikka  yo‘naltirilgan mahsulotlar bilan biznes yuritmoqda.  Mahsulot assortimenti keng va ilg‘or Germaniya  texnologiyasiga asoslangan. Saytda narxlar, sertifikatlar,\nfoydalanuvchi fikrlari ko‘rsatilsa — bu kompaniya  mahsulotlarini yanada ishonchli va ommabop qiladi.",
+      "ru": "bio-inside.net — это новый и инновационный проект в сфере биологически активных добавок, который ведёт бизнес с качественными и ориентированными на здоровье продуктами. Ассортимент продукции широк и основан на передовых немецких технологиях. Если на сайте будут представлены цены, сертификаты и отзывы пользователей — это сделает продукцию компании ещё более надёжной и популярной.",
+      "en": "bio-inside.net – biologik faol qo‘shimchalar sohasida yangi  va innovatsion loyiha bo‘lib, sifatli va salomatlikka  yo‘naltirilgan mahsulotlar bilan biznes yuritmoqda.  Mahsulot assortimenti keng va ilg‘or Germaniya  texnologiyasiga asoslangan. Saytda narxlar, sertifikatlar,\nfoydalanuvchi fikrlari ko‘rsatilsa — bu kompaniya  mahsulotlarini yanada ishonchli va ommabop qiladi."
+    },
+    "duration": {
+      "uz": "1",
+      "ru": "1",
+      "en": "1"
+    },
+    "image": "/assets/img/projects/bio-inside.webp",
+    "technologies": [
+      "Next js",
+      "Rect js",
+      "TypeScript",
+      "TailwindCss"
+    ],
+    "url": "https://www.bio-inside.net/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": " Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "gaztex-uz",
+    "slug": "gaztex-uz",
+    "title": {
+      "uz": "Gaztex uz",
+      "ru": "Gaztex uz",
+      "en": "Gaztex uz"
+    },
+    "description": {
+      "uz": "Gaztex.uz – bu gaz va texnika bo‘yicha xizmat  korsatafigan korxona bollib ishchilar va  buyurtmalarni nazorat qilish uchun ishlab chiqilgan platforma. CRM, hodimlar boshqaruvi va xizmatlar  bo‘limlari mavjud",
+      "ru": "Gaztex.uz — это предприятие, оказывающее услуги в сфере газа и техники, а также платформа, разработанная для контроля за сотрудниками и заказами. Включает в себя модули CRM, управление персоналом и отделы обслуживания.",
+      "en": "Gaztex.uz – bu gaz va texnika bo‘yicha xizmat  korsatafigan korxona bollib ishchilar va  buyurtmalarni nazorat qilish uchun ishlab chiqilgan platforma. CRM, hodimlar boshqaruvi va xizmatlar  bo‘limlari mavjud"
+    },
+    "duration": {
+      "uz": "1",
+      "ru": "1",
+      "en": "1"
+    },
+    "image": "/assets/img/projects/gaztex-uz.webp",
+    "technologies": [
+      "Next js",
+      "React js",
+      "TailwindCss",
+      "Shadcn UI"
+    ],
+    "url": "https://gaztex.uz/login",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "mesmer-uz",
+    "slug": "mesmer-uz",
+    "title": {
+      "uz": "Mesmer uz",
+      "ru": "Mesmer uz",
+      "en": "Mesmer uz"
+    },
+    "description": {
+      "uz": "«corporate.mesmer.uz» — Mesmer kompaniyasi o‘z xodimlariga e’tiborli bo‘lganligi sababli xodimlarining\nboshqaruv tizimini avtomatlashtirgan,sayt orqali xodimlar ma‘lumotlari ularning tug‘ilgan kunlari haqida, ilmiy \ndarajalari va kontaktlari, va bugungi kundagi topdagi  xodimlarni yoritib borishadi",
+      "ru": "corporate.mesmer.uz — Поскольку компания Mesmer уделяет особое внимание своим сотрудникам, она автоматизировала систему управления персоналом. Через сайт публикуется информация о сотрудниках: их даты рождения, научные степени, контактные данные, а также освещаются лучшие сотрудники на сегодняшний день.",
+      "en": "«corporate.mesmer.uz» — Mesmer kompaniyasi o‘z xodimlariga e’tiborli bo‘lganligi sababli xodimlarining\nboshqaruv tizimini avtomatlashtirgan,sayt orqali xodimlar ma‘lumotlari ularning tug‘ilgan kunlari haqida, ilmiy \ndarajalari va kontaktlari, va bugungi kundagi topdagi  xodimlarni yoritib borishadi"
+    },
+    "duration": {
+      "uz": "2",
+      "ru": "2",
+      "en": "2"
+    },
+    "image": "/assets/img/projects/mesmer-uz.webp",
+    "technologies": [
+      "Next js",
+      "React js",
+      "TailwindCss",
+      "Shadcn UI"
+    ],
+    "url": "https://corporate.mesmer.uz/auth/signin",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
     }
   }
 ];

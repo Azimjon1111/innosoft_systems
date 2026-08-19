@@ -452,5 +452,20 @@
     "homeLink": "Innosoft Systems — bosh sahifa",
     "switchLanguage": "Tilni almashtirish",
     "toggleTheme": "Rejimni almashtirish"
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Biz yaratgan loyihalar",
+    "subhead": "Turli sohalardagi kompaniyalar uchun ishlab chiqqan veb-saytlar, CRM/ERP tizimlar va mobil ilovalar.",
+    "all": "Barchasi",
+    "counter": "loyiha",
+    "visit": "Saytga o'tish",
+    "tech": "Texnologiyalar",
+    "duration": "Muddat",
+    "empty": "Bu yo'nalishda hozircha loyiha yo'q.",
+    "ctaTitle": "Sizning loyihangiz shu ro'yxatda bo'lsinmi?",
+    "ctaDesc": "Bepul konsultatsiyada g'oyangizni muhokama qilamiz va aniq reja tuzamiz.",
+    "ctaAction": "Loyihani boshlash",
+    "industries": "soha"
   }
 }

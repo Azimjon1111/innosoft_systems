@@ -452,5 +452,20 @@
     "homeLink": "Innosoft Systems — home page",
     "switchLanguage": "Switch language",
     "toggleTheme": "Toggle theme"
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Projects We've Built",
+    "subhead": "Websites, CRM/ERP systems and mobile apps delivered for companies across industries.",
+    "all": "All",
+    "counter": "projects",
+    "visit": "Visit website",
+    "tech": "Technologies",
+    "duration": "Timeline",
+    "empty": "No projects in this category yet.",
+    "ctaTitle": "Want your project on this list?",
+    "ctaDesc": "Let's discuss your idea in a free consultation and map out a clear plan.",
+    "ctaAction": "Start a project",
+    "industries": "industries"
   }
 }

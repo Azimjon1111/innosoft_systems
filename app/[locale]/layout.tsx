@@ -84,14 +84,16 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={`${sourceSans.variable} ${geistMono.variable}`}
+      data-theme="light"
       suppressHydrationWarning
     >
       <body className="min-h-svh antialiased">
-        {/* No-flash: tema localStorage'dan birinchi paint'dan OLDIN o'rnatiladi */}
+        {/* No-flash: default — light; foydalanuvchi dark tanlagan bo'lsa,
+            birinchi paint'dan OLDIN atribut olib tashlanadi */}
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "try{if(localStorage.getItem('theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}",
+              "try{if(localStorage.getItem('theme')==='dark')document.documentElement.removeAttribute('data-theme')}catch(e){}",
           }}
         />
         <NextIntlClientProvider>
