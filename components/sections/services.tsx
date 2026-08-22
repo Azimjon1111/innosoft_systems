@@ -62,7 +62,7 @@ export async function Services({ locale }: { locale: Locale }) {
                 <span className="spot-num" aria-hidden>
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <IconTile className="transition-all duration-300 ease-out group-hover:-rotate-6 group-hover:scale-110 group-hover:rounded-full group-hover:bg-primary/20">
+                <IconTile className="transition-all duration-300 ease-out group-hover:-rotate-6 group-hover:scale-110 group-hover:bg-primary/20">
                   <service.icon className="size-6 transition-transform duration-300 group-hover:rotate-6" />
                 </IconTile>
                 <h3 className="mt-6 text-xl font-semibold tracking-[-0.02em]">

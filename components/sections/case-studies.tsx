@@ -85,7 +85,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
 
                     {/* Yuqori o'ng: hover'da chiqadigan strelka */}
                     <span
-                      className="absolute right-4 top-4 z-[2] inline-flex size-9 translate-y-1 items-center justify-center rounded-full bg-white/10 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                      className="absolute right-4 top-4 z-[2] inline-flex size-9 translate-y-1 items-center justify-center rounded-none bg-white/10 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
                       aria-hidden
                     >
                       <ArrowUpRight className="size-4 text-white" />
@@ -94,7 +94,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
                     {/* Pastki kontent */}
                     <span className="absolute inset-x-0 bottom-0 z-[2] block p-5 lg:p-6">
                       {project.category && (
-                        <span className="mb-2.5 inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-white/85 backdrop-blur-sm">
+                        <span className="mb-2.5 inline-block rounded-none border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-white/85 backdrop-blur-sm">
                           {project.category.title[locale] ?? project.category.title.uz}
                         </span>
                       )}
@@ -121,7 +121,7 @@ export async function CaseStudies({ locale }: { locale: Locale }) {
                         {project.technologies?.slice(0, isBig ? 5 : 3).map((tech) => (
                           <span
                             key={tech}
-                            className="rounded-full bg-white/12 px-2.5 py-0.5 font-mono text-[11px] text-white/80 backdrop-blur-sm"
+                            className="rounded-none bg-white/12 px-2.5 py-0.5 font-mono text-[11px] text-white/80 backdrop-blur-sm"
                           >
                             {tech}
                           </span>

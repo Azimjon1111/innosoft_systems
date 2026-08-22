@@ -36,10 +36,11 @@
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
   /* ── Radius ───────────────────────────────── */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  /* Yagona radius tili: barcha yuzalar to'rtburchak (o'tkir burchak) */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
 
   /* ── Motion ───────────────────────────────── */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -389,6 +390,144 @@
   background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
 }
 
+/* ── Burger tugmasi: 3 chiziq → X morfi ── */
+.burger-box {
+  position: relative;
+  width: 22px;
+  height: 16px;
+}
+.burger-bar {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform-origin: center;
+  transition:
+    transform 420ms var(--ease-out-expo),
+    opacity 180ms ease,
+    width 300ms var(--ease-out-expo);
+}
+.burger-bar:nth-child(1) { top: 0; }
+.burger-bar:nth-child(2) { top: 7px; width: 78%; }
+.burger-bar:nth-child(3) { top: 14px; width: 55%; }
+/* Hover: chiziqlar tekislanadi */
+.burger:hover .burger-bar:nth-child(2),
+.burger:hover .burger-bar:nth-child(3) {
+  width: 100%;
+}
+.burger.is-open .burger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burger.is-open .burger-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+.burger.is-open .burger-bar:nth-child(3) {
+  width: 100%;
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── To'liq ekran menyu: parda bo'lib ochiladi ── */
+.menu-panel {
+  visibility: hidden;
+  opacity: 0;
+  /* Yopilishda: avval parda ko'tariladi, so'ng so'nadi */
+  transition:
+    opacity 200ms ease 340ms,
+    visibility 0s linear 560ms;
+}
+.menu-panel.is-open {
+  visibility: visible;
+  opacity: 1;
+  transition:
+    opacity 200ms ease,
+    visibility 0s;
+}
+/* Parda: clip-path faqat ichki varaqda — aks holda u fixed
+   bolalar uchun containing block yasab, pastki CTA'ni suradi */
+.menu-sheet {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 560ms var(--ease-out-expo);
+}
+.menu-panel.is-open .menu-sheet {
+  clip-path: inset(0 0 0 0);
+}
+/* Akkordeon: 0fr → 1fr grid o'tishi (balandlikni bilish shart emas) */
+.menu-acc {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 460ms var(--ease-out-expo);
+}
+.menu-acc[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.menu-acc-inner {
+  min-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    opacity 220ms ease,
+    transform 380ms var(--ease-out-expo);
+}
+.menu-acc[data-open="true"] .menu-acc-inner {
+  opacity: 1;
+  transform: none;
+  transition-delay: 110ms;
+}
+
+/* Mobil pastki CTA — pastdan ko'tariladi */
+.menu-bar {
+  transform: translateY(100%);
+  transition: transform 480ms var(--ease-out-expo);
+}
+.menu-panel.is-open .menu-bar {
+  transform: none;
+  transition-delay: 260ms;
+}
+/* Yuqoridagi gradient chiziq — parda bilan birga cho'ziladi */
+.menu-panel::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset-inline: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--grad-a), var(--grad-b));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 700ms var(--ease-out-expo) 80ms;
+}
+.menu-panel.is-open::before {
+  transform: scaleX(1);
+}
+/* Qatorlar navbat bilan pastdan chiqadi */
+.menu-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 380ms ease,
+    transform 520ms var(--ease-out-expo);
+}
+.menu-panel.is-open .menu-item {
+  opacity: 1;
+  transform: none;
+  transition-delay: var(--d, 0ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu-panel,
+  .menu-panel::before,
+  .menu-sheet,
+  .menu-bar,
+  .menu-acc,
+  .menu-acc-inner,
+  .menu-item,
+  .burger-bar {
+    transition: none !important;
+  }
+}
+
 /* ── Ish jarayoni: zigzag yo'l xaritasi ── */
 @keyframes road-dot {
   from { opacity: 0; transform: scale(0.2); }
@@ -579,18 +718,25 @@
   0%, 55% { transform: rotate(20deg) translateX(-180%); }
   85%, 100% { transform: rotate(20deg) translateX(520%); }
 }
-/* 24/7 radar aylanuvchi nur */
+/* 24/7 — kvadrat "skaner": yorug' chiziq pastga sirg'aladi */
 .adv-radar::before {
   content: "";
   position: absolute;
-  inset: -30%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0 76%,
-    color-mix(in oklab, var(--grad-a) 80%, transparent) 97%,
-    transparent 100%
+  left: 0;
+  right: 0;
+  height: 42%;
+  top: -42%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in oklab, var(--grad-a) 65%, transparent),
+    transparent
   );
-  animation: orbit-spin 3.5s linear infinite;
+  animation: adv-scan 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes adv-scan {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(340%); }
 }
 /* Grafik ustunlari — hover'da ketma-ket sakraydi */
 .adv-bar {
@@ -667,7 +813,7 @@
   :focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.7);
     outline-offset: 3px;
-    border-radius: 2px;
+    border-radius: 0;
   }
 
   h1,

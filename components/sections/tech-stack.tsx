@@ -140,7 +140,7 @@ export async function TechStack() {
                       className="orbit-item"
                       style={{ "--a": `${(360 / orbit.items.length) * i}deg` } as React.CSSProperties}
                     >
-                      <span className="orbit-chip flex cursor-default items-center gap-2 whitespace-nowrap rounded-full border border-line bg-surface py-1.5 pl-2.5 pr-3.5 text-[13px] font-medium text-secondary shadow-md transition-colors duration-200 hover:border-line-brand hover:text-foreground">
+                      <span className="orbit-chip flex cursor-default items-center gap-2 whitespace-nowrap rounded-none border border-line bg-surface py-1.5 pl-2.5 pr-3.5 text-[13px] font-medium text-secondary shadow-md transition-colors duration-200 hover:border-line-brand hover:text-foreground">
                         <TechIcon name={item} />
                         {item}
                       </span>
@@ -163,7 +163,7 @@ export async function TechStack() {
                 {group.items.map((item) => (
                   <li
                     key={item}
-                    className="flex items-center gap-2 rounded-full border border-line bg-surface py-1.5 pl-2.5 pr-3.5 text-sm font-medium text-secondary"
+                    className="flex items-center gap-2 rounded-none border border-line bg-surface py-1.5 pl-2.5 pr-3.5 text-sm font-medium text-secondary"
                   >
                     <TechIcon name={item} className="size-4" />
                     {item}

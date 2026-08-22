@@ -195,12 +195,12 @@ export function ProcessShowcase({ steps }: { steps: ProcessStep[] }) {
               <span className="relative flex size-12 items-center justify-center">
                 {/* Tarqaluvchi puls */}
                 <span
-                  className="grad-line road-pulse absolute inset-0 rounded-full"
+                  className="grad-line road-pulse absolute inset-0 rounded-none"
                   style={{ "--d": `${i * 340}ms` } as React.CSSProperties}
                 />
                 {/* Yadro */}
                 <span
-                  className="grad-line relative flex size-12 items-center justify-center rounded-full ring-4 ring-bg"
+                  className="grad-line relative flex size-12 items-center justify-center rounded-none ring-4 ring-bg"
                   style={{ boxShadow: "0 0 26px color-mix(in oklab, var(--grad-a) 45%, transparent)" }}
                 >
                   <Icon
@@ -247,7 +247,7 @@ export function ProcessShowcase({ steps }: { steps: ProcessStep[] }) {
       {/* ── Mobil/tablet: chapdagi chiziqli timeline ── */}
       <ol className="relative lg:hidden">
         <span
-          className="road-line-v absolute bottom-5 left-[19px] top-4 w-0.5 rounded-full opacity-60"
+          className="road-line-v absolute bottom-5 left-[19px] top-4 w-0.5 rounded-none opacity-60"
           aria-hidden
         />
         {steps.map((step, i) => {
@@ -255,7 +255,7 @@ export function ProcessShowcase({ steps }: { steps: ProcessStep[] }) {
           return (
             <li key={step.key} className="relative pb-9 pl-14 last:pb-0">
               <span
-                className="grad-line absolute left-0 top-0 flex size-10 items-center justify-center rounded-full ring-4 ring-bg"
+                className="grad-line absolute left-0 top-0 flex size-10 items-center justify-center rounded-none ring-4 ring-bg"
                 aria-hidden
               >
                 <Icon className="size-4 text-white" strokeWidth={2} />

@@ -9,7 +9,7 @@ export function HeroVisual() {
     <div className="relative mx-auto hidden w-full max-w-[560px] sm:block" aria-hidden>
       {/* Orqa glow */}
       <div
-        className="absolute -inset-8 -z-10 rounded-[32px]"
+        className="absolute -inset-8 -z-10 rounded-none"
         style={{
           background: "radial-gradient(ellipse 60% 55% at 50% 45%, rgba(9,131,198,0.20), transparent 70%)",
         }}
@@ -92,9 +92,9 @@ export function HeroVisual() {
             ].map((deal) => (
               <li key={deal.name} className="flex items-center gap-3">
                 <span className="w-40 truncate text-[12px] text-foreground/85">{deal.name}</span>
-                <span className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/[0.06]">
+                <span className="h-1.5 flex-1 overflow-hidden rounded-none bg-white/[0.06]">
                   <span
-                    className="block h-full rounded-full"
+                    className="block h-full rounded-none"
                     style={{ width: deal.width, background: deal.color, opacity: 0.85 }}
                   />
                 </span>

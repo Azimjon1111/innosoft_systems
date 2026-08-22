@@ -148,9 +148,9 @@ export const PROJECTS: Project[] = [
     "id": "anibla",
     "slug": "anibla",
     "title": {
-      "uz": "Anibla",
-      "ru": "Anibla",
-      "en": "Anibla"
+      "uz": "Anibla (mobil ilova)",
+      "ru": "Anibla (мобильное приложение)",
+      "en": "Anibla (mobile app)"
     },
     "description": {
       "uz": "Anibla.uz O'zbekistondagi birinchi uz Fandab. Bu ilova orqali siz xohlagan animeyingizni sifatli o'zbek tilida dublyaj qilinganini ko'ra olasiz.",
@@ -162,12 +162,13 @@ export const PROJECTS: Project[] = [
       "ru": "6 месяца",
       "en": "6 months"
     },
-    "image": "/assets/img/projects/anibla.webp",
+    "image": "/assets/img/projects/anibla-app.webp",
     "technologies": [
       "React Native",
       "Nestjs",
       "Mongodb"
     ],
+    "url": "https://play.google.com/store/apps/details?id=com.amediatv.soft",
     "category": {
       "title": {
         "uz": "Media",
@@ -737,41 +738,6 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    "id": "minifull",
-    "slug": "minifull",
-    "title": {
-      "uz": "Minifull",
-      "ru": "Minifull",
-      "en": "Minifull"
-    },
-    "description": {
-      "uz": "MINIFULL loyihasi sifatli mahsulotlar savdosi uchun mo'ljallangan zamonaviy elektron tijorat platformasi bo'lib, mijozlarga qulay xarid jarayoni va ishonchli xizmat ko'rsatishni ta'minlaydi. Sayt brendning raqamli nufuzini oshirish va foydalanuvchilar bilan samarali aloqa o'rnatishga xizmat qiladi.",
-      "ru": "Проект MINIFULL — это современная платформа электронной коммерции, разработанная для обеспечения удобного процесса покупок и качественного обслуживания клиентов. Веб-сайт укрепляет доверие к бренду и служит эффективным инструментом для взаимодействия с аудиторией.",
-      "en": "The MINIFULL project is a modern e-commerce platform designed to provide a seamless shopping experience and reliable customer service. The website enhances brand presence and fosters trust through efficient user communication and professional digital representation."
-    },
-    "duration": {
-      "uz": "2 oy",
-      "ru": "2 месяца",
-      "en": "2 months"
-    },
-    "image": "/assets/img/projects/minifull.webp",
-    "technologies": [
-      "Typescript",
-      "Next.js",
-      "Nest.js",
-      "Mongodb"
-    ],
-    "url": "https://minifull.uz",
-    "category": {
-      "title": {
-        "uz": "Internet magazin",
-        "ru": "Интернет-магазин",
-        "en": "E-commerce"
-      },
-      "slug": "e-commerce"
-    }
-  },
-  {
     "id": "imtihan",
     "slug": "imtihan",
     "title": {
@@ -804,39 +770,6 @@ export const PROJECTS: Project[] = [
         "en": "Others"
       },
       "slug": "others"
-    }
-  },
-  {
-    "id": "myhealthy",
-    "slug": "myhealthy",
-    "title": {
-      "uz": "Myhealthy",
-      "ru": "Myhealthy",
-      "en": "Myhealthy"
-    },
-    "description": {
-      "uz": "Bolalar va o'smirlarda allergik kasalliklarni erta aniqlash hamda ularning oldini olishga qaratilgan ixtisoslashtirilgan raqamli tibbiyot platformasi. Saytda xalqaro standartlarga asoslangan interaktiv elektron savolnoma mavjud bo'lib, u foydalanuvchilarga o'z sog'lig'ini nazorat qilish va dastlabki tashxis natijalarini olish imkonini beradi. Diagnostika vositasidan tashqari, platforma allergiya alomatlari (bronxial astma, allergik rinit, atopik dermatit kabi) haqida keng qamrovli ma'lumotlar, professional davolash yo'riqnomalari va tibbiy qo'llab-quvvatlash xizmatlarini taklif etadi. Bunda barcha ma'lumotlarning to'liq maxfiyligi kafolatlanadi.",
-      "ru": "Специализированная цифровая медицинская платформа, разработанная для раннего выявления и профилактики аллергических заболеваний у детей и подростков. На сайте представлена интерактивная электронная анкета, основанная на международных стандартах, которая помогает пользователям контролировать свое здоровье и получать предварительные результаты диагностики. Помимо диагностического инструмента, платформа предлагает подробные информационные материалы о симптомах аллергии (таких как бронхиальная астма, аллергический ринит и атопический дерматит), профессиональные рекомендации по лечению и доступ к службам медицинской поддержки, гарантируя при этом строгую конфиденциальность личных данных.",
-      "en": "A specialized digital healthcare platform designed for the early detection and prevention of allergic diseases in children and adolescents. The website features an interactive, internationally standardized electronic questionnaire that allows users to monitor their health and receive preliminary diagnostic results. Alongside the assessment tool, the platform offers comprehensive educational resources on common allergy symptoms (such as bronchial asthma, allergic rhinitis, and atopic dermatitis), professional treatment guidelines, and access to medical support services, all while strictly ensuring user data privacy."
-    },
-    "duration": {
-      "uz": "10 days",
-      "ru": "10 дней",
-      "en": "10 days"
-    },
-    "image": "/assets/img/projects/myhealthy.webp",
-    "technologies": [
-      "Next.js",
-      "Tailwind"
-    ],
-    "url": "https://www.myhealthy.uz",
-    "category": {
-      "title": {
-        "uz": "Meditsina",
-        "ru": "Медицина",
-        "en": " Medicine"
-      },
-      "slug": "medicine"
     }
   },
   {
@@ -905,41 +838,6 @@ export const PROJECTS: Project[] = [
         "en": "Building"
       },
       "slug": "construction"
-    }
-  },
-  {
-    "id": "bobo-market",
-    "slug": "bobo-market",
-    "title": {
-      "uz": "Bobo Market",
-      "ru": "Bobo Market",
-      "en": "Bobo Market"
-    },
-    "description": {
-      "uz": "Kundalik oziq-ovqat mahsulotlari, go'sht, ichimliklar, shirinliklar va kiyimlarni o'z ichiga olgan keng turdagi tovarlarni taklif etuvchi ko'p tarmoqli onlayn market va savdo maydonchasi. Platforma turli xil auditoriyaga xizmat ko'rsatish maqsadida ko'plab tillarni qo'llab-quvvatlaydi. Loyiha o'zida qulay katalog, maxsus mavsumiy tovarlar, ulgurji xaridlar va chet eldan keltirilgan mahsulotlar bo'limlarini jamlagan. Sayt xavfsiz avtorizatsiya, qulay savatcha tizimi hamda belgilangan miqdordan oshgan buyurtmalar uchun bepul yetkazib berish xizmati bilan foydalanuvchilarga mukammal onlayn xarid tajribasini taqdim etadi.",
-      "ru": "Многофункциональная онлайн-платформа и маркетплейс, предлагающий широкий ассортимент товаров, включая продукты питания, мясо, напитки, кондитерские изделия и одежду. Сайт поддерживает множество языков для удобства широкой аудитории. Проект имеет интуитивно понятный каталог со специальными разделами для сезонных товаров, оптовых покупок и импортной продукции. Платформа обеспечивает комфортный процесс онлайн-шопинга благодаря удобной системе корзины, безопасной авторизации и опции бесплатной доставки для определенных заказов.",
-      "en": "A comprehensive online grocery and retail marketplace offering a diverse selection of products, including daily groceries, meats, beverages, sweets, and clothing. The platform is designed with extensive multilingual support to serve a broad and diverse user base. It features a highly accessible catalog with special sections for seasonal items, wholesale purchases, and imported goods. The website ensures a seamless digital shopping experience with a convenient cart system, secure login, and free delivery options on qualifying orders."
-    },
-    "duration": {
-      "uz": "4 oy",
-      "ru": "4 месяца",
-      "en": "4 months"
-    },
-    "image": "/assets/img/projects/bobo-market.webp",
-    "technologies": [
-      "Typescript",
-      "Next.js",
-      "Nest.js",
-      "Tailwind"
-    ],
-    "url": " https://bobo-market.uz",
-    "category": {
-      "title": {
-        "uz": "Internet magazin",
-        "ru": "Интернет-магазин",
-        "en": "E-commerce"
-      },
-      "slug": "e-commerce"
     }
   },
   {
@@ -1083,77 +981,6 @@ export const PROJECTS: Project[] = [
         "en": "Building"
       },
       "slug": "construction"
-    }
-  },
-  {
-    "id": "starcatering",
-    "slug": "starcatering",
-    "title": {
-      "uz": "Starcatering",
-      "ru": "Starcatering",
-      "en": "Starcatering"
-    },
-    "description": {
-      "uz": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin.",
-      "ru": "\"starcatering.uz\" — это высококачественная кейтеринг-компания в Ташкенте, которая профессионально обслуживает мероприятия разных форматов и отличается прочными и надёжными отношениями с клиентами. Если вы планируете корпоративную встречу, свадьбу, праздник или другое мероприятие, эта компания может стать для вас подходящим выбором.",
-      "en": "\"starcatering.uz\" — is a high-quality catering company in Tashkent that provides professional services for various types of events, with strong and reliable customer relations. Whether you are planning a corporate meeting, wedding, celebration, or any other event, this company may be the right choice for you."
-    },
-    "duration": {
-      "uz": "15 kun",
-      "ru": "15 дней",
-      "en": "15 days"
-    },
-    "image": "/assets/img/projects/starcatering.webp",
-    "technologies": [
-      "React Js",
-      "NextJs",
-      "Tailwind Css",
-      "NestJs",
-      "Mongo"
-    ],
-    "url": "https://www.starcatering.uz",
-    "category": {
-      "title": {
-        "uz": "Biznes",
-        "ru": "Бизнес",
-        "en": "Business"
-      },
-      "slug": "biznes"
-    }
-  },
-  {
-    "id": "uv",
-    "slug": "uv",
-    "title": {
-      "uz": "UV",
-      "ru": "UV",
-      "en": "UV"
-    },
-    "description": {
-      "uz": "«uvix.uz» - UV printlash – plastik, metall,  yog‘och,shisha, akril va boshqalarga yuqori \naniqlikda rendlash funsiyalarini taklif qiladi  Kompaniya o‘z Saytida va ijtimoiy tarmoqlarda  vizual misollarni namoyish qilish orqali mijozlari sonini oshirmoqda",
-      "ru": "«uvix.uz» – UV-печать предлагает функции высокоточной печати на пластике, металле, дереве, стекле, акриле и других материалах. Компания увеличивает количество клиентов, демонстрируя визуальные примеры на своём сайте и в социальных сетях.",
-      "en": "«uvix.uz» – UV printing offers high-precision rendering functions on plastic, metal, wood, glass, acrylic, and more. The company increases its customer base by showcasing visual examples on its website and social media platforms."
-    },
-    "duration": {
-      "uz": "1 oy",
-      "ru": "1 месяца",
-      "en": "1 months"
-    },
-    "image": "/assets/img/projects/uv.webp",
-    "technologies": [
-      "NextJs",
-      "TailwindCSS",
-      "NestJs",
-      "MONGO"
-    ],
-    "url": "https://www.uvix.uz/",
-    "category": {
-      "title": {
-        "uz": "Biznes",
-        "ru": "Бизнес",
-        "en": "Business"
-      },
-      "slug": "biznes"
     }
   },
   {
@@ -1369,42 +1196,6 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    "id": "start-catering",
-    "slug": "start-catering",
-    "title": {
-      "uz": "Start Catering",
-      "ru": "Start Catering",
-      "en": "Start Catering"
-    },
-    "description": {
-      "uz": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin.",
-      "ru": "\"starcatering.uz\" - это высококачественная кейтеринговая компания в Ташкенте, которая предоставляет профессиональные и разнообразные услуги по организации мероприятий, с прочными отношениями с клиентами. Если вы планируете организовать корпоративную встречу, свадьбу, праздник или другое мероприятие, эта компания может вам подойти.",
-      "en": "\"starcatering.uz\" — bu Toshkentda professional va turli  formatdagi tadbirlarga xizmat ko‘rsatuvchi, yuqori  sifatli, mijozlar bilan muloqoti mustahkam va sifatli  catering-kompaniya Agar siz korporativ yig‘ilish, to‘y,  bayram yoki boshqa tadbir uyushtirmoqchi bo‘lsangiz,  bu kompaniya sizga mos bo‘lishi mumkin."
-    },
-    "duration": {
-      "uz": "7 kun",
-      "ru": "7 kun",
-      "en": "7 kun"
-    },
-    "image": "/assets/img/projects/start-catering.webp",
-    "technologies": [
-      "React js",
-      "Next js",
-      "Tailwind Css",
-      "Framer motion",
-      "Type Script"
-    ],
-    "url": "https://www.starcatering.uz/",
-    "category": {
-      "title": {
-        "uz": "Biznes",
-        "ru": "Бизнес",
-        "en": "Business"
-      },
-      "slug": "biznes"
-    }
-  },
-  {
     "id": "cleanza",
     "slug": "cleanza",
     "title": {
@@ -1471,41 +1262,6 @@ export const PROJECTS: Project[] = [
         "en": "Others"
       },
       "slug": "others"
-    }
-  },
-  {
-    "id": "bio-inside",
-    "slug": "bio-inside",
-    "title": {
-      "uz": "Bio Inside",
-      "ru": "Bio Inside",
-      "en": "Bio Inside"
-    },
-    "description": {
-      "uz": "bio-inside.net – biologik faol qo‘shimchalar sohasida yangi  va innovatsion loyiha bo‘lib, sifatli va salomatlikka  yo‘naltirilgan mahsulotlar bilan biznes yuritmoqda.  Mahsulot assortimenti keng va ilg‘or Germaniya  texnologiyasiga asoslangan. Saytda narxlar, sertifikatlar,\nfoydalanuvchi fikrlari ko‘rsatilsa — bu kompaniya  mahsulotlarini yanada ishonchli va ommabop qiladi.",
-      "ru": "bio-inside.net — это новый и инновационный проект в сфере биологически активных добавок, который ведёт бизнес с качественными и ориентированными на здоровье продуктами. Ассортимент продукции широк и основан на передовых немецких технологиях. Если на сайте будут представлены цены, сертификаты и отзывы пользователей — это сделает продукцию компании ещё более надёжной и популярной.",
-      "en": "bio-inside.net – biologik faol qo‘shimchalar sohasida yangi  va innovatsion loyiha bo‘lib, sifatli va salomatlikka  yo‘naltirilgan mahsulotlar bilan biznes yuritmoqda.  Mahsulot assortimenti keng va ilg‘or Germaniya  texnologiyasiga asoslangan. Saytda narxlar, sertifikatlar,\nfoydalanuvchi fikrlari ko‘rsatilsa — bu kompaniya  mahsulotlarini yanada ishonchli va ommabop qiladi."
-    },
-    "duration": {
-      "uz": "1",
-      "ru": "1",
-      "en": "1"
-    },
-    "image": "/assets/img/projects/bio-inside.webp",
-    "technologies": [
-      "Next js",
-      "Rect js",
-      "TypeScript",
-      "TailwindCss"
-    ],
-    "url": "https://www.bio-inside.net/",
-    "category": {
-      "title": {
-        "uz": "Meditsina",
-        "ru": "Медицина",
-        "en": " Medicine"
-      },
-      "slug": "medicine"
     }
   },
   {
@@ -1576,6 +1332,342 @@ export const PROJECTS: Project[] = [
         "en": "Business"
       },
       "slug": "biznes"
+    }
+  },
+  {
+    "id": "logistatrans-app",
+    "slug": "logistatrans-app",
+    "title": {
+      "uz": "Logistatrans (mobil ilova)",
+      "ru": "Logistatrans (мобильное приложение)",
+      "en": "Logistatrans (mobile app)"
+    },
+    "description": {
+      "uz": "Logistatrans logistika kompaniyasi uchun mobil ilova. Yuk tashish arizasining to'liq sikli — yangidan yetkazib berilgangacha — kanban statuslarida kuzatib boriladi. Mijozlar va agentlar bazasi, ichki shaxsiy hamda guruh chatlari, hisob-fakturalar va bildirishnomalar bitta ilovada jamlangan.",
+      "ru": "Мобильное приложение для логистической компании Logistatrans. Полный цикл грузоперевозки — от новой заявки до доставки — отслеживается по канбан-статусам. База клиентов и агентов, внутренние личные и групповые чаты, счета и уведомления собраны в одном приложении.",
+      "en": "A mobile app for the logistics company Logistatrans. The full freight cycle — from a new request to delivery — is tracked through kanban statuses. Client and agent directories, internal private and group chats, invoices and notifications are gathered in a single app."
+    },
+    "image": "/assets/img/projects/logistatrans-app.webp",
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=uz.logistatrans.app",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "bobo-market-app",
+    "slug": "bobo-market-app",
+    "title": {
+      "uz": "Bobo Market (mobil ilova)",
+      "ru": "Bobo Market (мобильное приложение)",
+      "en": "Bobo Market (mobile app)"
+    },
+    "description": {
+      "uz": "Bobo Market onlayn do'koni va yetkazib berish xizmatining mobil ilovasi. Kategoriyalar bo'yicha katalog, qidiruv va filtrlar, savat, buyurtma tarixi hamda yetkazib berish holatini kuzatish — oziq-ovqatdan maishiy texnikagacha bo'lgan mahsulotlar bir joyda.",
+      "ru": "Мобильное приложение интернет-магазина и службы доставки Bobo Market. Каталог по категориям, поиск и фильтры, корзина, история заказов и отслеживание доставки — от продуктов питания до бытовой техники в одном месте.",
+      "en": "The mobile app of the Bobo Market online store and delivery service. A category catalogue, search and filters, cart, order history and delivery tracking — from groceries to home appliances in one place."
+    },
+    "image": "/assets/img/projects/bobo-market-app.webp",
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=uz.bobo.market",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет магазин",
+        "en": "Online store"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "besh-market-app",
+    "slug": "besh-market-app",
+    "title": {
+      "uz": "Besh Market (mobil ilova)",
+      "ru": "Besh Market (мобильное приложение)",
+      "en": "Besh Market (mobile app)"
+    },
+    "description": {
+      "uz": "Besh Market — restoranlardan ovqat yetkazib berish ilovasi. Foydalanuvchi yaqin atrofdagi restoranlarni ko'radi, menyu va reytinglar bilan tanishadi, bir necha bosishda buyurtma beradi va uni real vaqtda kuzatadi. Kuryerlar uchun alohida smena va jadval moduli ishlab chiqilgan.",
+      "ru": "Besh Market — приложение для доставки еды из ресторанов. Пользователь видит заведения поблизости, изучает меню и рейтинги, оформляет заказ в несколько касаний и отслеживает его в реальном времени. Для курьеров разработан отдельный модуль смен и расписания.",
+      "en": "Besh Market is a restaurant food-delivery app. Users browse nearby venues, explore menus and ratings, place an order in a few taps and track it in real time. A separate shift and schedule module was built for couriers."
+    },
+    "image": "/assets/img/projects/besh-market-app.webp",
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=com.beshmarket",
+    "category": {
+      "title": {
+        "uz": "Internet magazin",
+        "ru": "Интернет магазин",
+        "en": "Online store"
+      },
+      "slug": "e-commerce"
+    }
+  },
+  {
+    "id": "firewise-app",
+    "slug": "firewise-app",
+    "title": {
+      "uz": "FireWise (mobil ilova)",
+      "ru": "FireWise (мобильное приложение)",
+      "en": "FireWise (mobile app)"
+    },
+    "description": {
+      "uz": "FireWise Enterprises uchun mobil katalog ilovasi. Yong'in xavfsizligi uskunalari va yechimlari bo'yicha keng assortiment, qidiruv, filtr va saralash, mahsulot kartochkalari, saqlangan tanlanganlar, amalga oshirilgan loyihalar hamda kompaniya yangiliklari bo'limi.",
+      "ru": "Мобильное каталожное приложение для FireWise Enterprises. Широкий ассортимент оборудования и решений для пожарной безопасности, поиск, фильтры и сортировка, карточки товаров, избранное, реализованные проекты и раздел новостей компании.",
+      "en": "A mobile catalogue app for FireWise Enterprises. A broad range of fire-safety equipment and solutions, search, filters and sorting, product cards, favourites, completed projects and a company news section."
+    },
+    "image": "/assets/img/projects/firewise-app.webp",
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=uz.firewise.app",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "myyurist-app",
+    "slug": "myyurist-app",
+    "title": {
+      "uz": "My Yurist (mobil ilova)",
+      "ru": "My Yurist (мобильное приложение)",
+      "en": "My Yurist (mobile app)"
+    },
+    "description": {
+      "uz": "My Yurist huquqiy yordam ilovasi. Yuristlar katalogi va ular bilan bog'lanish, onlayn savol-javob, tez javob talab qiladigan blits-savollar bo'limi, ariza va shartnoma namunalari bazasi hamda sud jarayoni bo'yicha qo'llanma.",
+      "ru": "Приложение юридической помощи My Yurist. Каталог юристов и связь с ними, онлайн вопрос-ответ, раздел блиц-вопросов для быстрых консультаций, база образцов заявлений и договоров, а также руководство по судебному процессу.",
+      "en": "The My Yurist legal-help app. A directory of lawyers and direct contact, online Q&A, a rapid-answer section for short questions, a library of application and contract templates, and a guide to court procedure."
+    },
+    "image": "/assets/img/projects/myyurist-app.webp",
+    "technologies": [
+      "React Native",
+      "TypeScript",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://play.google.com/store/apps/details?id=com.yurist_mobile",
+    "category": {
+      "title": {
+        "uz": "Boshqalar",
+        "ru": "Другие",
+        "en": "Others"
+      },
+      "slug": "others"
+    }
+  },
+  {
+    "id": "anibla-web",
+    "slug": "anibla-web",
+    "title": {
+      "uz": "Anibla.uz (veb platforma)",
+      "ru": "Anibla.uz (веб-платформа)",
+      "en": "Anibla.uz (web platform)"
+    },
+    "description": {
+      "uz": "Anibla.uz — o'zbek tilida dublyaj qilingan anime ko'rish uchun veb-platforma. Katalog va kategoriyalar, qismlar bo'yicha navigatsiya, sevimlilar ro'yxati, video pleyer va sifat tanlash, obuna tariflari hamda yangi qismlar haqida xabarnoma.",
+      "ru": "Anibla.uz — веб-платформа для просмотра аниме в узбекском дубляже. Каталог и категории, навигация по сериям, список избранного, видеоплеер с выбором качества, тарифы подписки и уведомления о новых эпизодах.",
+      "en": "Anibla.uz is a web platform for watching anime dubbed into Uzbek. A catalogue with categories, episode navigation, a favourites list, a video player with quality selection, subscription plans and new-episode notifications."
+    },
+    "image": "/assets/img/projects/anibla-web.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://anibla.uz/",
+    "category": {
+      "title": {
+        "uz": "Media",
+        "ru": "Медиа",
+        "en": "Media"
+      },
+      "slug": "media"
+    }
+  },
+  {
+    "id": "global-building-group",
+    "slug": "global-building-group",
+    "title": {
+      "uz": "Global Building Group",
+      "ru": "Global Building Group",
+      "en": "Global Building Group"
+    },
+    "description": {
+      "uz": "Global Building Group qurilish kompaniyasining korporativ sayti. Loyihalashdan «kalit topshiriq»gacha bo'lgan to'liq sikl xizmatlari, sanoat, energetika va fuqarolik qurilishi bo'yicha amalga oshirilgan loyihalar galereyasi, yangiliklar bo'limi va uch tilli interfeys.",
+      "ru": "Корпоративный сайт строительной компании Global Building Group. Услуги полного цикла — от проектирования до сдачи «под ключ», галерея реализованных проектов промышленного, энергетического и гражданского строительства, раздел новостей и трёхъязычный интерфейс.",
+      "en": "The corporate website of the construction company Global Building Group. Full-cycle services from design to turnkey handover, a gallery of completed industrial, energy and civil construction projects, a news section and a trilingual interface."
+    },
+    "image": "/assets/img/projects/globalbuilding.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://globalbuilding.uz/",
+    "category": {
+      "title": {
+        "uz": "Qurilish",
+        "ru": "Строительство",
+        "en": "Construction"
+      },
+      "slug": "construction"
+    }
+  },
+  {
+    "id": "ipsum-pathology",
+    "slug": "ipsum-pathology",
+    "title": {
+      "uz": "IPSUM Pathology",
+      "ru": "IPSUM Pathology",
+      "en": "IPSUM Pathology"
+    },
+    "description": {
+      "uz": "IPSUM Pathology laboratoriyasining sayti. NGS (yangi avlod sekvenatsiyasi), kliniko-diagnostik va patomorfologik yo'nalishlar bo'yicha xizmatlar katalogi, tahlil turlari tavsifi, o'quv dasturlari hamda onlayn ariza qoldirish imkoniyati.",
+      "ru": "Сайт лаборатории IPSUM Pathology. Каталог услуг по направлениям NGS (секвенирование нового поколения), клинико-диагностическим и патоморфологическим исследованиям, описание видов анализов, обучающие программы и онлайн-заявка.",
+      "en": "The website of the IPSUM Pathology laboratory. A catalogue of services across NGS (next-generation sequencing), clinical diagnostics and pathomorphology, descriptions of test types, training programmes and an online request form."
+    },
+    "image": "/assets/img/projects/ipsum-pathology.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://ipsum.uz/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": "Medicine"
+      },
+      "slug": "medicine"
+    }
+  },
+  {
+    "id": "ung-overseas",
+    "slug": "ung-overseas",
+    "title": {
+      "uz": "UNG Overseas",
+      "ru": "UNG Overseas",
+      "en": "UNG Overseas"
+    },
+    "description": {
+      "uz": "UNG Overseas — O'zbekistonning xalqaro energetika savdosi bo'linmasi sayti. Trading, strukturaviy moliyalashtirish va kapital bozorlari yo'nalishlari, investorlar uchun bo'lim, tenderlar, yangiliklar va karyera sahifalari ingliz hamda rus tillarida.",
+      "ru": "UNG Overseas — сайт международного энергетического подразделения Узбекистана. Направления трейдинга, структурного финансирования и рынков капитала, раздел для инвесторов, тендеры, новости и карьерные страницы на английском и русском языках.",
+      "en": "UNG Overseas is the website of Uzbekistan's international energy trading arm. Trading, structured finance and capital markets divisions, an investor section, tenders, news and career pages in English and Russian."
+    },
+    "image": "/assets/img/projects/ung-overseas.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://www.ungoverseas.com/",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "mountain-and-sea",
+    "slug": "mountain-and-sea",
+    "title": {
+      "uz": "Mountain&Sea",
+      "ru": "Mountain&Sea",
+      "en": "Mountain&Sea"
+    },
+    "description": {
+      "uz": "Mountain&Sea oziq-ovqat brendining sayti. Tabiiy nori va dengiz mahsulotlari katalogi, mahsulot tarkibi va sifat sertifikatlari, kompaniya tarixi hamda yangiliklar bo'limi — uch tilda.",
+      "ru": "Сайт продуктового бренда Mountain&Sea. Каталог натуральных нори и морепродуктов, состав продукции и сертификаты качества, история компании и раздел новостей — на трёх языках.",
+      "en": "The website of the food brand Mountain&Sea. A catalogue of natural nori and seafood products, ingredient details and quality certificates, the company story and a news section — in three languages."
+    },
+    "image": "/assets/img/projects/mountain-and-sea.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://mountainandsea.uz/",
+    "category": {
+      "title": {
+        "uz": "Biznes",
+        "ru": "Бизнес",
+        "en": "Business"
+      },
+      "slug": "biznes"
+    }
+  },
+  {
+    "id": "avantika-medex",
+    "slug": "avantika-medex",
+    "title": {
+      "uz": "Avantika Medex",
+      "ru": "Avantika Medex",
+      "en": "Avantika Medex"
+    },
+    "description": {
+      "uz": "Avantika Medex farmatsevtika ishlab chiqaruvchisining sayti. GMP standartidagi avtomatlashtirilgan ishlab chiqarish liniyalari haqida ma'lumot, preparatlar katalogi, hamkorlik va farmakonazorat bo'limlari hamda yangiliklar lentasi.",
+      "ru": "Сайт фармацевтического производителя Avantika Medex. Информация об автоматизированных производственных линиях стандарта GMP, каталог препаратов, разделы партнёрства и фармаконадзора, а также лента новостей.",
+      "en": "The website of the pharmaceutical manufacturer Avantika Medex. Information on GMP-standard automated production lines, a product catalogue, partnership and pharmacovigilance sections, and a news feed."
+    },
+    "image": "/assets/img/projects/avantika-medex.webp",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nest.js",
+      "MongoDB"
+    ],
+    "url": "https://avantikamedex.uz/",
+    "category": {
+      "title": {
+        "uz": "Meditsina",
+        "ru": "Медицина",
+        "en": "Medicine"
+      },
+      "slug": "medicine"
     }
   }
 ];

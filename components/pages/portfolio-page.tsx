@@ -86,7 +86,7 @@ export async function PortfolioPage({ locale }: { locale: Locale }) {
                 href={CONTACT.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-9 inline-flex h-12 items-center gap-3 rounded-md bg-primary-solid px-7 text-[13px] font-semibold uppercase tracking-[0.1em] text-[#050816] transition-colors duration-200 hover:bg-primary-hover"
+                className="btn-primary group mt-9 inline-flex h-12 items-center gap-3 rounded-md bg-primary-solid px-7 text-[13px] font-semibold uppercase tracking-[0.1em] text-[#050816] transition-colors duration-200 hover:bg-primary-hover"
               >
                 {t("ctaAction")}
                 <ArrowRight

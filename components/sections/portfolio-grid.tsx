@@ -90,7 +90,7 @@ export function PortfolioGrid({
                   />
                   {project.url && (
                     <span
-                      className="absolute right-4 top-4 z-[2] inline-flex size-9 translate-y-1 items-center justify-center rounded-full bg-white/12 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                      className="absolute right-4 top-4 z-[2] inline-flex size-9 translate-y-1 items-center justify-center rounded-none bg-white/12 opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
                       aria-hidden
                     >
                       <ArrowUpRight className="size-4 text-white" />
@@ -121,7 +121,7 @@ export function PortfolioGrid({
                       {project.technologies.slice(0, 4).map((tech) => (
                         <li
                           key={tech}
-                          className="rounded-full border border-line px-2.5 py-1 font-mono text-[11px] text-tertiary"
+                          className="rounded-none border border-line px-2.5 py-1 font-mono text-[11px] text-tertiary"
                         >
                           {tech}
                         </li>
@@ -180,7 +180,7 @@ function FilterChip({
       onClick={onClick}
       aria-pressed={isActive}
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors duration-200",
+        "inline-flex items-center gap-2 rounded-none border px-4 py-2 text-sm font-medium transition-colors duration-200",
         isActive
           ? "proc-active border-transparent text-foreground"
           : "border-line text-secondary hover:border-line-strong hover:text-foreground"

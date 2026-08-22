@@ -33,13 +33,13 @@ function AdvVisual({ item }: { item: ItemKey }) {
           {[0, 1, 2].map((i) => (
             <span
               key={i}
-              className="flex size-11 items-center justify-center rounded-full border-2 border-surface bg-bg-elevated transition-all duration-300"
+              className="flex size-11 items-center justify-center rounded-none border-2 border-surface bg-bg-elevated transition-all duration-300"
             >
               <Users className="size-4 text-secondary" aria-hidden />
             </span>
           ))}
           <span
-            className="flex size-11 items-center justify-center rounded-full border-2 border-surface text-[12px] font-bold text-white transition-all duration-300"
+            className="flex size-11 items-center justify-center rounded-none border-2 border-surface text-[12px] font-bold text-white transition-all duration-300"
             style={{ background: "linear-gradient(135deg, var(--grad-a), var(--grad-b))" }}
           >
             10+
@@ -63,7 +63,7 @@ function AdvVisual({ item }: { item: ItemKey }) {
   }
   return (
     <div className="flex h-20 items-center">
-      <div className="adv-radar relative flex size-14 items-center justify-center overflow-hidden rounded-full border border-line-strong">
+      <div className="adv-radar relative flex size-14 items-center justify-center overflow-hidden rounded-none border border-line-strong">
         <Headset className="relative z-[1] size-5 text-secondary" aria-hidden />
       </div>
     </div>

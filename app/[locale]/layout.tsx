@@ -105,7 +105,7 @@ export default async function LocaleLayout({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Telegram"
-          className="fixed bottom-5 right-5 z-40 inline-flex size-[52px] items-center justify-center rounded-full text-white shadow-[0_8px_24px_rgba(9,131,198,0.4)] transition-transform duration-200 hover:scale-105 print:hidden"
+          className="fixed bottom-5 right-5 z-40 inline-flex size-[52px] items-center justify-center rounded-none text-white shadow-[0_8px_24px_rgba(9,131,198,0.4)] transition-transform duration-200 hover:scale-105 print:hidden"
           style={{ background: "linear-gradient(135deg, #0983c6, #065d8f)" }}
         >
           <Send className="size-5" aria-hidden />

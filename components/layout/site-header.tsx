@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X, ArrowRight, Sun, Moon } from "lucide-react";
+import { ChevronDown, ArrowRight, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { servicePath, servicesHubPath, projectsPath } from "@/lib/routes";
 import { serviceGroups } from "@/lib/nav";
@@ -37,6 +37,50 @@ const INDUSTRY_KEYS = [
  * ekranlarda) → to'liq ekran menyu, o'rtada nav + hover mega panellar,
  * o'ngda til tanlagich va outlined-uppercase CTA.
  */
+/** Menyu akkordeoni: 0fr → 1fr grid o'tishi bilan silliq ochiladi/yopiladi */
+function MenuAccordion({
+  id,
+  label,
+  delay,
+  open,
+  onToggle,
+  children,
+}: {
+  id: string;
+  label: string;
+  delay: number;
+  open: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      style={{ "--d": `${delay}ms` } as React.CSSProperties}
+      className="menu-item border-b border-line"
+    >
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        aria-controls={`menu-acc-${id}`}
+        className="flex w-full cursor-pointer items-center justify-between py-5 text-left text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
+      >
+        {label}
+        <ChevronDown
+          className={cn(
+            "size-5 shrink-0 text-tertiary transition-transform duration-300 lg:size-6",
+            open && "rotate-180"
+          )}
+          aria-hidden
+        />
+      </button>
+      <div id={`menu-acc-${id}`} className="menu-acc" data-open={open}>
+        <div className="menu-acc-inner">{children}</div>
+      </div>
+    </div>
+  );
+}
+
 export function SiteHeader({ locale }: { locale: Locale }) {
   const t = useTranslations("nav");
   const tInd = useTranslations("industries");
@@ -45,6 +89,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
 
   const [open, setOpen] = useState<MenuId>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  // Menyu ichidagi ochiq akkordeon (bir vaqtda bittasi)
+  const [acc, setAcc] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
   const [theme, setTheme] = useState<"dark" | "light">("light");
 
@@ -74,6 +120,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
 
   // To'liq ekran menyu ochiq bo'lsa scroll qulflanadi
   useEffect(() => {
+    if (!menuOpen) setAcc(null);
     document.documentElement.style.overflow = menuOpen ? "hidden" : "";
     return () => {
       document.documentElement.style.overflow = "";
@@ -127,7 +174,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
     >
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary-solid focus:px-4 focus:py-2 focus:text-[#050816]"
+        className="btn-primary sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary-solid focus:px-4 focus:py-2 focus:text-[#050816]"
       >
         {tA11y("skipToContent")}
       </a>
@@ -143,9 +190,17 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           aria-expanded={menuOpen}
           aria-controls="fullscreen-menu"
           aria-label={menuOpen ? t("menuClose") : t("menuOpen")}
-          className="mr-4 inline-flex size-11 shrink-0 items-center justify-center text-foreground transition-colors hover:text-accent sm:mr-6"
+          className={cn(
+            "burger mr-4 inline-flex size-11 shrink-0 items-center justify-center text-foreground transition-colors hover:text-accent sm:mr-6",
+            menuOpen && "is-open"
+          )}
         >
-          {menuOpen ? <X className="size-6" aria-hidden /> : <Menu className="size-6" aria-hidden />}
+          {/* 3 chiziq → X morfi */}
+          <span className="burger-box" aria-hidden>
+            <span className="burger-bar" />
+            <span className="burger-bar" />
+            <span className="burger-bar" />
+          </span>
         </button>
 
         <Link
@@ -400,21 +455,29 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       </div>
 
       {/* ── To'liq ekran menyu (EPAM hamburger, barcha ekranlarda) ── */}
-      {menuOpen && (
-        <nav
-          id="fullscreen-menu"
-          aria-label={t("mainNav")}
-          className="fixed inset-x-0 bottom-0 top-[76px] z-40 overflow-y-auto bg-bg"
-        >
+      {/* Panel DOM'da doim turadi — yopilish animatsiyasi ham ko'rinsin */}
+      <nav
+        id="fullscreen-menu"
+        aria-label={t("mainNav")}
+        aria-hidden={!menuOpen}
+        inert={!menuOpen}
+        className={cn(
+          "menu-panel fixed inset-x-0 bottom-0 top-[76px] z-40",
+          menuOpen && "is-open"
+        )}
+      >
+        <div className="menu-sheet absolute inset-0 overflow-y-auto bg-bg">
           <div className="mx-auto w-full max-w-[1440px] px-6 pb-32 pt-6 md:px-10 lg:px-16 lg:pb-16 lg:pt-12">
             <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-12">
               {/* Asosiy navigatsiya */}
               <div className="lg:col-span-8">
-                <details className="group border-b border-line">
-                  <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl [&::-webkit-details-marker]:hidden">
-                    {t("services")}
-                    <ChevronDown className="size-5 text-tertiary transition-transform duration-200 group-open:rotate-180 lg:size-6" aria-hidden />
-                  </summary>
+                <MenuAccordion
+                  id="services"
+                  label={t("services")}
+                  delay={0}
+                  open={acc === "services"}
+                  onToggle={() => setAcc(acc === "services" ? null : "services")}
+                >
                   <div className="grid grid-cols-1 gap-x-10 pb-8 sm:grid-cols-2 lg:grid-cols-4">
                     {(Object.keys(serviceGroups) as (keyof typeof serviceGroups)[]).map((group) => (
                       <div key={group} className="mt-4">
@@ -445,13 +508,15 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                     {t("allServices")}
                     <ArrowRight className="size-4" aria-hidden />
                   </Link>
-                </details>
+                </MenuAccordion>
 
-                <details className="group border-b border-line">
-                  <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl [&::-webkit-details-marker]:hidden">
-                    {t("industries")}
-                    <ChevronDown className="size-5 text-tertiary transition-transform duration-200 group-open:rotate-180 lg:size-6" aria-hidden />
-                  </summary>
+                <MenuAccordion
+                  id="industries"
+                  label={t("industries")}
+                  delay={60}
+                  open={acc === "industries"}
+                  onToggle={() => setAcc(acc === "industries" ? null : "industries")}
+                >
                   <ul className="grid grid-cols-1 gap-x-10 pb-6 sm:grid-cols-2 lg:grid-cols-3">
                     {INDUSTRY_KEYS.map((key) => (
                       <li key={key}>
@@ -465,22 +530,25 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                       </li>
                     ))}
                   </ul>
-                </details>
+                </MenuAccordion>
 
                 <Link
                   href={projectsPath(locale)}
                   onClick={() => setMenuOpen(false)}
-                  className="flex items-center justify-between border-b border-line py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
+                  style={{ "--d": "120ms" } as React.CSSProperties}
+                  className="menu-item flex items-center justify-between border-b border-line py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
                 >
                   {t("caseStudies")}
                   <ArrowRight className="size-5 text-tertiary lg:size-6" aria-hidden />
                 </Link>
 
-                <details className="group border-b border-line">
-                  <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl [&::-webkit-details-marker]:hidden">
-                    {t("company")}
-                    <ChevronDown className="size-5 text-tertiary transition-transform duration-200 group-open:rotate-180 lg:size-6" aria-hidden />
-                  </summary>
+                <MenuAccordion
+                  id="company"
+                  label={t("company")}
+                  delay={180}
+                  open={acc === "company"}
+                  onToggle={() => setAcc(acc === "company" ? null : "company")}
+                >
                   <ul className="pb-6">
                     {[
                       { label: t("companyAbout"), href: `/${locale}/about` },
@@ -499,12 +567,13 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                       </li>
                     ))}
                   </ul>
-                </details>
+                </MenuAccordion>
 
                 <a
                   href="#contact"
                   onClick={() => setMenuOpen(false)}
-                  className="flex items-center justify-between border-b border-line py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
+                  style={{ "--d": "240ms" } as React.CSSProperties}
+                  className="menu-item flex items-center justify-between border-b border-line py-5 text-xl font-semibold tracking-[-0.02em] transition-colors hover:text-accent lg:text-3xl"
                 >
                   {t("contact")}
                   <ArrowRight className="size-5 text-tertiary lg:size-6" aria-hidden />
@@ -512,7 +581,10 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               </div>
 
               {/* Yon panel: til + CTA (desktop) */}
-              <div className="mt-10 lg:col-span-4 lg:mt-0">
+              <div
+                style={{ "--d": "300ms" } as React.CSSProperties}
+                className="menu-item mt-10 lg:col-span-4 lg:mt-0"
+              >
                 <p className="text-[12px] font-medium uppercase tracking-[0.14em] text-tertiary">
                   {tA11y("switchLanguage")}
                 </p>
@@ -546,19 +618,19 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Pastki yopishgan CTA — faqat kichik ekranlar */}
-          <div className="fixed inset-x-0 bottom-0 border-t border-line bg-bg p-4 lg:hidden">
-            <a
-              href="#contact"
-              onClick={() => setMenuOpen(false)}
-              className="outline-cta flex h-[52px] w-full items-center justify-center border border-white/40 text-[13px] font-semibold uppercase tracking-[0.1em] text-foreground"
-            >
-              {t("cta")}
-            </a>
-          </div>
-        </nav>
-      )}
+        {/* Pastki yopishgan CTA — faqat kichik ekranlar */}
+        <div className="menu-bar absolute inset-x-0 bottom-0 border-t border-line bg-bg p-4 lg:hidden">
+          <a
+            href="#contact"
+            onClick={() => setMenuOpen(false)}
+            className="outline-cta flex h-[52px] w-full items-center justify-center border border-white/40 text-[13px] font-semibold uppercase tracking-[0.1em] text-foreground"
+          >
+            {t("cta")}
+          </a>
+        </div>
+      </nav>
     </header>
   );
 }
